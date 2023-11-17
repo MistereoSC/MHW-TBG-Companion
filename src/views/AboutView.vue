@@ -29,7 +29,7 @@ import BorderComponent from '@/components/BorderComponent.vue'
 				</div>
 			</div>
 		</BorderComponent>
-		<img src="background.png" class="page__background" />
+		<img src="/background.png" class="page__background" />
 	</div>
 </template>
 

@@ -12,18 +12,18 @@ onMounted(() => {
 
 <template>
 	<div class="menu">
-		<img class="menu__image" src="logo.png" alt="Game Logo" />
+		<img class="menu__image" src="/logo.png" alt="Game Logo" />
 		<div class="menu__title"><span class="menu__title__text">Board Game Companion</span></div>
 		<nav class="nav">
 			<div class="separator"></div>
 			<router-link :to="{name: 'campaign'}" class="nav__item" disabled>
 				<span class="nav__text"
-					><img class="nav__image" src="icons/icon_campaign.png" />Campaign Tracker</span
+					><img class="nav__image" src="/icons/icon_campaign.png" />Campaign Tracker</span
 				>
 			</router-link>
 			<router-link :to="{name: 'hunt'}" class="nav__item">
 				<span class="nav__text"
-					><img class="nav__image" src="icons/icon_potion.png" />Hunt Helper</span
+					><img class="nav__image" src="/icons/icon_potion.png" />Hunt Helper</span
 				>
 			</router-link>
 
@@ -31,34 +31,34 @@ onMounted(() => {
 
 			<router-link :to="{name: 'weapons'}" class="nav__item" disabled>
 				<span class="nav__text"
-					><img class="nav__image" src="icons/icon_weapon.png" />Weapon Trees</span
+					><img class="nav__image" src="/icons/icon_weapon.png" />Weapon Trees</span
 				>
 			</router-link>
 			<router-link :to="{name: 'armors'}" class="nav__item" disabled>
 				<span class="nav__text"
-					><img class="nav__image" src="icons/icon_armor.png" />Armor Trees</span
+					><img class="nav__image" src="/icons/icon_armor.png" />Armor Trees</span
 				>
 			</router-link>
 			<router-link :to="{name: 'monsters'}" class="nav__item" disabled>
 				<span class="nav__text"
-					><img class="nav__image" src="icons/icon_monster.png" />Monster Info</span
+					><img class="nav__image" src="/icons/icon_monster.png" />Monster Info</span
 				>
 			</router-link>
 			<router-link :to="{name: 'quests'}" class="nav__item" disabled>
 				<span class="nav__text"
-					><img class="nav__image" src="icons/icon_quest.png" />Quest Log</span
+					><img class="nav__image" src="/icons/icon_quest.png" />Quest Log</span
 				>
 			</router-link>
 			<router-link :to="{name: 'arenas'}" class="nav__item" disabled>
 				<span class="nav__text"
-					><img class="nav__image" src="icons/icon_arena.png" />Arena Quests</span
+					><img class="nav__image" src="/icons/icon_arena.png" />Arena Quests</span
 				>
 			</router-link>
 
 			<div class="separator"></div>
 
 			<router-link :to="{name: 'about'}" class="nav__item">
-				<span class="nav__text"><img class="nav__image" src="icons/icon_about.png" />About</span>
+				<span class="nav__text"><img class="nav__image" src="/icons/icon_about.png" />About</span>
 			</router-link>
 
 			<div class="separator"></div>

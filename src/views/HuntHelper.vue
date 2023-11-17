@@ -35,7 +35,7 @@ function decreaseLive() {
 		<div class="page__top">
 			<BorderComponent :disable_hover="true">
 				<div class="tracker">
-					<img class="tracker__image" src="icons/icon_potion.png" />
+					<img class="tracker__image" src="/icons/icon_potion.png" />
 					<h3 class="tracker__title">Potions</h3>
 					<div class="separator--decorative"></div>
 					<div class="tracker__counter">
@@ -65,7 +65,7 @@ function decreaseLive() {
 			</BorderComponent>
 			<BorderComponent :disable_hover="true">
 				<div class="tracker">
-					<img class="tracker__image" src="icons/icon_quest.png" />
+					<img class="tracker__image" src="/icons/icon_quest.png" />
 					<h3 class="tracker__title">Lives</h3>
 					<div class="separator"></div>
 					<div class="tracker__counter">
@@ -103,7 +103,7 @@ function decreaseLive() {
 					<div class="info__content">
 						<div class="info__item">
 							<span class="info__item__title"
-								><img src="icons/status/stun.png" class="info__item__image" />Stun</span
+								><img src="/icons/status/stun.png" class="info__item__image" />Stun</span
 							>
 							<span class="info__item__text">
 								Choose one attack card from your hand and place it face down on your stamina board.
@@ -112,7 +112,7 @@ function decreaseLive() {
 						</div>
 						<div class="info__item">
 							<span class="info__item__title"
-								><img src="icons/status/poison.png" class="info__item__image" />Poison</span
+								><img src="/icons/status/poison.png" class="info__item__image" />Poison</span
 							>
 							<span class="info__item__text">
 								Your hunter loses 2 health at the end of your next turn.
@@ -120,7 +120,7 @@ function decreaseLive() {
 						</div>
 						<div class="info__item">
 							<span class="info__item__title"
-								><img src="icons/status/sleep.png" class="info__item__image" />Sleep</span
+								><img src="/icons/status/sleep.png" class="info__item__image" />Sleep</span
 							>
 							<span class="info__item__text">
 								You can't place attack cards on your stamina board to attack, move, or dodge until
@@ -129,7 +129,7 @@ function decreaseLive() {
 						</div>
 						<div class="info__item">
 							<span class="info__item__title"
-								><img src="icons/status/paralysis.png" class="info__item__image" />Paralysis</span
+								><img src="/icons/status/paralysis.png" class="info__item__image" />Paralysis</span
 							>
 							<span class="info__item__text">
 								If you have more than 2 cards in your hand, discard down to 2 cards
@@ -137,7 +137,7 @@ function decreaseLive() {
 						</div>
 						<div class="info__item">
 							<span class="info__item__title"
-								><img src="icons/status/blight.png" class="info__item__image" />Blastblight</span
+								><img src="/icons/status/blight.png" class="info__item__image" />Blastblight</span
 							>
 							<span class="info__item__text">
 								Your hunter has -2 armour until the end of your next turn.
@@ -151,7 +151,7 @@ function decreaseLive() {
 					<div class="info__content">
 						<div class="info__item">
 							<span class="info__item__title"
-								><img src="icons/status/stun.png" class="info__item__image" />Stun</span
+								><img src="/icons/status/stun.png" class="info__item__image" />Stun</span
 							>
 							<span class="info__item__text">
 								The dodge value of the monster's next attack is 1 and can't be increased or
@@ -160,7 +160,7 @@ function decreaseLive() {
 						</div>
 						<div class="info__item">
 							<span class="info__item__title"
-								><img src="icons/status/poison.png" class="info__item__image" />Poison</span
+								><img src="/icons/status/poison.png" class="info__item__image" />Poison</span
 							>
 							<span class="info__item__text">
 								The monster loses 2 health at the end of its next turn.
@@ -168,7 +168,7 @@ function decreaseLive() {
 						</div>
 						<div class="info__item">
 							<span class="info__item__title"
-								><img src="icons/status/sleep.png" class="info__item__image" />Sleep</span
+								><img src="/icons/status/sleep.png" class="info__item__image" />Sleep</span
 							>
 							<span class="info__item__text">
 								Only resolve the hunter turn and hunter attack symbols of the next monster
@@ -177,7 +177,7 @@ function decreaseLive() {
 						</div>
 						<div class="info__item">
 							<span class="info__item__title"
-								><img src="icons/status/paralysis.png" class="info__item__image" />Paralysis</span
+								><img src="/icons/status/paralysis.png" class="info__item__image" />Paralysis</span
 							>
 							<span class="info__item__text">
 								If the monster's next behaviour card has a movement symbol, reduce the number in the
@@ -186,7 +186,7 @@ function decreaseLive() {
 						</div>
 						<div class="info__item">
 							<span class="info__item__title"
-								><img src="icons/status/blight.png" class="info__item__image" />Blastblight</span
+								><img src="/icons/status/blight.png" class="info__item__image" />Blastblight</span
 							>
 							<span class="info__item__text">
 								Each part of the monster has –1 armour until the end of its next turn,
