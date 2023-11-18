@@ -34,7 +34,7 @@ onMounted(() => {
 					><img class="nav__image" src="/icons/icon_weapon.png" />Weapon Trees</span
 				>
 			</router-link>
-			<router-link :to="{name: 'armors'}" class="nav__item" disabled>
+			<router-link :to="{name: 'armors'}" class="nav__item">
 				<span class="nav__text"
 					><img class="nav__image" src="/icons/icon_armor.png" />Armor Trees</span
 				>

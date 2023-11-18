@@ -24,11 +24,6 @@ import SideMenu from '@/components/SideMenu.vue'
 		display: grid;
 		grid-template-columns: auto 1fr;
 	}
-
-	&__header {
-	}
-	&__menu {
-	}
 }
 </style>
 <style lang="scss">

@@ -43,8 +43,8 @@ function getBoxShadow() {
 <style lang="scss" scoped>
 $border: 2px solid;
 .component {
-	min-width: 100px;
-	min-height: 100px;
+	min-width: 64px;
+	min-height: 64px;
 	border: $border c.$background-3;
 	transition: border 0.2s ease-out;
 	position: relative;

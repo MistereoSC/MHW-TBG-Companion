@@ -17,7 +17,7 @@ import BorderComponent from '@/components/BorderComponent.vue'
 						<img src="/icons/brands/github.png" alt="GitHub" class="about__buttons__icon --color" />
 					</a>
 					<a
-						href="https://www.reddit.com/user/mistereo_sc/"
+						href="https://github.com/MistereoSC/MHW-TBG-Companion"
 						class="about__buttons__link"
 						target="_blank"
 					>

@@ -27,7 +27,7 @@ const router = createRouter({
 		{
 			path: '/armors',
 			name: 'armors',
-			component: () => import('../views/AboutView.vue'),
+			component: () => import('../views/ArmorTreeView.vue'),
 		},
 		{
 			path: '/monsters',
