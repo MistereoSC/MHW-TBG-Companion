@@ -22,6 +22,6 @@ export interface IArmor {
 		type: string | 'fire' | 'water' | 'thunder' | 'ice' | 'dragon'
 		amount: number
 	}
-	effect: null | string
+	effect: null | {name: string; description: string}
 	parts: Array<{name: string; amount: number}>
 }

@@ -14,8 +14,10 @@ onMounted(() => {
 			return
 		}
 		scrollContainer.addEventListener('wheel', (e) => {
-			e.preventDefault()
-			scrollContainer.scrollLeft += e.deltaY
+			if (!e.ctrlKey) {
+				e.preventDefault
+				scrollContainer.scrollLeft += e.deltaY
+			}
 		})
 	}
 })
@@ -53,6 +55,8 @@ onMounted(() => {
 				></ArmorSet>
 			</div>
 		</div>
+
+		<div class="blind --before" v-if="PAGE_DIRECTION == 'horizontal'"></div>
 	</div>
 </template>
 
@@ -61,13 +65,28 @@ onMounted(() => {
 	width: 100%;
 	height: 100%;
 }
+.blind {
+	width: 60px;
+
+	position: absolute;
+
+	&.--after {
+		inset: 0 0 8px auto;
+		background: linear-gradient(-90deg, rgba(24, 24, 24, 1) 0%, rgba(0, 0, 0, 0) 100%);
+	}
+	&.--before {
+		inset: 0 auto 8px 0;
+		background: linear-gradient(90deg, rgba(24, 24, 24, 1) 0%, rgba(0, 0, 0, 0) 100%);
+	}
+}
 .content {
+	position: relative;
 	height: 100vh;
 	width: auto;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	padding: 10px 40px 10px 50px;
+	padding: 10px 50px 10px 50px;
 	gap: 34px;
 
 	overflow-y: hidden;

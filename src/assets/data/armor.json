@@ -45,7 +45,7 @@
             "greaves": {
                 "armor": 0,
                 "resistance": null,
-                "effect": "Poison Resistance",
+                "effect": {"name":"Poison Resistance", "description":"This hunter can't suffer the $status/poison$ status ailment."},
                 "parts": [
                     {
                         "name": "Machalite Ore",
@@ -84,7 +84,7 @@
             "mail": {
                 "armor": 1,
                 "resistance": null,
-                "effect": "Slugger",
+                "effect": {"name":"Slugger", "description":"Once per quest, when hits hunter uses a $status/stun$ status ailment attack card, place +1 $status/stun$ token."},
                 "parts": [
                     {
                         "name": "Monster Bone Small",
@@ -121,7 +121,7 @@
             "helm": {
                 "armor": 1,
                 "resistance": {"type": "water", "amount": 1},
-                "effect": "Speed Eating",
+                "effect": {"name":"Speed Eating", "description":"Once per quest, this hunter may use combat actions and preparation actions during the same turn."},
                 "parts": [
                     {
                         "name": "Great Jagras Hide",
@@ -144,7 +144,7 @@
             "mail": {
                 "armor": 1,
                 "resistance": {"type": "water", "amount": 1},
-                "effect": "Palico Rally",
+                "effect": {"name":"Palico Rally", "description":"This hunter may use their Palico ability twice per quest."},
                 "parts": [
                     {
                         "name": "Great Jagras Hide",
@@ -191,7 +191,7 @@
             "helm": {
                 "armor": 0,
                 "resistance": {"type": "thunder", "amount": 2},
-                "effect": "Constitution",
+                "effect": {"name":"Constitution", "description":"Once per quest when this hunter successfully dodges a monster attack, discard your attack cards instead of placing them on your stamina board."},
                 "parts": [
                     {
                         "name": "Tobi-Kadachi Pelt",
@@ -210,7 +210,7 @@
             "mail": {
                 "armor": 1,
                 "resistance": {"type": "thunder", "amount": 1},
-                "effect": "Evade Extender",
+                "effect": {"name":"Evade Extender", "description":"When this hunter successfully dodges a monster attack, they may move 1 additional node."},
                 "parts": [
                     {
                         "name": "Tobi-Kadachi Pelt",
@@ -233,7 +233,7 @@
             "greaves": {
                 "armor": 0,
                 "resistance": {"type": "thunder", "amount": 1},
-                "effect": "Thunder Attack",
+                "effect": {"name":"Thunder Attack", "description":"When this hunter plays a $elements/thunder$ elemental attack card, draw +1 $misc/damage_card$."},
                 "parts": [
                     {
                         "name": "Great Jagras Hide",
@@ -257,7 +257,7 @@
             "helm": {
                 "armor": 1,
                 "resistance": {"type": "fire", "amount": 2},
-                "effect": "Fire Attack",
+                "effect": {"name":"Fire Attack",  "description":"When this hunter plays a $elements/fire$ elemental attack card, draw +1 $misc/damage_card$."},
                 "parts": [
                     {
                         "name": "Anjanath Pelt",
@@ -276,7 +276,7 @@
             "mail": {
                 "armor": 1,
                 "resistance": {"type": "fire", "amount": 1},
-                "effect": "Marathon Runner",
+                "effect": {"name":"Marathon Runner","description":"When this hunter walks, they move up to 2 nodes instead of 1."},
                 "parts": [
                     {
                         "name": "Anjanath Pelt",
@@ -323,7 +323,7 @@
             "helm": {
                 "armor": 2,
                 "resistance": {"type": "fire", "amount": 1},
-                "effect": "Set Bonus: Rathalos Mastery",
+                "effect": {"name":"Set Bonus: Rathalos Mastery", "description":"When this hunter plays a $elements/fire$ elemental attack card, instead of placing an elemental token draw 1 elemental damage card. This doesn't effect monsters with $elements/fire$ immunity."},
                 "parts": [
                     {
                         "name": "Rathalos Scale",
@@ -342,7 +342,7 @@
             "mail": {
                 "armor": 1,
                 "resistance": {"type": "fire", "amount": 1},
-                "effect": "Rathalos Power",
+                "effect": {"name":"Rathalos Power", "description":"Once per quest, this player may swap their hunter token with another player. The facing of the hunter token each player now has should match the facing of their previous token."},
                 "parts": [
                     {
                         "name": "Rathalos Scale",
@@ -361,7 +361,7 @@
             "greaves": {
                 "armor": 1,
                 "resistance": {"type": "fire", "amount": 1},
-                "effect": "Sleep Resistance",
+                "effect": {"name":"Sleep Resistance", "description":"This hunter can't suffer the $status/sleep$ status ailment."},
                 "parts": [
                     {
                         "name": "Rathalos Shell",
@@ -386,7 +386,7 @@
             "helm": {
                 "armor": 2,
                 "resistance": {"type": "fire", "amount": 1},
-                "effect": "Intimidator",
+                "effect": {"name":"Intimidator", "description":"This hunter can't suffer damage during the gathering phase."},
                 "parts": [
                     {
                         "name": "Azure Rathalos Scale",
@@ -405,7 +405,7 @@
             "mail": {
                 "armor": 1,
                 "resistance": {"type": "fire", "amount": 1},
-                "effect": "Set Bonus: Azrue Rathalos Mastery",
+                "effect": {"name":"Set Bonus: Azure Rathalos Mastery", "description":"When this hunter would draw an elemental damage card, draw 3 cards before choosing 1 to resolve"},
                 "parts": [
                     {
                         "name": "Azure Rathalos Scale",
@@ -424,7 +424,7 @@
             "greaves": {
                 "armor": 1,
                 "resistance": {"type": "fire", "amount": 1},
-                "effect": "Focus",
+                "effect": {"name":"Focus", "description":"When this hunter uses an attack card with Combo, reduce the Combo value by 1 to a minimum of 1."},
                 "parts": [
                     {
                         "name": "Azure Rathalos Carapace",
@@ -451,7 +451,7 @@
             "helm": {
                 "armor": 1,
                 "resistance": {"type": "water", "amount": 1},
-                "effect": "Guard",
+                "effect": {"name":"Guard", "description":"When this hunter plays an attack card that grants additional armour, the card gains +1 $misc/armor$."},
                 "parts": [
                     {
                         "name": "Barroth Ridge",
@@ -493,7 +493,7 @@
             "greaves": {
                 "armor": 1,
                 "resistance": {"type": "water", "amount": 1},
-                "effect": "Stun Resistance",
+                "effect": {"name":"Stun Resistance", "description":"This hunter can't suffer the $status/stun$ status ailment."},
                 "parts": [
                     {
                         "name": "Barroth Carapace",
@@ -521,7 +521,7 @@
             "helm": {
                 "armor": 1,
                 "resistance": {"type": "water", "amount": 1},
-                "effect": "Sporepuff Expert",
+                "effect": {"name":"Sporepuff Expert", "description":"When the hunter recovers health from anything that isn't a potion, recover 1 additional health."},
                 "parts": [
                     {
                         "name": "Pukei-Pukei Carapace",
@@ -540,7 +540,7 @@
             "mail": {
                 "armor": 1,
                 "resistance": {"type": "water", "amount": 1},
-                "effect": "Botanist",
+                "effect": {"name":"Botanist", "description":"During the gathering phase, when the hunters gain a potion they may immediately recover to full health without spending a potion."},
                 "parts": [
                     {
                         "name": "Pukei-Pukei Carapace",
@@ -559,7 +559,7 @@
             "greaves": {
                 "armor": 1,
                 "resistance": {"type": "water", "amount": 1},
-                "effect": "Poison Resistance",
+                "effect": {"name":"Poison Resistance", "description":"This hunter can't suffer the $status/poison$ status ailment."},
                 "parts": [
                     {
                         "name": "Pukei-Pukei Carapace",
@@ -587,7 +587,7 @@
             "helm": {
                 "armor": 1,
                 "resistance": {"type": "water", "amount": 1},
-                "effect": "Aquatic Expert",
+                "effect": {"name":"Aquatic Expert", "description":"When this hunter moves onto pond nodes they don't discard damage cards."},
                 "parts": [
                     {
                         "name": "Jyuratodus Scale",
@@ -610,7 +610,7 @@
             "mail": {
                 "armor": 1,
                 "resistance": {"type": "water", "amount": 1},
-                "effect": "Water Attack",
+                "effect": {"name":"Water Attack", "description":"When this hunter plays a $elements/water$ elemental attack card, draw +1 $misc/damage_card$."},
                 "parts": [
                     {
                         "name": "Jyuratodus Scale",
@@ -661,7 +661,7 @@
             "helm": {
                 "armor": 1,
                 "resistance": {"type": "fire", "amount": 1},
-                "effect": "Heroics",
+                "effect": {"name":"Heroics", "description":"While this hunter plays an attack card without elemental damage, while being at 2 health or less, draw +1 $misc/damage_card$."},
                 "parts": [
                     {
                         "name": "Diablos Ridge",
@@ -684,7 +684,7 @@
             "mail": {
                 "armor": 1,
                 "resistance": {"type": "fire", "amount": 1},
-                "effect": "Slugger",
+                "effect": {"name":"Slugger", "description":"Once per Quest, when hits hunter uses a $status/stun$ status ailment attack card, place +1 $status/stun$ token."},
                 "parts": [
                     {
                         "name": "Diablos Carapace",
@@ -707,7 +707,7 @@
             "greaves": {
                 "armor": 2,
                 "resistance": {"type": "fire", "amount": 1},
-                "effect": "Set Bonus: Diablos Mastery",
+                "effect": {"name":"Set Bonus: Diablos Mastery", "description":"When this hunter plays an attack card without an elemental damage symbol, draw +1 $misc/damage_card$."},
                 "parts": [
                     {
                         "name": "Diablos Ridge",
@@ -731,7 +731,7 @@
             "helm": {
                 "armor": 1,
                 "resistance": {"type": "fire", "amount": 1},
-                "effect": "Set Bonus: Black Diablos Mastery",
+                "effect": {"name":"Set Bonus: Black Diablos Mastery", "description":"When this hunter plays an attack card without an elemental damage symbol, draw +1 $misc/damage_card$."},
                 "parts": [
                     {
                         "name": "Black Diablos Ridge",
@@ -754,7 +754,7 @@
             "mail": {
                 "armor": 1,
                 "resistance": {"type": "fire", "amount": 1},
-                "effect": "Resentment",
+                "effect": {"name":"Resentment", "description":"If this hunter recovered health during your previous turn, the first attack card you play this turn gains +2 $misc/damage_card$."},
                 "parts": [
                     {
                         "name": "Black Diablos Carapace",
@@ -773,7 +773,7 @@
             "greaves": {
                 "armor": 2,
                 "resistance": {"type": "fire", "amount": 1},
-                "effect": "Part Breaker",
+                "effect": {"name":"Part Breaker", "description":"When this hunter plays an attack card with 1 or more $misc/break$ the card gains +1 $misc/break$."},
                 "parts": [
                     {
                         "name": "Black Diablos Ridge",

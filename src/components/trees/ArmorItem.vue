@@ -2,6 +2,7 @@
 import type {IArmor} from '@/components/interfaces/items'
 import Shield from '@/components/icons/Icon_Shield.vue'
 import Pentagon from '@/components/icons/Icon_Pentagon.vue'
+import Tooltip from '@/views/Tooltip.vue'
 
 const props = defineProps<{
 	item: IArmor
@@ -25,6 +26,15 @@ function getFillColor(element: string) {
 		default:
 			return undefined
 	}
+}
+function getTooltipText(text: string) {
+	const out = text.replace(/\$([^\$]*)\$/g, genHtmlImg('$1'))
+	return out
+}
+
+function genHtmlImg(str: string) {
+	const path = `/icons/${str}.png`
+	return `<img src="${path}" style="max-width: 16px; max-height: 16px;"/>`
 }
 </script>
 
@@ -50,8 +60,8 @@ function getFillColor(element: string) {
 
 			<div class="item__stats">
 				<div class="item__stats__element">
-					<Shield :stroke-width="2" fill="#282828" stroke="#626262">
-						<span class="item__stats__text">{{ item.armor }}</span>
+					<Shield :stroke-width="2" fill="#deceb4" stroke="#626262">
+						<span class="item__stats__text --dark">{{ item.armor }}</span>
 					</Shield>
 				</div>
 				<div class="item__stats__element" v-if="item.resistance">
@@ -69,7 +79,14 @@ function getFillColor(element: string) {
 
 			<div class="separator"></div>
 
-			<div class="item__effect">{{ item.effect }}</div>
+			<div class="item__effect">
+				<span>{{ item.effect?.name }}</span>
+				<Tooltip class="tooltip" position="top" v-if="item.effect">
+					<div class="tooltip-content">
+						<span v-html="getTooltipText(item.effect.description)"></span>
+					</div>
+				</Tooltip>
+			</div>
 		</div>
 	</div>
 </template>
@@ -107,14 +124,6 @@ function getFillColor(element: string) {
 		line-height: 1.1;
 		text-align: center;
 	}
-	&__effect {
-		display: grid;
-		place-items: center;
-		min-height: 28px;
-		font-size: 14px;
-		line-height: 1;
-		text-align: center;
-	}
 	&__stats {
 		display: flex;
 		justify-content: center;
@@ -135,6 +144,22 @@ function getFillColor(element: string) {
 			}
 		}
 	}
+
+	&__effect {
+		position: relative;
+		display: grid;
+		place-items: center;
+		min-height: 28px;
+		font-size: 14px;
+		line-height: 1;
+		text-align: center;
+
+		&:not(:hover) {
+			.tooltip {
+				display: none;
+			}
+		}
+	}
 }
 
 .separator {
@@ -142,5 +167,14 @@ function getFillColor(element: string) {
 	width: auto;
 	margin: 5px 0px;
 	background-color: c.$background-3;
+}
+
+.tooltip-content {
+	text-align: justify;
+	text-align-last: center;
+	line-height: 1.25;
+	font-size: 16px;
+	width: max-content;
+	max-width: 200px;
 }
 </style>
