@@ -67,7 +67,7 @@ function decreaseLive() {
 				<div class="tracker">
 					<img class="tracker__image" src="/icons/icon_quest.png" />
 					<h3 class="tracker__title">Lives</h3>
-					<div class="separator"></div>
+					<div class="separator--decorative"></div>
 					<div class="tracker__counter">
 						<button
 							class="tracker__button tracker__button--minus"
