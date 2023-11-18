@@ -1,3 +1,13 @@
+export interface IExpansions<T> {
+	basic: T
+	wildspire_waste: T
+	ancient_forest: T
+	kulu: T
+	teostra: T
+	nergigante: T
+	kushala: T
+}
+
 export interface IArmorSet {
 	name: string
 	icon: string

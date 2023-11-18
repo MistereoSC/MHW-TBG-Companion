@@ -5,12 +5,13 @@ import BorderComponent from '../BorderComponent.vue'
 
 const props = defineProps<{
 	set: IArmorSet
+	direction?: 'horizontal' | 'vertical'
 }>()
 </script>
 
 <template>
-	<div class="container">
-		<BorderComponent class="header__border" :disable_hover="true">
+	<div class="container" :class="{'direction-horizontal': props.direction == 'horizontal'}">
+		<BorderComponent class="header__border" :disable_hover="true" :blur_radius="10">
 			<img :src="`/icons/monsters/${set.icon}.png`" class="header__icon" />
 		</BorderComponent>
 		<div class="line"></div>
@@ -41,12 +42,6 @@ const props = defineProps<{
 </template>
 
 <style lang="scss" scoped>
-.container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 200px;
-}
 .header {
 	&__border {
 		width: 64px;
@@ -55,6 +50,8 @@ const props = defineProps<{
 	&__icon {
 		width: 60px;
 		height: 60px;
+		background-color: c.$background;
+		padding: 6px;
 	}
 }
 .line {
@@ -63,5 +60,30 @@ const props = defineProps<{
 	height: 64px;
 	margin: -20px 0;
 	z-index: -1;
+}
+.container:not(.container.direction-horizontal) {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 200px;
+	.line {
+		width: 4px;
+		background-color: c.$background-3;
+		height: 64px;
+		margin: -20px 0;
+		z-index: -1;
+	}
+}
+
+.container.direction-horizontal {
+	display: flex;
+	align-items: center;
+	.line {
+		width: 64px;
+		background-color: c.$background-3;
+		height: 4px;
+		margin: 0 -20px;
+		z-index: -1;
+	}
 }
 </style>

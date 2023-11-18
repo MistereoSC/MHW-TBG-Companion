@@ -57,6 +57,11 @@ onMounted(() => {
 
 			<div class="separator"></div>
 
+			<router-link :to="{name: 'settings'}" class="nav__item" disabled>
+				<span class="nav__text"
+					><img class="nav__image" src="/icons/icon_settings.png" />Settings</span
+				>
+			</router-link>
 			<router-link :to="{name: 'about'}" class="nav__item">
 				<span class="nav__text"><img class="nav__image" src="/icons/icon_about.png" />About</span>
 			</router-link>

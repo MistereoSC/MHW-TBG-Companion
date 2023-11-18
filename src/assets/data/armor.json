@@ -1,464 +1,798 @@
-[
-    {
-        "name": "Alloy",
-        "icon": "ore",
-        "rarity": 1,
-        "helm": {
-            "armor": 1,
-            "resistance": null,
-            "effect": null,
-            "parts": [
-                {
-                    "name": "Machalite Ore",
-                    "amount": 2
-                },
-                {
-                    "name": "Carbalite Ore",
-                    "amount": 1
-                },   
-                {
-                    "name": "Dragonite Ore",
-                    "amount": 1
-                }
-            ]
+{
+    "basic": [
+        {
+            "name": "Alloy",
+            "icon": "ore",
+            "rarity": 1,
+            "helm": {
+                "armor": 1,
+                "resistance": null,
+                "effect": null,
+                "parts": [
+                    {
+                        "name": "Machalite Ore",
+                        "amount": 2
+                    },
+                    {
+                        "name": "Carbalite Ore",
+                        "amount": 1
+                    },   
+                    {
+                        "name": "Dragonite Ore",
+                        "amount": 1
+                    }
+                ]
+            },
+            "mail": {
+                "armor": 1,
+                "resistance": null,
+                "effect": null,
+                "parts": [
+                    {
+                        "name": "Machalite Ore",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Carbalite Ore",
+                        "amount": 2
+                    },   
+                    {
+                        "name": "Dragonite Ore",
+                        "amount": 1
+                    }
+                ]
+            },
+            "greaves": {
+                "armor": 0,
+                "resistance": null,
+                "effect": "Poison Resistance",
+                "parts": [
+                    {
+                        "name": "Machalite Ore",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Carbalite Ore",
+                        "amount": 2
+                    },   
+                    {
+                        "name": "Dragonite Ore",
+                        "amount": 1
+                    }
+                ]
+            }
         },
-        "mail": {
-            "armor": 1,
-            "resistance": null,
-            "effect": null,
-            "parts": [
-                {
-                    "name": "Machalite Ore",
-                    "amount": 1
-                },
-                {
-                    "name": "Carbalite Ore",
-                    "amount": 2
-                },   
-                {
-                    "name": "Dragonite Ore",
-                    "amount": 1
-                }
-            ]
-        },
-        "greaves": {
-            "armor": 0,
-            "resistance": null,
-            "effect": "Poison Resistance",
-            "parts": [
-                {
-                    "name": "Machalite Ore",
-                    "amount": 1
-                },
-                {
-                    "name": "Carbalite Ore",
-                    "amount": 2
-                },   
-                {
-                    "name": "Dragonite Ore",
-                    "amount": 1
-                }
-            ]
+        {
+            "name": "Bone",
+            "icon": "bone",
+            "rarity": 1,
+            "helm": {
+                "armor": 1,
+                "resistance": null,
+                "effect": null,
+                "parts": [
+                    {
+                        "name": "Monster Bone Small",
+                        "amount": 2
+                    },
+                    {
+                        "name": "Ancient Bone",
+                        "amount": 2
+                    }
+                ]
+            },
+            "mail": {
+                "armor": 1,
+                "resistance": null,
+                "effect": "Slugger",
+                "parts": [
+                    {
+                        "name": "Monster Bone Small",
+                        "amount": 2
+                    },
+                    {
+                        "name": "Ancient Bone",
+                        "amount": 2
+                    }
+                ]
+            },
+            "greaves": {
+                "armor": 0,
+                "resistance": null,
+                "effect": null,
+                "parts": [
+                    {
+                        "name": "Monster Bone Small",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Ancient Bone",
+                        "amount": 1
+                    }
+                ]
+            }
         }
-    },
-    {
-        "name": "Bone",
-        "icon": "bone",
-        "rarity": 1,
-        "helm": {
-            "armor": 1,
-            "resistance": null,
-            "effect": null,
-            "parts": [
-                {
-                    "name": "Monster Bone Small",
-                    "amount": 2
-                },
-                {
-                    "name": "Ancient Bone",
-                    "amount": 2
-                }
-            ]
+    ],
+    "ancient_forest": [
+        {
+            "name": "Great Jagras",
+            "icon": "jagras",
+            "rarity": 2,
+            "helm": {
+                "armor": 1,
+                "resistance": {"type": "water", "amount": 1},
+                "effect": "Speed Eating",
+                "parts": [
+                    {
+                        "name": "Great Jagras Hide",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Great Jagras Mane",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Great Jagras Claw",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Ancient Bone",
+                        "amount": 1
+                    }
+                ]
+            },
+            "mail": {
+                "armor": 1,
+                "resistance": {"type": "water", "amount": 1},
+                "effect": "Palico Rally",
+                "parts": [
+                    {
+                        "name": "Great Jagras Hide",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Great Jagras Claw",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Great Jagras Scale",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Monster Bone Small",
+                        "amount": 1
+                    }
+                ]
+            },
+            "greaves": {
+                "armor": 1,
+                "resistance": {"type": "water", "amount": 1},
+                "effect": null,
+                "parts": [
+                    {
+                        "name": "Great Jagras Hide",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Great Jagras Scale",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Great Jagras Mane",
+                        "amount": 1
+                    }
+                ]
+            }
         },
-        "mail": {
-            "armor": 1,
-            "resistance": null,
-            "effect": "Slugger",
-            "parts": [
-                {
-                    "name": "Monster Bone Small",
-                    "amount": 2
-                },
-                {
-                    "name": "Ancient Bone",
-                    "amount": 2
-                }
-            ]
+        {
+            "name": "Kadachi",
+            "icon": "tobi",
+            "rarity": 2,
+            "helm": {
+                "armor": 0,
+                "resistance": {"type": "thunder", "amount": 2},
+                "effect": "Constitution",
+                "parts": [
+                    {
+                        "name": "Tobi-Kadachi Pelt",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Tobi-Kadachi Claw",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Electro Sac",
+                        "amount": 1
+                    }
+                ]
+            },
+            "mail": {
+                "armor": 1,
+                "resistance": {"type": "thunder", "amount": 1},
+                "effect": "Evade Extender",
+                "parts": [
+                    {
+                        "name": "Tobi-Kadachi Pelt",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Tobi-Kadachi Electrode",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Tobi-Kadachi Membrane",
+                        "amount": 2
+                    },
+                    {
+                        "name": "Wingdrake Hide",
+                        "amount": 1
+                    }
+                ]
+            },
+            "greaves": {
+                "armor": 0,
+                "resistance": {"type": "thunder", "amount": 1},
+                "effect": "Thunder Attack",
+                "parts": [
+                    {
+                        "name": "Great Jagras Hide",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Great Jagras Scale",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Great Jagras Mane",
+                        "amount": 1
+                    }
+                ]
+            }
         },
-        "greaves": {
-            "armor": 0,
-            "resistance": null,
-            "effect": null,
-            "parts": [
-                {
-                    "name": "Monster Bone Small",
-                    "amount": 1
-                },
-                {
-                    "name": "Ancient Bone",
-                    "amount": 1
-                }
-            ]
+        {
+            "name": "Anja",
+            "icon": "anjanath",
+            "rarity": 2,
+            "helm": {
+                "armor": 1,
+                "resistance": {"type": "fire", "amount": 2},
+                "effect": "Fire Attack",
+                "parts": [
+                    {
+                        "name": "Anjanath Pelt",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Anjanath Scale",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Anjanath Tail",
+                        "amount": 1
+                    }
+                ]
+            },
+            "mail": {
+                "armor": 1,
+                "resistance": {"type": "fire", "amount": 1},
+                "effect": "Marathon Runner",
+                "parts": [
+                    {
+                        "name": "Anjanath Pelt",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Anjanath Fang",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Anjanath Nosebone",
+                        "amount": 1
+                    }
+                ]
+            },
+            "greaves": {
+                "armor": 1,
+                "resistance": {"type": "fire", "amount": 2},
+                "effect": null,
+                "parts": [
+                    {
+                        "name": "Anjanath Pelt",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Anjanath Scale",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Flame Sac",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Machalite Ore",
+                        "amount": 2
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Rathalos",
+            "icon": "rathalos",
+            "rarity": 3,
+            "helm": {
+                "armor": 2,
+                "resistance": {"type": "fire", "amount": 1},
+                "effect": "Set Bonus: Rathalos Mastery",
+                "parts": [
+                    {
+                        "name": "Rathalos Scale",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Rathalos Shell",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Rathalos Marrow",
+                        "amount": 1
+                    }
+                ]
+            },
+            "mail": {
+                "armor": 1,
+                "resistance": {"type": "fire", "amount": 1},
+                "effect": "Rathalos Power",
+                "parts": [
+                    {
+                        "name": "Rathalos Scale",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Rathalos Webbing",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Rathalos Plate",
+                        "amount": 1
+                    }
+                ]
+            },
+            "greaves": {
+                "armor": 1,
+                "resistance": {"type": "fire", "amount": 1},
+                "effect": "Sleep Resistance",
+                "parts": [
+                    {
+                        "name": "Rathalos Shell",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Rathalos Wingtalon",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Rathalos Tail",
+                        "amount": 1
+                    }
+
+                ]
+            }
+        },
+        {
+            "name": "Rath Soul",
+            "icon": "rathalos_azure",
+            "rarity": 3,
+            "helm": {
+                "armor": 2,
+                "resistance": {"type": "fire", "amount": 1},
+                "effect": "Intimidator",
+                "parts": [
+                    {
+                        "name": "Azure Rathalos Scale",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Azure Rathalos Carapace",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Azure Rathalos Marrow",
+                        "amount": 1
+                    }
+                ]
+            },
+            "mail": {
+                "armor": 1,
+                "resistance": {"type": "fire", "amount": 1},
+                "effect": "Set Bonus: Azrue Rathalos Mastery",
+                "parts": [
+                    {
+                        "name": "Azure Rathalos Scale",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Azure Rathalos Wing",
+                        "amount": 2
+                    },
+                    {
+                        "name": "Azure Rathalos Plate",
+                        "amount": 1
+                    }
+                ]
+            },
+            "greaves": {
+                "armor": 1,
+                "resistance": {"type": "fire", "amount": 1},
+                "effect": "Focus",
+                "parts": [
+                    {
+                        "name": "Azure Rathalos Carapace",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Azure Rathalos Wingtalon",
+                        "amount": 2
+                    },
+                    {
+                        "name": "Azure Rathalos Tail",
+                        "amount": 1
+                    }
+
+                ]
+            }
         }
-    },
-    {
-        "name": "Barroth",
-        "icon": "barroth",
-        "rarity": 2,
-        "helm": {
-            "armor": 1,
-            "resistance": {"type": "water", "amount": 1},
-            "effect": "Guard",
-            "parts": [
-                {
-                    "name": "Barroth Ridge",
-                    "amount": 1
-                },
-                {
-                    "name": "Barroth Claw",
-                    "amount": 1
-                },
-                {
-                    "name": "Fertile Mud",
-                    "amount": 1
-                }
-            ]
+    ],
+    "wildspire_waste": [
+        {
+            "name": "Barroth",
+            "icon": "barroth",
+            "rarity": 2,
+            "helm": {
+                "armor": 1,
+                "resistance": {"type": "water", "amount": 1},
+                "effect": "Guard",
+                "parts": [
+                    {
+                        "name": "Barroth Ridge",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Barroth Claw",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Fertile Mud",
+                        "amount": 1
+                    }
+                ]
+            },
+            "mail": {
+                "armor": 1,
+                "resistance": {"type": "water", "amount": 1},
+                "effect": null,
+                "parts": [
+                    {
+                        "name": "Barroth Carapace",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Barroth Ridge",
+                        "amount": 2
+                    },
+                    {
+                        "name": "Barroth Claw",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Quality Bone",
+                        "amount": 2
+                    }
+                ]
+            },
+            "greaves": {
+                "armor": 1,
+                "resistance": {"type": "water", "amount": 1},
+                "effect": "Stun Resistance",
+                "parts": [
+                    {
+                        "name": "Barroth Carapace",
+                        "amount": 2
+                    },
+                    {
+                        "name": "Barroth Ridge",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Fertile Mud",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Monster Keenbone",
+                        "amount": 1
+                    }
+                ]
+            }
         },
-        "mail": {
-            "armor": 1,
-            "resistance": {"type": "water", "amount": 1},
-            "effect": null,
-            "parts": [
-                {
-                    "name": "Barroth Carapace",
-                    "amount": 1
-                },
-                {
-                    "name": "Barroth Ridge",
-                    "amount": 2
-                },
-                {
-                    "name": "Barroth Claw",
-                    "amount": 1
-                },
-                {
-                    "name": "Quality Bone",
-                    "amount": 2
-                }
-            ]
+        {
+            "name": "Pukei",
+            "icon": "pukei",
+            "rarity": 2,
+            "helm": {
+                "armor": 1,
+                "resistance": {"type": "water", "amount": 1},
+                "effect": "Sporepuff Expert",
+                "parts": [
+                    {
+                        "name": "Pukei-Pukei Carapace",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Pukei-Pukei Tail",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Pukei-Pukei Wing",
+                        "amount": 1
+                    }
+                ]
+            },
+            "mail": {
+                "armor": 1,
+                "resistance": {"type": "water", "amount": 1},
+                "effect": "Botanist",
+                "parts": [
+                    {
+                        "name": "Pukei-Pukei Carapace",
+                        "amount": 2
+                    },
+                    {
+                        "name": "Pukei-Pukei Tail",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Carbalite Ore",
+                        "amount": 3
+                    }
+                ]
+            },
+            "greaves": {
+                "armor": 1,
+                "resistance": {"type": "water", "amount": 1},
+                "effect": "Poison Resistance",
+                "parts": [
+                    {
+                        "name": "Pukei-Pukei Carapace",
+                        "amount": 2
+                    },
+                    {
+                        "name": "Pukei-Pukei Sac",
+                        "amount": 2
+                    },
+                    {
+                        "name": "Pukei-Pukei Scale",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Monster Keenbone",
+                        "amount": 1
+                    }
+                ]
+            }
         },
-        "greaves": {
-            "armor": 1,
-            "resistance": {"type": "water", "amount": 1},
-            "effect": "Stun Resistance",
-            "parts": [
-                {
-                    "name": "Barroth Carapace",
-                    "amount": 2
-                },
-                {
-                    "name": "Barroth Ridge",
-                    "amount": 1
-                },
-                {
-                    "name": "Fertile Mud",
-                    "amount": 1
-                },
-                {
-                    "name": "Monster Keenbone",
-                    "amount": 1
-                }
-            ]
+        {
+            "name": "Jyura",
+            "icon": "jyuratodus",
+            "rarity": 2,
+            "helm": {
+                "armor": 1,
+                "resistance": {"type": "water", "amount": 1},
+                "effect": "Aquatic Expert",
+                "parts": [
+                    {
+                        "name": "Jyuratodus Scale",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Jyuratodus Carapace",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Jyuratodus Fin",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Gajau Scale",
+                        "amount": 1
+                    }
+                ]
+            },
+            "mail": {
+                "armor": 1,
+                "resistance": {"type": "water", "amount": 1},
+                "effect": "Water Attack",
+                "parts": [
+                    {
+                        "name": "Jyuratodus Scale",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Jyuratodus Fin",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Jyuratodus Fang",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Torrent Sac",
+                        "amount": 2
+                    }
+                ]
+            },
+            "greaves": {
+                "armor": 1,
+                "resistance": {"type": "water", "amount": 2},
+                "effect": null,
+                "parts": [
+                    {
+                        "name": "Jyuratodus Carapace",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Jyuratodus Fin",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Jyuratodus Fang",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Wyvern Gem",
+                        "amount": 1
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Diablos",
+            "icon": "diablos",
+            "rarity": 3,
+            "helm": {
+                "armor": 1,
+                "resistance": {"type": "fire", "amount": 1},
+                "effect": "Heroics",
+                "parts": [
+                    {
+                        "name": "Diablos Ridge",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Diablos Fang",
+                        "amount": 2
+                    },
+                    {
+                        "name": "Diablos Horn",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Wyvern Gem",
+                        "amount": 2
+                    }
+                ]
+            },
+            "mail": {
+                "armor": 1,
+                "resistance": {"type": "fire", "amount": 1},
+                "effect": "Slugger",
+                "parts": [
+                    {
+                        "name": "Diablos Carapace",
+                        "amount": 2
+                    },
+                    {
+                        "name": "Diablos Ridge",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Majestic Horn",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Lightcrystal",
+                        "amount": 2
+                    }
+                ]
+            },
+            "greaves": {
+                "armor": 2,
+                "resistance": {"type": "fire", "amount": 1},
+                "effect": "Set Bonus: Diablos Mastery",
+                "parts": [
+                    {
+                        "name": "Diablos Ridge",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Diablos Carapace",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Blos Medulla",
+                        "amount": 1
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Diablos Necro",
+            "icon": "diablos_black",
+            "rarity": 3,
+            "helm": {
+                "armor": 1,
+                "resistance": {"type": "fire", "amount": 1},
+                "effect": "Set Bonus: Black Diablos Mastery",
+                "parts": [
+                    {
+                        "name": "Black Diablos Ridge",
+                        "amount": 2
+                    },
+                    {
+                        "name": "Majestic Horn",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Black Spiral Horn",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Novacrystal",
+                        "amount": 2
+                    }
+                ]
+            },
+            "mail": {
+                "armor": 1,
+                "resistance": {"type": "fire", "amount": 1},
+                "effect": "Resentment",
+                "parts": [
+                    {
+                        "name": "Black Diablos Carapace",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Black Spiral Horn",
+                        "amount": 2
+                    },
+                    {
+                        "name": "Blos Medulla",
+                        "amount": 1
+                    }
+                ]
+            },
+            "greaves": {
+                "armor": 2,
+                "resistance": {"type": "fire", "amount": 1},
+                "effect": "Part Breaker",
+                "parts": [
+                    {
+                        "name": "Black Diablos Ridge",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Black Diablos Carapace",
+                        "amount": 2
+                    },
+                    {
+                        "name": "Black Spiral Horn",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Wyvern Gem",
+                        "amount": 1
+                    }
+                ]
+            }
         }
-    },
-    {
-        "name": "Pukei",
-        "icon": "pukei",
-        "rarity": 2,
-        "helm": {
-            "armor": 1,
-            "resistance": {"type": "water", "amount": 1},
-            "effect": "Sporepuff Expert",
-            "parts": [
-                {
-                    "name": "Pukei-Pukei Carapace",
-                    "amount": 1
-                },
-                {
-                    "name": "Pukei-Pukei Tail",
-                    "amount": 1
-                },
-                {
-                    "name": "Pukei-Pukei Wing",
-                    "amount": 1
-                }
-            ]
-        },
-        "mail": {
-            "armor": 1,
-            "resistance": {"type": "water", "amount": 1},
-            "effect": "Botanist",
-            "parts": [
-                {
-                    "name": "Pukei-Pukei Carapace",
-                    "amount": 2
-                },
-                {
-                    "name": "Pukei-Pukei Tail",
-                    "amount": 1
-                },
-                {
-                    "name": "Carbalite Ore",
-                    "amount": 3
-                }
-            ]
-        },
-        "greaves": {
-            "armor": 1,
-            "resistance": {"type": "water", "amount": 1},
-            "effect": "Poison Resistance",
-            "parts": [
-                {
-                    "name": "Pukei-Pukei Carapace",
-                    "amount": 2
-                },
-                {
-                    "name": "Pukei-Pukei Sac",
-                    "amount": 2
-                },
-                {
-                    "name": "Pukei-Pukei Scale",
-                    "amount": 1
-                },
-                {
-                    "name": "Monster Keenbone",
-                    "amount": 1
-                }
-            ]
-        }
-    },
-    {
-        "name": "Jyura",
-        "icon": "jyuratodus",
-        "rarity": 2,
-        "helm": {
-            "armor": 1,
-            "resistance": {"type": "water", "amount": 1},
-            "effect": "Aquatic Expert",
-            "parts": [
-                {
-                    "name": "Jyuratodus Scale",
-                    "amount": 1
-                },
-                {
-                    "name": "Jyuratodus Carapace",
-                    "amount": 1
-                },
-                {
-                    "name": "Jyuratodus Fin",
-                    "amount": 1
-                },
-                {
-                    "name": "Gajau Scale",
-                    "amount": 1
-                }
-            ]
-        },
-        "mail": {
-            "armor": 1,
-            "resistance": {"type": "water", "amount": 1},
-            "effect": "Water Attack",
-            "parts": [
-                {
-                    "name": "Jyuratodus Scale",
-                    "amount": 1
-                },
-                {
-                    "name": "Jyuratodus Fin",
-                    "amount": 1
-                },
-                {
-                    "name": "Jyuratodus Fang",
-                    "amount": 1
-                },
-                {
-                    "name": "Torrent Sac",
-                    "amount": 2
-                }
-            ]
-        },
-        "greaves": {
-            "armor": 1,
-            "resistance": {"type": "water", "amount": 2},
-            "effect": null,
-            "parts": [
-                {
-                    "name": "Jyuratodus Carapace",
-                    "amount": 1
-                },
-                {
-                    "name": "Jyuratodus Fin",
-                    "amount": 1
-                },
-                {
-                    "name": "Jyuratodus Fang",
-                    "amount": 1
-                },
-                {
-                    "name": "Wyvern Gem",
-                    "amount": 1
-                }
-            ]
-        }
-    },
-    {
-        "name": "Diablos",
-        "icon": "diablos",
-        "rarity": 2,
-        "helm": {
-            "armor": 1,
-            "resistance": {"type": "fire", "amount": 1},
-            "effect": "Heroics",
-            "parts": [
-                {
-                    "name": "Diablos Ridge",
-                    "amount": 1
-                },
-                {
-                    "name": "Diablos Fang",
-                    "amount": 2
-                },
-                {
-                    "name": "Diablos Horn",
-                    "amount": 1
-                },
-                {
-                    "name": "Wyvern Gem",
-                    "amount": 2
-                }
-            ]
-        },
-        "mail": {
-            "armor": 1,
-            "resistance": {"type": "fire", "amount": 1},
-            "effect": "Slugger",
-            "parts": [
-                {
-                    "name": "Diablos Carapace",
-                    "amount": 2
-                },
-                {
-                    "name": "Diablos Ridge",
-                    "amount": 1
-                },
-                {
-                    "name": "Majestic Horn",
-                    "amount": 1
-                },
-                {
-                    "name": "Lightcrystal",
-                    "amount": 2
-                }
-            ]
-        },
-        "greaves": {
-            "armor": 2,
-            "resistance": {"type": "fire", "amount": 1},
-            "effect": "Set Bonus: Diablos Mastery",
-            "parts": [
-                {
-                    "name": "Diablos Ridge",
-                    "amount": 1
-                },
-                {
-                    "name": "Diablos Carapace",
-                    "amount": 1
-                },
-                {
-                    "name": "Blos Medulla",
-                    "amount": 1
-                }
-            ]
-        }
-    },
-    {
-        "name": "Diablos Necro",
-        "icon": "diablos_black",
-        "rarity": 2,
-        "helm": {
-            "armor": 1,
-            "resistance": {"type": "fire", "amount": 1},
-            "effect": "Set Bonus: Black Diablos Mastery",
-            "parts": [
-                {
-                    "name": "Black Diablos Ridge",
-                    "amount": 2
-                },
-                {
-                    "name": "Majestic Horn",
-                    "amount": 1
-                },
-                {
-                    "name": "Black Spiral Horn",
-                    "amount": 1
-                },
-                {
-                    "name": "Novacrystal",
-                    "amount": 2
-                }
-            ]
-        },
-        "mail": {
-            "armor": 1,
-            "resistance": {"type": "fire", "amount": 1},
-            "effect": "Resentment",
-            "parts": [
-                {
-                    "name": "Black Diablos Carapace",
-                    "amount": 1
-                },
-                {
-                    "name": "Black Spiral Horn",
-                    "amount": 2
-                },
-                {
-                    "name": "Blos Medulla",
-                    "amount": 1
-                }
-            ]
-        },
-        "greaves": {
-            "armor": 2,
-            "resistance": {"type": "fire", "amount": 1},
-            "effect": "Part Breaker",
-            "parts": [
-                {
-                    "name": "Black Diablos Ridge",
-                    "amount": 1
-                },
-                {
-                    "name": "Black Diablos Carapace",
-                    "amount": 2
-                },
-                {
-                    "name": "Black Spiral Horn",
-                    "amount": 1
-                },
-                {
-                    "name": "Wyvern Gem",
-                    "amount": 1
-                }
-            ]
-        }
-    }
-]
+    ]
+}
