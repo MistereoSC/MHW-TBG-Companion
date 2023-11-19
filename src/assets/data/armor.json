@@ -794,5 +794,289 @@
                 ]
             }
         }
+    ],
+    "kulu": [
+        {
+            "name": "Kulu",
+            "icon": "kulu",
+            "rarity": 4,
+            "helm": {
+                "armor": 1,
+                "resistance": {"type": "ice", "amount": 2},
+                "effect": {"name":"Weakness Exploit", "description":"When you play an attack card with Combo of 2 or more, draw +1 $misc/damage_card$."},
+                "parts": [
+                    {
+                        "name": "Kulu-Ya-Ku Scale",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Kulu-Ya-Ku Hide",
+                        "amount": 1
+                    },   
+                    {
+                        "name": "Kulu-Ya-Ku Plume",
+                        "amount": 1
+                    }
+                ]
+            },
+            "mail": {
+                "armor": 1,
+                "resistance": {"type": "ice", "amount": 1},
+                "effect": {"name":"Critical Eye", "description":"When you draw $misc/damage_card$, draw +1$misc/damage_card$, then choose 1 $misc/damage_card$ to place on top of your damage deck before inflicting damage to the monster."},
+                "parts": [
+                    {
+                        "name": "Kulu-Ya-Ku Hide",
+                        "amount": 2
+                    },
+                    {
+                        "name": "Kulu-Ya-Ku Plume",
+                        "amount": 1
+                    },   
+                    {
+                        "name": "Kulu-Ya-Ku Beak",
+                        "amount": 1
+                    },   
+                    {
+                        "name": "Bird Wyvern Gem",
+                        "amount": 1
+                    }
+                ]
+            },
+            "greaves": {
+                "armor": 1,
+                "resistance": {"type": "ice", "amount": 1},
+                "effect": null,
+                "parts": [
+                    {
+                        "name": "Kulu-Ya-Ku Hide",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Kulu-Ya-Ku Scale",
+                        "amount": 2
+                    },   
+                    {
+                        "name": "Wingdrake Hide",
+                        "amount": 1
+                    },   
+                    {
+                        "name": "Earth Crystal",
+                        "amount": 1
+                    }
+                ]
+            }
+        }
+    ],
+    "teostra": [
+        {
+            "name": "Teostra",
+            "icon": "teostra",
+            "rarity": 4,
+            "helm": {
+                "armor": 2,
+                "resistance": {"type": "fire", "amount": 1},
+                "effect": {"name":"Latent Power", "description":"If this hunter suffered damage during the monster's last turn, draw +1 $misc/damage_card$ for the first attack card you play this turn which inflicts damage."},
+                "parts": [
+                    {
+                        "name": "Teostra Carapace",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Teostra Horn",
+                        "amount": 1
+                    },   
+                    {
+                        "name": "Teostra Tail",
+                        "amount": 1
+                    },   
+                    {
+                        "name": "Firecell Stone",
+                        "amount": 2
+                    }
+                ]
+            },
+            "mail": {
+                "armor": 1,
+                "resistance": {"type": "fire", "amount": 2},
+                "effect": {"name":"Teostra Technique", "description":"Once per quest, when this hunter plays an attack card, shuffle any $misc/damage_card$ you draw into your damage deck instead of discarding them."},
+                "parts": [
+                    {
+                        "name": "Teostra Webbing",
+                        "amount": 2
+                    },
+                    {
+                        "name": "Teostra Powder",
+                        "amount": 2
+                    },   
+                    {
+                        "name": "Rathalos Plate",
+                        "amount": 1
+                    }
+                ]
+            },
+            "greaves": {
+                "armor": 2,
+                "resistance": {"type": "fire", "amount": 1},
+                "effect": {"name":"Weakness Exploit", "description":"When you play an attack card with Combo of 2 or more, draw +1 $misc/damage_card$."},
+                "parts": [
+                    {
+                        "name": "Fire Dragon Scale",
+                        "amount": 2
+                    },
+                    {
+                        "name": "Teostra Mane",
+                        "amount": 1
+                    }
+                ]
+            }
+        }
+    ],
+    "nergigante": [
+        {
+            "name": "Nergigante",
+            "icon": "nergigante",
+            "rarity": 4,
+            "helm": {
+                "armor": 2,
+                "resistance": {"type": "fire", "amount": 2},
+                "effect": {"name":"Maximum Might", "description":"When you draw $misc/damage_card$, draw +2 $misc/damage_card$, then choose 2 $misc/damage_card$ to place back on top of your damage deck before inflicting damage to the monster."},
+                "parts": [
+                    {
+                        "name": "Nergigante Horn",
+                        "amount": 2
+                    },
+                    {
+                        "name": "Nergigante Carapace",
+                        "amount": 1
+                    },   
+                    {
+                        "name": "Immortal Dragonscale",
+                        "amount": 2
+                    },   
+                    {
+                        "name": "Nergigante Gem",
+                        "amount": 1
+                    }
+                ]
+            },
+            "mail": {
+                "armor": 2,
+                "resistance": {"type": "ice", "amount": 2},
+                "effect": {"name":"Agitator", "description":"When you select a broken body part to attack, your attack cards which inflict damage gain +1 $misc/damage_card$."},
+                "parts": [
+                    {
+                        "name": "Nergigante Talon",
+                        "amount": 2
+                    },
+                    {
+                        "name": "Immortal Dragonscale",
+                        "amount": 2
+                    },   
+                    {
+                        "name": "Elder Dragon Bone",
+                        "amount": 2
+                    }
+                ]
+            },
+            "greaves": {
+                "armor": 1,
+                "resistance": {"type": "water", "amount": 2},
+                "effect": {"name":"Set Bonus: Nergigante Hunger", "description":"If your hunter inflicts 1 or more damage to the monster during your turn, recover 1 health."},
+                "parts": [
+                    {
+                        "name": "Nergigante Carapace",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Immortal Dragonscale",
+                        "amount": 1
+                    },   
+                    {
+                        "name": "Nergigante Regrowth Plate",
+                        "amount": 2
+                    },   
+                    {
+                        "name": "Elder Dragon Blood",
+                        "amount": 2
+                    }
+                ]
+            }
+        }
+    ],
+    "kushala": [
+        {
+            "name": "Kushala",
+            "icon": "kushala",
+            "rarity": 4,
+            "helm": {
+                "armor": 1,
+                "resistance": {"type": "ice", "amount": 2},
+                "effect": {"name":"Ice Attack", "description":"When this hunter plays a $elements/ice$ elemental attack card, draw +1 $misc/damage_card$."},
+                "parts": [
+                    {
+                        "name": "Daora Dragon Scale",
+                        "amount": 2
+                    },
+                    {
+                        "name": "Daora Carapace",
+                        "amount": 1
+                    },   
+                    {
+                        "name": "Daora Webbing",
+                        "amount": 1
+                    },   
+                    {
+                        "name": "Elder Dragon Blood",
+                        "amount": 2
+                    }
+                ]
+            },
+            "mail": {
+                "armor": 2,
+                "resistance": {"type": "ice", "amount": 1},
+                "effect": {"name":"Set Bonus: Kushala Daora Flight", "description":"When this hunter pays 1 or more attack cards to dodge monster attacks or sprint, add +1 Agility to their agility total."},
+                "parts": [
+                    {
+                        "name": "Daora Carapace",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Daora Horn",
+                        "amount": 1
+                    },   
+                    {
+                        "name": "Daora Claw",
+                        "amount": 1
+                    },   
+                    {
+                        "name": "Daora Gem",
+                        "amount": 1
+                    }
+                ]
+            },
+            "greaves": {
+                "armor": 2,
+                "resistance": {"type": "ice", "amount": 1},
+                "effect": {"name":"Handicraft", "description":"Once per quest, if your damage deck becomes empty while resolving an attack card, you may immediately sharpen and continue to resolve the attaco."},
+                "parts": [
+                    {
+                        "name": "Daora Carapace",
+                        "amount": 1
+                    },
+                    {
+                        "name": "Daora Dragon Scale",
+                        "amount": 1
+                    },   
+                    {
+                        "name": "Daora Webbing",
+                        "amount": 2
+                    },   
+                    {
+                        "name": "Elder Dragon Bone",
+                        "amount": 2
+                    }
+                ]
+            }
+        }
     ]
 }

@@ -54,6 +54,33 @@ onMounted(() => {
 					:direction="PAGE_DIRECTION === 'vertical' ? 'horizontal' : 'vertical'"
 				></ArmorSet>
 			</div>
+
+			<div class="separator"></div>
+
+			<div class="set" v-for="set in ArmorSetsByExpansion.kulu">
+				<ArmorSet
+					:set="set"
+					:direction="PAGE_DIRECTION === 'vertical' ? 'horizontal' : 'vertical'"
+				></ArmorSet>
+			</div>
+			<div class="set" v-for="set in ArmorSetsByExpansion.teostra">
+				<ArmorSet
+					:set="set"
+					:direction="PAGE_DIRECTION === 'vertical' ? 'horizontal' : 'vertical'"
+				></ArmorSet>
+			</div>
+			<div class="set" v-for="set in ArmorSetsByExpansion.nergigante">
+				<ArmorSet
+					:set="set"
+					:direction="PAGE_DIRECTION === 'vertical' ? 'horizontal' : 'vertical'"
+				></ArmorSet>
+			</div>
+			<div class="set" v-for="set in ArmorSetsByExpansion.kushala">
+				<ArmorSet
+					:set="set"
+					:direction="PAGE_DIRECTION === 'vertical' ? 'horizontal' : 'vertical'"
+				></ArmorSet>
+			</div>
 		</div>
 
 		<div class="blind --before" v-if="PAGE_DIRECTION == 'horizontal'"></div>
