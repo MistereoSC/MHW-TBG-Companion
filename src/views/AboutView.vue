@@ -4,7 +4,7 @@ import BorderComponent from '@/components/BorderComponent.vue'
 
 <template>
 	<div class="page">
-		<BorderComponent :disable_hover="true">
+		<BorderComponent>
 			<div class="about">
 				<h1 class="about__title">About</h1>
 				<p class="about__text">

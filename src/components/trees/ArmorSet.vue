@@ -11,7 +11,7 @@ const props = defineProps<{
 
 <template>
 	<div class="container" :class="{'direction-horizontal': props.direction == 'horizontal'}">
-		<BorderComponent class="header__border" :disable_hover="true" :blur_radius="10">
+		<BorderComponent class="header__border" :blur_radius="10">
 			<img :src="`/icons/monsters/${set.icon}.png`" class="header__icon" />
 		</BorderComponent>
 		<div class="line"></div>

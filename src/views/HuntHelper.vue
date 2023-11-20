@@ -33,7 +33,7 @@ function decreaseLive() {
 <template>
 	<div class="page">
 		<div class="page__top">
-			<BorderComponent :disable_hover="true">
+			<BorderComponent>
 				<div class="tracker">
 					<img class="tracker__image" src="/icons/icon_potion.png" />
 					<h3 class="tracker__title">Potions</h3>
@@ -63,7 +63,7 @@ function decreaseLive() {
 					</div>
 				</div>
 			</BorderComponent>
-			<BorderComponent :disable_hover="true">
+			<BorderComponent>
 				<div class="tracker">
 					<img class="tracker__image" src="/icons/icon_quest.png" />
 					<h3 class="tracker__title">Lives</h3>
