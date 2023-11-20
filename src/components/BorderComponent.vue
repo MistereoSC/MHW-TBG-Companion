@@ -4,7 +4,7 @@ import {onMounted} from 'vue'
 const props = defineProps<{
 	blur_radius?: number
 	prevent_clickthrough?: boolean
-	disable_hover?: boolean
+	enable_hover?: boolean
 }>()
 const emit = defineEmits([])
 onMounted(() => {
@@ -21,7 +21,7 @@ function getBoxShadow() {
 </script>
 
 <template>
-	<div class="component" :class="{animate: !disable_hover}">
+	<div class="component" :class="{animate: enable_hover}">
 		<slot></slot>
 
 		<span class="corner"></span>
@@ -51,6 +51,7 @@ $border: 2px solid;
 	margin: 16px;
 
 	&.animate {
+		cursor: pointer;
 		&:hover {
 			border-color: c.$text;
 			span {

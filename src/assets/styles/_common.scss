@@ -1,0 +1,77 @@
+@use './colors' as c;
+
+button,
+a {
+	&.c-button__icon {
+		width: 32px;
+		height: 32px;
+		cursor: pointer;
+		& > span.material-symbols-outlined {
+			color: c.$text;
+			transition: color 0.1s ease-out;
+			font-size: 32px;
+			font-weight: bold;
+			cursor: pointer;
+		}
+
+		&:hover {
+			& > span.material-symbols-outlined {
+				color: c.$text-mute;
+			}
+		}
+	}
+
+	&.c-button__medium {
+		cursor: pointer;
+
+		min-width: 32px;
+		min-height: 32px;
+		padding: 10px;
+		font-size: 16px;
+
+		border-radius: 3px;
+		box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.8);
+		border: 1px solid c.$background-3;
+		background-color: c.$background-00;
+		transition: background-color 0.1s ease-out, border-color 0.1s ease-out, color 0.3s ease-out;
+
+		&:not([disabled]):hover {
+			border-color: c.$text-mute;
+			background-color: c.$background-0;
+		}
+
+		&[disabled] {
+			cursor: default;
+			color: c.$text-disabled;
+		}
+	}
+}
+
+input.c-input__underline {
+	outline: none;
+	border: none;
+	background-color: transparent;
+	border-bottom: 1px solid c.$text-mute;
+	padding: 0px 5px 2px 5px;
+	font-size: 1rem;
+}
+
+div.scrollable--hidden {
+	&::-webkit-scrollbar {
+		width: 0px;
+		height: 0px;
+	}
+}
+div.scrollable--minimal {
+	&::-webkit-scrollbar {
+		width: 6px;
+		height: 6px;
+	}
+	&::-webkit-scrollbar-track {
+		background-color: transparent;
+	}
+	&::-webkit-scrollbar-thumb {
+		background-color: c.$background-3;
+		border-radius: 4px;
+	}
+}

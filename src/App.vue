@@ -19,6 +19,7 @@ import SideMenu from '@/components/SideMenu.vue'
 	height: 100vh;
 	display: grid;
 	grid-template-rows: auto 1fr;
+	overflow: hidden;
 
 	&__content {
 		display: grid;

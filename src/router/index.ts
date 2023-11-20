@@ -1,5 +1,6 @@
 import {createRouter, createWebHistory} from 'vue-router'
 import HuntHelper from '@/views/HuntHelper.vue'
+import CampaignView from '@/views/CampaignView.vue'
 
 const router = createRouter({
 	history: createWebHistory(import.meta.env.BASE_URL),
@@ -12,7 +13,7 @@ const router = createRouter({
 		{
 			path: '/campaign',
 			name: 'campaign',
-			component: () => import('../views/AboutView.vue'),
+			component: CampaignView,
 		},
 		{
 			path: '/hunt',
@@ -22,7 +23,7 @@ const router = createRouter({
 		{
 			path: '/weapons',
 			name: 'weapons',
-			component: () => import('../views/AboutView.vue'),
+			component: () => import('../views/WeaponTreeView.vue'),
 		},
 		{
 			path: '/armors',

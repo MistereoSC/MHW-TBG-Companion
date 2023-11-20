@@ -11,12 +11,12 @@ onMounted(() => {
 </script>
 
 <template>
-	<div class="menu">
+	<div class="menu" id="id_menu_side">
 		<img class="menu__image" src="/logo.png" alt="Game Logo" />
 		<div class="menu__title"><span class="menu__title__text">Board Game Companion</span></div>
 		<nav class="nav">
 			<div class="separator"></div>
-			<router-link :to="{name: 'campaign'}" class="nav__item" disabled>
+			<router-link :to="{name: 'campaign'}" class="nav__item">
 				<span class="nav__text"
 					><img class="nav__image" src="/icons/icon_campaign.png" />Campaign Tracker</span
 				>
@@ -81,6 +81,7 @@ onMounted(() => {
 	display: flex;
 	flex-direction: column;
 	background-color: c.$background-00;
+	border-right: 2px solid c.$background-3;
 	padding-top: 1em;
 
 	&__title {
