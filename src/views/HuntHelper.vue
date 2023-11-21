@@ -1,33 +1,7 @@
 <script lang="ts" setup>
-import {onMounted, ref} from 'vue'
 import BorderComponent from '@/components/BorderComponent.vue'
-
-const props = defineProps<{
-	message?: string
-}>()
-const emit = defineEmits([])
-onMounted(() => {
-	return
-})
-
-const activeNumberPotions = ref(3)
-const activeNumberLives = ref(3)
-function increasePotion() {
-	if (activeNumberPotions.value >= 3) return
-	activeNumberPotions.value++
-}
-function decreasePotion() {
-	if (activeNumberPotions.value <= 0) return
-	activeNumberPotions.value--
-}
-function increaseLive() {
-	if (activeNumberLives.value >= 3) return
-	activeNumberLives.value++
-}
-function decreaseLive() {
-	if (activeNumberLives.value <= 0) return
-	activeNumberLives.value--
-}
+import {useHuntHelperStore} from '@/stores/huntHelper'
+const huntHelperStore = useHuntHelperStore()
 </script>
 
 <template>
@@ -41,13 +15,13 @@ function decreaseLive() {
 					<div class="tracker__counter">
 						<button
 							class="tracker__button tracker__button--minus"
-							@click="decreasePotion"
-							:class="{disabled: activeNumberPotions <= 0}"
+							@click="huntHelperStore.decrementPotions"
+							:class="{disabled: huntHelperStore.countPotions <= 0}"
 						></button>
 						<div class="tracker__scroller__wrapper">
 							<div
 								class="tracker__scroller"
-								:style="{transform: `translateY(-${activeNumberPotions * 48}px)`}"
+								:style="{transform: `translateY(-${huntHelperStore.countPotions * 48}px)`}"
 							>
 								<div class="tracker__scroller__number">0</div>
 								<div class="tracker__scroller__number">1</div>
@@ -57,8 +31,8 @@ function decreaseLive() {
 						</div>
 						<button
 							class="tracker__button tracker__button--plus"
-							@click="increasePotion"
-							:class="{disabled: activeNumberPotions >= 3}"
+							@click="huntHelperStore.incrementPotions"
+							:class="{disabled: huntHelperStore.countPotions >= 3}"
 						></button>
 					</div>
 				</div>
@@ -71,13 +45,13 @@ function decreaseLive() {
 					<div class="tracker__counter">
 						<button
 							class="tracker__button tracker__button--minus"
-							@click="decreaseLive"
-							:class="{disabled: activeNumberLives <= 0}"
+							@click="huntHelperStore.decrementLives"
+							:class="{disabled: huntHelperStore.countLives <= 0}"
 						></button>
 						<div class="tracker__scroller__wrapper">
 							<div
 								class="tracker__scroller"
-								:style="{transform: `translateY(-${activeNumberLives * 48}px)`}"
+								:style="{transform: `translateY(-${huntHelperStore.countLives * 48}px)`}"
 							>
 								<div class="tracker__scroller__number">0</div>
 								<div class="tracker__scroller__number">1</div>
@@ -87,8 +61,8 @@ function decreaseLive() {
 						</div>
 						<button
 							class="tracker__button tracker__button--plus"
-							@click="increaseLive"
-							:class="{disabled: activeNumberLives >= 3}"
+							@click="huntHelperStore.incrementLives"
+							:class="{disabled: huntHelperStore.countLives >= 3}"
 						></button>
 					</div>
 				</div>
