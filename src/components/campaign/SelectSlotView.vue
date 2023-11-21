@@ -48,10 +48,27 @@ function closeModal() {
 			<div class="top__content">
 				<div class="slot" v-for="index in 3">
 					<BorderComponent :enable_hover="true" class="slot" @click="() => selectSlot(index - 1)">
-						<div class="slot__add" v-if="!previews[index - 1]"></div>
+						<div
+							class="slot__add"
+							v-if="
+								//@ts-ignore
+								!previews[index - 1]
+							"
+						></div>
 						<div class="slot__content" v-else>
-							<h3 class="slot__title">{{ previews[index - 1].title }}</h3>
-							<img :src="`/icons/${previews[index - 1].icon}.png`" class="slot__icon" />
+							<h3 class="slot__title">
+								{{
+									//@ts-ignore
+									previews[index - 1].title
+								}}
+							</h3>
+							<img
+								:src="`/icons/${
+									//@ts-ignore
+									previews[index - 1].icon
+								}.png`"
+								class="slot__icon"
+							/>
 						</div>
 					</BorderComponent>
 				</div>
