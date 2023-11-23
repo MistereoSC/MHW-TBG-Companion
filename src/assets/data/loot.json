@@ -1,0 +1,50 @@
+{
+	"common": [
+		{"id": 0,"name": "Monster Bone S", "color": 1, "icon": "bone"},
+		{"id": 1,"name": "Monster Bone M", "color": 1, "icon": "bone"},
+		{"id": 2,"name": "Monster Bone L", "color": 1, "icon": "bone"},
+		{"id": 3,"name": "Monster Keenbone", "color": 3, "icon": "bone"},
+		{"id": 4,"name": "Monster Hardbone", "color": 4, "icon": "bone"},
+		{"id": 5,"name": "Ancient Bone", "color": 2, "icon": "bone"},
+		{"id": 6,"name": "Boulder Bone", "color": 1, "icon": "bone"},
+		{"id": 7,"name": "Quality Bone", "color": 0, "icon": "bone"},
+		{"id": 8,"name": "Malachite Ore", "color": 0, "icon": "ore"},
+		{"id": 9,"name": "Dragonite Ore", "color": 2, "icon": "ore"},
+		{"id": 10,"name": "Carbalite Ore", "color": 3, "icon": "ore"},
+		{"id": 11,"name": "Fucium Ore", "color": 4, "icon": "ore"},
+		{"id": 12,"name": "Dragonvein Crystal", "color": 4, "icon": "gem"},
+		{"id": 13,"name": "Wingdrake Hide", "color": 1, "icon": "hide"}
+	],
+	"uncommon": [
+		{"id": 14, "name": "Aqua Sac ", "color": 0, "icon": "sac"},
+		{"id": 15, "name": "Thunder Sac ", "color": 0, "icon": "sac"},
+		{"id": 16, "name": "Electro Sac ", "color": 0, "icon": "sac"},
+		{"id": 17, "name": "Flame Sac ", "color": 0, "icon": "sac"},
+		{"id": 18, "name": "Inferno Sac ", "color": 0, "icon": "sac"},
+		{"id": 19, "name": "Poison Sac ", "color": 0, "icon": "sac"},
+		{"id": 20, "name": "Toxin Sac Sac ", "color": 0, "icon": "sac"},
+		{"id": 21, "name": "Wyvern Gem", "color": 0, "icon": "gem"},
+		{"id": 22, "name": "Bird Wyvern Gem", "color": 0, "icon": "gem"},
+		{"id": 23, "name": "Earth Crystal", "color": 0, "icon": "gem"},
+		{"id": 24, "name": "Coral Crystal", "color": 0, "icon": "gem"},
+		{"id": 25, "name": "Novacrystal", "color": 0, "icon": "gem"},
+		{"id": 26, "name": "Gajau Scale", "color": 0, "icon": "scale"},
+		{"id": 27, "name": "Fire Dragon Scale", "color": 0, "icon": "scale"},
+		{"id": 28, "name": "Immortal Dragon Scale", "color": 0, "icon": "scale"},
+		{"id": 29, "name": "Sharp Claw", "color": 0, "icon": "claw"},
+		{"id": 30, "name": "Piercing Claw", "color": 0, "icon": "claw"},
+		{"id": 31, "name": "Twisted Horn", "color": 0, "icon": "claw"},
+		{"id": 32, "name": "Majestic Horn", "color": 0, "icon": "claw"},
+		{"id": 33, "name": "Black Spiral Horn", "color": 0, "icon": "claw"},
+		{"id": 34, "name": "Blos Medulla", "color": 0, "icon": "body"},
+		{"id": 35, "name": "Electrode", "color": 0, "icon": "body"},
+		{"id": 36, "name": "Fertile Mud", "color": 0, "icon": "dung"},
+		{"id": 37, "name": "Warm Pelt", "color": 0, "icon": "hide"},
+		{"id": 38, "name": "Ancient Bone", "color": 0, "icon": "ore"},
+		{"id": 39, "name": "Elder Dragon blood", "color": 0, "icon": "potion"},
+		{"id": 40, "name": "Elder Dragon Bone", "color": 0, "icon": "bone"}
+	],
+	"parts": [
+		
+	]
+}

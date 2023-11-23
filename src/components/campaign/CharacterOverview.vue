@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 import {onMounted, ref} from 'vue'
 import {useCampaignStore} from '@/stores/campaign'
-import CharacterSlot from '@/components/campaign/CharacterSlot.vue'
-import BorderComponent from '../BorderComponent.vue'
+import BorderComponent from '@/components/BorderComponent.vue'
+
 const CHARACTER_SLOT_LIMIT = 16
 
 const campaignStore = useCampaignStore()
@@ -119,7 +119,10 @@ function calculateCharacterSlotsWidth() {
 					background-color: c.$text;
 				}
 				.tracker__characters__slot__icon {
-					opacity: 0.7;
+					opacity: 0.8;
+				}
+				.tracker__characters__slot__title {
+					opacity: 1;
 				}
 			}
 			&__content {
@@ -133,12 +136,15 @@ function calculateCharacterSlotsWidth() {
 				flex-direction: column;
 			}
 			&__title {
+				cursor: pointer;
 				width: 100%;
-				background-color: rgba($color: c.$background-00, $alpha: 0.5);
+				background-color: rgba($color: c.$background-00, $alpha: 0.9);
 				text-align: center;
 				z-index: 1;
 				font-size: 1.2rem;
 				padding: 2px 6px;
+				transition: opacity 0.1s ease-out;
+				opacity: 0.5;
 			}
 			&__icon {
 				position: absolute;
@@ -161,14 +167,14 @@ function calculateCharacterSlotsWidth() {
 				position: absolute;
 				background-color: c.$text-disabled;
 				transition: background-color 0.2s ease-out;
-				inset: 20px 55px;
+				inset: 24px 58px;
 			}
 			&::before {
 				content: '';
 				position: absolute;
 				background-color: c.$text-disabled;
 				transition: background-color 0.2s ease-out;
-				inset: 55px 20px;
+				inset: 58px 24px;
 			}
 		}
 		&__blind {

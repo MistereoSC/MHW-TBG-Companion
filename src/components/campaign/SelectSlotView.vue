@@ -118,6 +118,9 @@ function closeModal() {
 	gap: 2rem;
 	&__title {
 		font-size: 2.5rem;
+		padding: 0 1em;
+		border-top: 2px solid c.$text;
+		border-bottom: 2px solid c.$text;
 	}
 	&__content {
 		display: flex;
@@ -140,6 +143,7 @@ function closeModal() {
 		flex-direction: column;
 	}
 	&__title {
+		cursor: pointer;
 		width: 100%;
 		background-color: rgba($color: c.$background-00, $alpha: 0.9);
 		text-align: center;

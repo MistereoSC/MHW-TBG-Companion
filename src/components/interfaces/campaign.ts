@@ -1,3 +1,5 @@
+import type {IItem} from './items'
+
 export interface ICampaignData {
 	creation_date: number
 	last_update: number
@@ -18,8 +20,10 @@ export interface ICharacterData {
 	palico_name: string
 	icon: string
 
-	inventory_parts: []
-	inventory_common: []
-	inventory_uncommon: []
-	inventory_gear: []
+	inventory: {
+		common: Array<IItem>
+		uncommon: string
+		parts: string
+		equipment: string
+	}
 }

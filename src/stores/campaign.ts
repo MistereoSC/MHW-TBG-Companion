@@ -1,6 +1,7 @@
 import {defineStore} from 'pinia'
 import {ref} from 'vue'
 import type {ICampaignData, ICharacterData} from '@/components/interfaces/campaign'
+import {getDefaultInventory} from '@/components/interfaces/items'
 import {getRandomMonsterIcon, getRandomWeaponIcon} from '@/components/icons/icon_helper'
 
 export const useCampaignStore = defineStore('campaign', () => {
@@ -103,16 +104,20 @@ export const useCampaignStore = defineStore('campaign', () => {
 			hunter_name: hunter_name,
 			palico_name: palico_name,
 			icon: getRandomWeaponIcon(false),
-			inventory_parts: [],
-			inventory_common: [],
-			inventory_uncommon: [],
-			inventory_gear: [],
+			inventory: getDefaultInventory(),
 		} as ICharacterData
 		if (icon) newCharacter.icon = icon
 
 		campaignData.value.characters.push(newCharacter)
 		saveSlot()
 		return newCharacter
+	}
+
+	function setCharacter(slot: number, character: ICharacterData) {
+		if (!campaignData.value) return
+		// TODO: Validation
+		campaignData.value.characters[slot] = character
+		saveSlot()
 	}
 	// #endregion
 
@@ -124,5 +129,6 @@ export const useCampaignStore = defineStore('campaign', () => {
 		getSlotPreviews,
 		createNewCampaign,
 		createNewCharacter,
+		setCharacter,
 	}
 })

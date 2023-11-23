@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-//@ts-ignore
 import ArmorSetsByExpansion from '@/assets/data/armor.json'
 import {onMounted} from 'vue'
 import ArmorSet from '@/components/trees/ArmorSet.vue'

@@ -2,6 +2,7 @@
 import {onMounted, ref} from 'vue'
 import {useCampaignStore} from '@/stores/campaign'
 import SelectSlotView from '@/components/campaign/SelectSlotView.vue'
+import CharacterSheet from '@/components/campaign/CharacterSheet.vue'
 import CharacterOverview from '@/components/campaign/CharacterOverview.vue'
 import Modal from '@/components/Modal.vue'
 
@@ -14,19 +15,24 @@ function onSlotSelect(slot: number) {
 	slotSelectionOpen.value = false
 }
 
-const modalCharacterOpen = ref(false)
-
-function selectCharacter(slot: number) {}
+const modalCharacterCreateOpen = ref(false)
+const selectedCharacter = ref(-1)
+function selectCharacter(slot: number) {
+	selectedCharacter.value = slot
+}
+function closeSelectCharacter() {
+	selectedCharacter.value = -1
+}
 function createCharacter() {
 	newHunterName.value = ''
 	newHunterPalico.value = ''
-	modalCharacterOpen.value = true
+	modalCharacterCreateOpen.value = true
 }
 const newHunterName = ref('')
 const newHunterPalico = ref('')
 function confirmCreateCharacter() {
 	campaignStore.createNewCharacter(newHunterName.value, newHunterPalico.value)
-	modalCharacterOpen.value = false
+	modalCharacterCreateOpen.value = false
 }
 </script>
 
@@ -38,7 +44,7 @@ function confirmCreateCharacter() {
 		<div class="page__tracker scrollable" v-else>
 			<div class="tracker">
 				<div class="tracker__title">
-					<h1>{{ campaignStore.campaignData?.title }}</h1>
+					<h1 class="tracker__title__text">{{ campaignStore.campaignData?.title }}</h1>
 				</div>
 				<div class="tracker__days"></div>
 				<CharacterOverview
@@ -46,7 +52,7 @@ function confirmCreateCharacter() {
 					@select="(slot) => selectCharacter(slot)"
 				></CharacterOverview>
 			</div>
-			<Modal v-if="modalCharacterOpen" @close="modalCharacterOpen = false">
+			<Modal v-if="modalCharacterCreateOpen" @close="modalCharacterCreateOpen = false">
 				<div class="modal__content">
 					<div class="modal__title">
 						<h2 class="modal__title__text">Create Character</h2>
@@ -72,8 +78,11 @@ function confirmCreateCharacter() {
 					>
 						Embark
 					</button>
-				</div></Modal
-			>
+				</div>
+			</Modal>
+			<Modal v-if="selectedCharacter >= 0" @close="closeSelectCharacter" :hide_close_button="true">
+				<CharacterSheet @close="closeSelectCharacter" :slot="selectedCharacter" />
+			</Modal>
 		</div>
 	</div>
 </template>
@@ -92,6 +101,18 @@ function confirmCreateCharacter() {
 }
 .tracker {
 	min-height: 100vh;
+	&__title {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		padding: 1rem 0;
+		&__text {
+			font-size: 2rem;
+			padding: 0 1rem;
+			border-top: 2px solid c.$text;
+			border-bottom: 2px solid c.$text;
+		}
+	}
 }
 
 .modal {
