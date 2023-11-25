@@ -10,7 +10,7 @@ export function getRandomWeaponIcon(full_path: boolean, rarity?: number) {
 	}`
 }
 
-enum EMonsterIcons {
+export enum EMonsterIcons {
 	'anjanath',
 	'barroth',
 	'diablos',
@@ -26,7 +26,7 @@ enum EMonsterIcons {
 	'teostra',
 	'tobi',
 }
-enum EWeaponIcons {
+export enum EWeaponIcons {
 	'longsword',
 	'greatsword',
 	'sns',
@@ -41,4 +41,36 @@ enum EWeaponIcons {
 	'bow',
 	'lbg',
 	'hbg',
+}
+
+export const EWeaponIconsArr = [
+	'longsword',
+	'greatsword',
+	'sns',
+	'dualblades',
+	'hammer',
+	'horn',
+	'lance',
+	'gunlance',
+	'switchaxe',
+	'glaive',
+	'chargeblade',
+	'bow',
+	'lbg',
+	'hbg',
+]
+
+export enum EColors {
+	White,
+	Yellow,
+	Green,
+	Purple,
+	Red,
+}
+export enum EColorsHex {
+	White = '#FFFFFF',
+	Yellow = '#f8d058',
+	Green = '#70c888',
+	Purple = '#a858c0',
+	Red = '#f85858',
 }
