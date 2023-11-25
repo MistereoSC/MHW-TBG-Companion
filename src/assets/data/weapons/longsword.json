@@ -1,7 +1,365 @@
 {
-	"basic": [],
-	"ancient_forest": [],
-	"wildspire_waste": [],
+	"basic": [
+		{
+			"name": "Ore",
+			"icon": "items/ore_0",
+			"weapons": [
+				{
+					"name": "Iron Katana",
+					"rarity": 0,
+					"icon": "items/ore_0",
+					"parts": [],
+					"damage": [
+						{"value": 1, "amount": 9},
+						{"value": 2, "amount": 3}
+					],
+					"remove": [],
+					"add": []
+				},
+				{
+					"name": "Iron Grace",
+					"rarity": 1,
+					"icon": "items/ore_0",
+					"parts": [
+						{"name": "Dragonite Ore", "amount": 1},
+						{"name": "Malachite Ore", "amount": 1},
+						{"name": "Monster Bone M", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 7},
+						{"value": 2, "amount": 5}
+					],
+					"remove": [{"name": "Spirit Thrust", "amount": 2}],
+					"add": [{"name": "Enhanced Spirit Thrust", "amount": 2}]
+				},
+				{
+					"name": "Iron Gospel",
+					"rarity": 2,
+					"icon": "items/ore_0",
+					"parts": [
+						{"name": "Dragonite Ore", "amount": 3},
+						{"name": "Carbalite Ore", "amount": 2},
+						{"name": "Fucium Ore", "amount": 2},
+						{"name": "Dragonvein Crystal", "amount": 2}
+					],
+					"damage": [
+						{"value": 1, "amount": 5},
+						{"value": 2, "amount": 5},
+						{"value": 3, "amount": 2}
+					],
+					"remove": [
+						{"name": "Spirit Thrust", "amount": 2},
+						{"name": "Overhead Slash", "amount": 2}
+					],
+					"add": [
+						{"name": "Enhanced Spirit Thrust", "amount": 2},
+						{"name": "Enhanced Overhead Slash", "amount": 2}
+					]
+				}
+			]
+		},
+		{
+			"name": "Bone",
+			"icon": "items/bone_1",
+			"weapons": [
+				{
+					"name": "Bone Shotel",
+					"rarity": 0,
+					"icon": "items/bone_1",
+					"parts": [{"name": "Monster Bone S", "amount": 1}],
+					"damage": [
+						{"value": 1, "amount": 7},
+						{"value": 2, "amount": 3}
+					],
+					"add": [],
+					"remove": []
+				},
+				{
+					"name": "Hard Bone Shotel",
+					"rarity": 1,
+					"icon": "items/ore_0",
+					"parts": [
+						{"name": "Monster Bone M", "amount": 1},
+						{"name": "Monster Bone L", "amount": 1},
+						{"name": "Boulder Bone", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 4},
+						{"value": 2, "amount": 5},
+						{"value": 3, "amount": 1}
+					],
+					"remove": [{"name": "Foresight Slash", "amount": 2}],
+					"add": [{"name": "Impact Foresight Slash", "amount": 2}]
+				},
+				{
+					"name": "Bone Reaper",
+					"rarity": 2,
+					"icon": "items/ore_0",
+					"parts": [
+						{"name": "Monster Hardbone", "amount": 2},
+						{"name": "Monster Keenbone", "amount": 2},
+						{"name": "Quality Bone", "amount": 3}
+					],
+					"damage": [
+						{"value": 1, "amount": 3},
+						{"value": 2, "amount": 5},
+						{"value": 3, "amount": 2}
+					],
+					"remove": [
+						{"name": "Foresight Slash", "amount": 2},
+						{"name": "Thrust", "amount": 3}
+					],
+					"add": [
+						{"name": "Impact Foresight Slash", "amount": 2},
+						{"name": "Enhanced Thrust", "amount": 3}
+					]
+				}
+			]
+		}
+	],
+	"ancient_forest": [
+		{
+			"name": "Tobi-Kadachi",
+			"icon": "monsters/tobi",
+			"weapons": [
+				{
+					"name": "Bone Shotel",
+					"rarity": 0,
+					"icon": "items/bone_1",
+					"parts": [{"name": "Monster Bone S", "amount": 1}],
+					"damage": [
+						{"value": 1, "amount": 7},
+						{"value": 2, "amount": 3}
+					],
+					"add": [],
+					"remove": []
+				},
+				{
+					"name": "Pulsar Shotel",
+					"rarity": 2,
+					"icon": "monsters/tobi",
+					"parts": [
+						{"name": "Tobi-Kadachi Claw", "amount": 1},
+						{"name": "Tobi-Kadachi Pelt", "amount": 3},
+						{"name": "Tobi-Kadachi Scale", "amount": 2}
+					],
+					"damage": [
+						{"value": 1, "amount": 1},
+						{"value": 2, "amount": 7},
+						{"value": 3, "amount": 2}
+					],
+					"remove": [{"name": "Fade Slash", "amount": 2}],
+					"add": [{"name": "Thunder Fade Slash", "amount": 2}]
+				},
+				{
+					"name": "Kadachi Fang",
+					"rarity": 3,
+					"icon": "monsters/tobi",
+					"parts": [
+						{"name": "Tobi-Kadachi Claw", "amount": 3},
+						{"name": "Tobi-Kadachi Pelt", "amount": 1},
+						{"name": "Tobi-Kadachi Scale", "amount": 1},
+						{"name": "Dragonvein Crystal", "amount": 2}
+					],
+					"damage": [
+						{"value": 1, "amount": 1},
+						{"value": 2, "amount": 8},
+						{"value": 3, "amount": 3}
+					],
+					"remove": [
+						{"name": "Fade Slash", "amount": 2},
+						{"name": "Rising Slash", "amount": 2}
+					],
+					"add": [
+						{"name": "Thunder Fade Slash", "amount": 2},
+						{"name": "Shocking Rising Slash", "amount": 2}
+					]
+				}
+			]
+		},
+		{
+			"name": "Anjanath",
+			"icon": "monsters/anjanath",
+			"weapons": [
+				{
+					"name": "Bone Shotel",
+					"rarity": 0,
+					"icon": "items/bone_1",
+					"parts": [{"name": "Monster Bone S", "amount": 1}],
+					"damage": [
+						{"value": 1, "amount": 7},
+						{"value": 2, "amount": 3}
+					],
+					"add": [],
+					"remove": []
+				},
+				{
+					"name": "Blazing Shotel",
+					"rarity": 2,
+					"icon": "monsters/anjanath",
+					"parts": [
+						{"name": "Anjanath Scale", "amount": 3},
+						{"name": "Anjanath Fang", "amount": 2},
+						{"name": "Flame Sac", "amount": 1}
+					],
+					"damage": [
+						{"value": 2, "amount": 1},
+						{"value": 3, "amount": 9},
+						{"value": 4, "amount": 2}
+					],
+					"remove": [{"name": "Ready Stance", "amount": 2}],
+					"add": [{"name": "Poised Stance", "amount": 2}]
+				},
+				{
+					"name": "Anja Scimitar",
+					"rarity": 3,
+					"icon": "monsters/anjanath",
+					"parts": [
+						{"name": "Anjanath Fang", "amount": 2},
+						{"name": "Anjanath Scale", "amount": 2},
+						{"name": "Inferno Sac", "amount": 2}
+					],
+					"damage": [
+						{"value": 2, "amount": 1},
+						{"value": 3, "amount": 9},
+						{"value": 4, "amount": 4}
+					],
+					"remove": [
+						{"name": "Ready Stance", "amount": 2},
+						{"name": "Helm Breaker", "amount": 2}
+					],
+					"add": [
+						{"name": "Poised Stance", "amount": 2},
+						{"name": "Flaming Helm Breaker", "amount": 2}
+					]
+				}
+			]
+		},
+		{
+			"name": "Rathalos",
+			"icon": "monsters/rathalos",
+			"weapons": [
+				{
+					"name": "Iron Katana",
+					"rarity": 0,
+					"icon": "items/ore_0",
+					"parts": [],
+					"damage": [
+						{"value": 1, "amount": 9},
+						{"value": 2, "amount": 3}
+					],
+					"remove": [],
+					"add": []
+				},
+				{
+					"name": "Wyvern Blade 'Fall'",
+					"rarity": 2,
+					"icon": "monsters/rathalos",
+					"parts": [
+						{"name": "Rathalos Scale", "amount": 2},
+						{"name": "Rathalos Webbing", "amount": 2},
+						{"name": "Rathalos Marrow", "amount": 1},
+						{"name": "Inferno Sac", "amount": 1}
+					],
+					"damage": [
+						{"value": 2, "amount": 2},
+						{"value": 3, "amount": 8},
+						{"value": 4, "amount": 2}
+					],
+					"remove": [{"name": "Rising Slash", "amount": 2}],
+					"add": [{"name": "Blazing Rising Slash", "amount": 2}]
+				},
+				{
+					"name": "Wyvern Blade 'Blood'",
+					"rarity": 3,
+					"icon": "monsters/rathalos",
+					"parts": [
+						{"name": "Rathalos Scale", "amount": 2},
+						{"name": "Rathalos Carapace", "amount": 1},
+						{"name": "Rathalos Wing", "amount": 1},
+						{"name": "Rathalos Medulla", "amount": 1}
+					],
+					"damage": [
+						{"value": 2, "amount": 2},
+						{"value": 3, "amount": 8},
+						{"value": 4, "amount": 4}
+					],
+					"remove": [
+						{"name": "Rising Slash", "amount": 2},
+						{"name": "Spirit Helm Breaker", "amount": 2}
+					],
+					"add": [
+						{"name": "Blazing Rising Slash", "amount": 2},
+						{"name": "Blazing Helm Breaker", "amount": 2}
+					],
+					"armor": 1
+				}
+			]
+		}
+	],
+	"wildspire_waste": [
+		{
+			"name": "Jyuratodus",
+			"icon": "monsters/jyuratodus",
+			"weapons": [
+				{
+					"name": "Bone Shotel",
+					"rarity": 0,
+					"icon": "items/bone_1",
+					"parts": [{"name": "Monster Bone S", "amount": 1}],
+					"damage": [
+						{"value": 1, "amount": 7},
+						{"value": 2, "amount": 3}
+					],
+					"add": [],
+					"remove": []
+				},
+				{
+					"name": "Jyura Shotel",
+					"rarity": 2,
+					"icon": "monsters/jyuratodus",
+					"parts": [
+						{"name": "Jyuratodus Fin", "amount": 1},
+						{"name": "Jyuratodus Shell", "amount": 2},
+						{"name": "Jyuratodus Scale", "amount": 3},
+						{"name": "Aqua Sac", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 2},
+						{"value": 2, "amount": 6},
+						{"value": 3, "amount": 2}
+					],
+					"remove": [{"name": "Helm Breaker", "amount": 2}],
+					"add": [{"name": "Mud Helm Breaker", "amount": 2}]
+				},
+				{
+					"name": "Dipterus",
+					"rarity": 3,
+					"icon": "monsters/jyuratodus",
+					"parts": [
+						{"name": "Jyuratodus Fin", "amount": 1},
+						{"name": "Jyuratodus Carapace", "amount": 2},
+						{"name": "Jyuratodus Scale", "amount": 2},
+						{"name": "Aqua Sac", "amount": 1},
+						{"name": "Gajau Scale", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 2},
+						{"value": 2, "amount": 7},
+						{"value": 3, "amount": 3}
+					],
+					"remove": [
+						{"name": "Helm Breaker", "amount": 2},
+						{"name": "Spirit Thrust", "amount": 2}
+					],
+					"add": [
+						{"name": "Mud Helm Breaker", "amount": 2},
+						{"name": "Water Spirit Thrust", "amount": 2}
+					]
+				}
+			]
+		}
+	],
 	"kulu": [],
 	"teostra": [],
 	"nergigante": [],

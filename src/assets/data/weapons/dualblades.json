@@ -1,7 +1,372 @@
 {
-	"basic": [],
-	"ancient_forest": [],
-	"wildspire_waste": [],
+	"basic": [
+		{
+			"name": "Ore",
+			"icon": "items/ore_0",
+			"weapons": [
+				{
+					"name": "Matched Slicers",
+					"rarity": 0,
+					"icon": "items/ore_0",
+					"parts": [],
+					"damage": [
+						{"value": 1, "amount": 10},
+						{"value": 2, "amount": 2}
+					],
+					"remove": [],
+					"add": []
+				},
+				{
+					"name": "Dual Slicers",
+					"rarity": 1,
+					"icon": "items/ore_0",
+					"parts": [
+						{"name": "Dragonite Ore", "amount": 1},
+						{"name": "Malachite Ore", "amount": 1},
+						{"name": "Monster Bone M", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 8},
+						{"value": 2, "amount": 3},
+						{"value": 3, "amount": 1}
+					],
+					"remove": [{"name": "Lunging Stab", "amount": 2}],
+					"add": [{"name": "Enhanced Lunging Stab", "amount": 2}]
+				},
+				{
+					"name": "Chrome Slicers",
+					"rarity": 2,
+					"icon": "items/ore_0",
+					"parts": [
+						{"name": "Dragonite Ore", "amount": 3},
+						{"name": "Carbalite Ore", "amount": 2},
+						{"name": "Fucium Ore", "amount": 2},
+						{"name": "Dragonvein Crystal", "amount": 2}
+					],
+					"damage": [
+						{"value": 1, "amount": 5},
+						{"value": 2, "amount": 5},
+						{"value": 3, "amount": 2}
+					],
+					"remove": [
+						{"name": "Lunging Stab", "amount": 2},
+						{"name": "Blade Dance", "amount": 4}
+					],
+					"add": [
+						{"name": "Enhanced Lunging Stab", "amount": 2},
+						{"name": "Enhanced Blade Dance", "amount": 4}
+					]
+				}
+			]
+		},
+		{
+			"name": "Bone",
+			"icon": "items/bone_1",
+			"weapons": [
+				{
+					"name": "Bone Hatches",
+					"rarity": 0,
+					"icon": "items/bone_1",
+					"parts": [{"name": "Monster Bone S", "amount": 1}],
+					"damage": [
+						{"value": 1, "amount": 7},
+						{"value": 2, "amount": 3}
+					],
+					"add": [],
+					"remove": []
+				},
+				{
+					"name": "Wild Hatchets",
+					"rarity": 1,
+					"icon": "items/ore_0",
+					"parts": [
+						{"name": "Monster Bone M", "amount": 1},
+						{"name": "Monster Bone L", "amount": 1},
+						{"name": "Boulder Bone", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 5},
+						{"value": 2, "amount": 5}
+					],
+					"remove": [{"name": "Double Slash", "amount": 2}],
+					"add": [{"name": "Impact Double Slash", "amount": 2}]
+				},
+				{
+					"name": "Strong Hatchets",
+					"rarity": 2,
+					"icon": "items/ore_0",
+					"parts": [
+						{"name": "Monster Hardbone", "amount": 2},
+						{"name": "Monster Keenbone", "amount": 2},
+						{"name": "Quality Bone", "amount": 3}
+					],
+					"damage": [
+						{"value": 1, "amount": 3},
+						{"value": 2, "amount": 5},
+						{"value": 3, "amount": 2}
+					],
+					"remove": [
+						{"name": "Double Slash", "amount": 2},
+						{"name": "Rapid Spin", "amount": 2}
+					],
+					"add": [
+						{"name": "Impact Double Slash", "amount": 2},
+						{"name": "Strong Rapid Spin", "amount": 2}
+					]
+				}
+			]
+		}
+	],
+	"ancient_forest": [
+		{
+			"name": "Tobi-Kadachi",
+			"icon": "monsters/tobi",
+			"weapons": [
+				{
+					"name": "Bone Hatches",
+					"rarity": 0,
+					"icon": "items/bone_1",
+					"parts": [{"name": "Monster Bone S", "amount": 1}],
+					"damage": [
+						{"value": 1, "amount": 7},
+						{"value": 2, "amount": 3}
+					],
+					"add": [],
+					"remove": []
+				},
+				{
+					"name": "Pulsar Hatchets",
+					"rarity": 2,
+					"icon": "monsters/tobi",
+					"parts": [
+						{"name": "Tobi-Kadachi Electrode", "amount": 1},
+						{"name": "Tobi-Kadachi Claw", "amount": 2},
+						{"name": "Electro Sac", "amount": 2},
+						{"name": "Coral Crystal", "amount": 2}
+					],
+					"damage": [
+						{"value": 1, "amount": 1},
+						{"value": 2, "amount": 9},
+						{"value": 3, "amount": 2}
+					],
+					"remove": [
+						{"name": "Bladed Fangs", "amount": 2},
+						{"name": "Rapid Spin", "amount": 2}
+					],
+					"add": [{"name": "Shocking Rush", "amount": 4}]
+				},
+				{
+					"name": "Kadachi Claws",
+					"rarity": 3,
+					"icon": "monsters/tobi",
+					"parts": [
+						{"name": "Tobi-Kadachi Electrode", "amount": 2},
+						{"name": "Tobi-Kadachi Claw", "amount": 2},
+						{"name": "Thunder Sac", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 3},
+						{"value": 2, "amount": 4},
+						{"value": 3, "amount": 5}
+					],
+					"remove": [
+						{"name": "Bladed Fangs", "amount": 2},
+						{"name": "Rapid Spin", "amount": 2},
+						{"name": "Demon Mode", "amount": 2}
+					],
+					"add": [
+						{"name": "Shocking Rush", "amount": 4},
+						{"name": "Enhanced Demon Mode", "amount": 2}
+					]
+				}
+			]
+		},
+		{
+			"name": "Anjanath",
+			"icon": "monsters/anjanath",
+			"weapons": [
+				{
+					"name": "Bone Hatches",
+					"rarity": 0,
+					"icon": "items/bone_1",
+					"parts": [{"name": "Monster Bone S", "amount": 1}],
+					"damage": [
+						{"value": 1, "amount": 7},
+						{"value": 2, "amount": 3}
+					],
+					"add": [],
+					"remove": []
+				},
+				{
+					"name": "Blazing Hatchets",
+					"rarity": 2,
+					"icon": "monsters/anjanath",
+					"parts": [
+						{"name": "Anjanath Scale", "amount": 3},
+						{"name": "Anjanath Fang", "amount": 2},
+						{"name": "Flame Sac", "amount": 1}
+					],
+					"damage": [
+						{"value": 2, "amount": 1},
+						{"value": 3, "amount": 9},
+						{"value": 4, "amount": 2}
+					],
+					"remove": [
+						{"name": "Six Fold Slash", "amount": 1},
+						{"name": "", "amount": 1}
+					],
+					"add": [{"name": "Blazing Fold Slash", "amount": 2}]
+				},
+				{
+					"name": "Anja Cyclone",
+					"rarity": 3,
+					"icon": "monsters/anjanath",
+					"parts": [
+						{"name": "Anjanath Fang", "amount": 4},
+						{"name": "Anjanath Pelt", "amount": 4},
+						{"name": "Firecell Stone", "amount": 2}
+					],
+					"damage": [
+						{"value": 2, "amount": 1},
+						{"value": 3, "amount": 9},
+						{"value": 4, "amount": 4}
+					],
+					"remove": [
+						{"name": "Six Fold Slash", "amount": 1},
+						{"name": "", "amount": 1},
+						{"name": "Double Slash", "amount": 2}
+					],
+					"add": [
+						{"name": "Blazing Fold Slash", "amount": 2},
+						{"name": "Blazing Double Slash", "amount": 2}
+					]
+				}
+			]
+		}
+	],
+	"wildspire_waste": [
+		{
+			"name": "Jyuratodus",
+			"icon": "monsters/jyuratodus",
+			"weapons": [
+				{
+					"name": "Bone Hatches",
+					"rarity": 0,
+					"icon": "items/bone_1",
+					"parts": [{"name": "Monster Bone S", "amount": 1}],
+					"damage": [
+						{"value": 1, "amount": 7},
+						{"value": 2, "amount": 3}
+					],
+					"add": [],
+					"remove": []
+				},
+				{
+					"name": "Madness Pangas",
+					"rarity": 2,
+					"icon": "monsters/jyuratodus",
+					"parts": [
+						{"name": "Jyuratodus Fin", "amount": 1},
+						{"name": "Jyuratodus Shell", "amount": 2},
+						{"name": "Jyuratodus Scale", "amount": 3},
+						{"name": "Aqua Sac", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 2},
+						{"value": 2, "amount": 5},
+						{"value": 3, "amount": 3}
+					],
+					"remove": [{"name": "Blade Dance", "amount": 4}],
+					"add": [{"name": "Water Dance", "amount": 4}]
+				},
+				{
+					"name": "Jyura Hatchets",
+					"rarity": 3,
+					"icon": "monsters/jyuratodus",
+					"parts": [
+						{"name": "Jyuratodus Fin", "amount": 1},
+						{"name": "Jyuratodus Carapace", "amount": 2},
+						{"name": "Jyuratodus Scale", "amount": 2},
+						{"name": "Aqua Sac", "amount": 1},
+						{"name": "Gajau Scale", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 2},
+						{"value": 2, "amount": 6},
+						{"value": 3, "amount": 4}
+					],
+					"remove": [
+						{"name": "Blade Dance", "amount": 4},
+						{"name": "Rapid Spin", "amount": 2}
+					],
+					"add": [
+						{"name": "Water Dance", "amount": 4},
+						{"name": "Flurry Rush", "amount": 2}
+					]
+				}
+			]
+		},
+		{
+			"name": "Diablos",
+			"icon": "monsters/diablos",
+			"weapons": [
+				{
+					"name": "Bone Hatches",
+					"rarity": 0,
+					"icon": "items/bone_1",
+					"parts": [{"name": "Monster Bone S", "amount": 1}],
+					"damage": [
+						{"value": 1, "amount": 7},
+						{"value": 2, "amount": 3}
+					],
+					"add": [],
+					"remove": []
+				},
+				{
+					"name": "Diablos Hatchets",
+					"rarity": 2,
+					"icon": "monsters/diablos",
+					"parts": [
+						{"name": "Diablos Fang", "amount": 2},
+						{"name": "Diablos Shell", "amount": 4},
+						{"name": "Twisted Horn", "amount": 1},
+						{"name": "Monster Bone L", "amount": 2}
+					],
+					"damage": [
+						{"value": 2, "amount": 2},
+						{"value": 3, "amount": 6},
+						{"value": 4, "amount": 4}
+					],
+					"remove": [{"name": "Double Slash", "amount": 2}],
+					"add": [{"name": "Brutal Double Slash", "amount": 2}]
+				},
+				{
+					"name": "Diablos Clubs",
+					"rarity": 3,
+					"icon": "monsters/diablos",
+					"parts": [
+						{"name": "Diablos Carapace", "amount": 2},
+						{"name": "Diablos Ridge", "amount": 2},
+						{"name": "Majestic Horn", "amount": 2},
+						{"name": "Blos Medulla", "amount": 1}
+					],
+					"damage": [
+						{"value": 2, "amount": 2},
+						{"value": 3, "amount": 7},
+						{"value": 4, "amount": 5}
+					],
+					"remove": [
+						{"name": "Double Slash", "amount": 2},
+						{"name": "Demon Mode", "amount": 2}
+					],
+					"add": [
+						{"name": "Brutal Double Slash", "amount": 2},
+						{"name": "Brutal Demon Mode", "amount": 2}
+					]
+				}
+			]
+		}
+	],
 	"kulu": [],
 	"teostra": [],
 	"nergigante": [],

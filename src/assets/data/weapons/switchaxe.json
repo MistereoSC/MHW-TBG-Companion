@@ -1,7 +1,365 @@
 {
-	"basic": [],
-	"ancient_forest": [],
-	"wildspire_waste": [],
+	"basic": [
+		{
+			"name": "Ore",
+			"icon": "items/ore_0",
+			"weapons": [
+				{
+					"name": "Proto Iron Axe",
+					"rarity": 0,
+					"icon": "items/ore_0",
+					"parts": [],
+					"damage": [
+						{"value": 1, "amount": 11},
+						{"value": 4, "amount": 1}
+					],
+					"remove": [],
+					"add": []
+				},
+				{
+					"name": "Improved Steel Axe",
+					"rarity": 1,
+					"icon": "items/ore_0",
+					"parts": [
+						{"name": "Dragonite Ore", "amount": 1},
+						{"name": "Malachite Ore", "amount": 1},
+						{"name": "Monster Bone M", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 10},
+						{"value": 3, "amount": 1},
+						{"value": 4, "amount": 1}
+					],
+					"remove": [{"name": "Overhead Slash", "amount": 2}],
+					"add": [{"name": "Enhanced Overhead Slash", "amount": 2}]
+				},
+				{
+					"name": "Perfected Alloy Axe",
+					"rarity": 2,
+					"icon": "items/ore_0",
+					"parts": [
+						{"name": "Dragonite Ore", "amount": 3},
+						{"name": "Carbalite Ore", "amount": 2},
+						{"name": "Fucium Ore", "amount": 2},
+						{"name": "Dragonvein Crystal", "amount": 2}
+					],
+					"damage": [
+						{"value": 1, "amount": 8},
+						{"value": 3, "amount": 1},
+						{"value": 4, "amount": 3}
+					],
+					"remove": [
+						{"name": "Overhead Slash", "amount": 2},
+						{"name": "Wild Swing", "amount": 4}
+					],
+					"add": [
+						{"name": "Enhanced Overhead Slash", "amount": 2},
+						{"name": "Savage Swing", "amount": 4}
+					]
+				}
+			]
+		},
+		{
+			"name": "Bone",
+			"icon": "items/bone_1",
+			"weapons": [
+				{
+					"name": "Bone Axe",
+					"rarity": 0,
+					"icon": "items/bone_1",
+					"parts": [{"name": "Monster Bone S", "amount": 1}],
+					"damage": [
+						{"value": 1, "amount": 8},
+						{"value": 3, "amount": 2}
+					],
+					"add": [],
+					"remove": []
+				},
+				{
+					"name": "Bone Smasher",
+					"rarity": 1,
+					"icon": "items/ore_0",
+					"parts": [
+						{"name": "Monster Bone M", "amount": 1},
+						{"name": "Monster Bone L", "amount": 1},
+						{"name": "Boulder Bone", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 7},
+						{"value": 3, "amount": 3}
+					],
+					"remove": [{"name": "Forward Slash", "amount": 2}],
+					"add": [{"name": "Leaping Slash", "amount": 2}]
+				},
+				{
+					"name": "Power Smasher",
+					"rarity": 2,
+					"icon": "items/ore_0",
+					"parts": [
+						{"name": "Monster Hardbone", "amount": 2},
+						{"name": "Monster Keenbone", "amount": 2},
+						{"name": "Quality Bone", "amount": 3}
+					],
+					"damage": [
+						{"value": 1, "amount": 5},
+						{"value": 3, "amount": 4},
+						{"value": 4, "amount": 1}
+					],
+					"remove": [
+						{"name": "Forward Slash", "amount": 2},
+						{"name": "Heavenward Flurry", "amount": 2}
+					],
+					"add": [
+						{"name": "Leaping Slash", "amount": 2},
+						{"name": "Heavenward Combo", "amount": 2}
+					]
+				}
+			]
+		}
+	],
+	"ancient_forest": [
+		{
+			"name": "Anjanath",
+			"icon": "monsters/anjanath",
+			"weapons": [
+				{
+					"name": "Proto Iron Axe",
+					"rarity": 0,
+					"icon": "items/ore_0",
+					"parts": [],
+					"damage": [
+						{"value": 1, "amount": 11},
+						{"value": 4, "amount": 1}
+					],
+					"remove": [],
+					"add": []
+				},
+				{
+					"name": "Flammenbeil",
+					"rarity": 2,
+					"icon": "monsters/anjanath",
+					"parts": [
+						{"name": "Anjanath Fang", "amount": 2},
+						{"name": "Anjanath Scale", "amount": 1},
+						{"name": "Anjanath Pelt", "amount": 2},
+						{"name": "Flame Sac", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 5},
+						{"value": 3, "amount": 3},
+						{"value": 4, "amount": 2}
+					],
+					"remove": [{"name": "Forward Slash", "amount": 1}],
+					"add": [{"name": "Charging Slash", "amount": 2}]
+				},
+				{
+					"name": "Gnashing Flammenbeil",
+					"rarity": 3,
+					"icon": "monsters/anjanath",
+					"parts": [
+						{"name": "Anjanath Pelt", "amount": 4},
+						{"name": "Anjanath Nosebone", "amount": 4},
+						{"name": "Firecell Stone", "amount": 2}
+					],
+					"damage": [
+						{"value": 1, "amount": 6},
+						{"value": 3, "amount": 3},
+						{"value": 4, "amount": 3}
+					],
+					"remove": [
+						{"name": "Forward Slash", "amount": 2},
+						{"name": "Overhead Slash", "amount": 2}
+					],
+					"add": [
+						{"name": "Charging Slash", "amount": 2},
+						{"name": "Blazing Slash", "amount": 2}
+					]
+				}
+			]
+		},
+		{
+			"name": "Rathalos",
+			"icon": "monsters/rathalos",
+			"weapons": [
+				{
+					"name": "Bone Axe",
+					"rarity": 0,
+					"icon": "items/bone_1",
+					"parts": [{"name": "Monster Bone S", "amount": 1}],
+					"damage": [
+						{"value": 1, "amount": 8},
+						{"value": 3, "amount": 2}
+					],
+					"add": [],
+					"remove": []
+				},
+				{
+					"name": "Rathalos Axe",
+					"rarity": 2,
+					"icon": "monsters/rathalos",
+					"parts": [
+						{"name": "Rathalos Scale", "amount": 1},
+						{"name": "Rathalos Webbing", "amount": 2},
+						{"name": "Rathalos Marrow", "amount": 2},
+						{"name": "Inferno Sac", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 6},
+						{"value": 3, "amount": 4},
+						{"value": 4, "amount": 2}
+					],
+					"remove": [{"name": "Wild Swing", "amount": 4}],
+					"add": [{"name": "Burning Swing", "amount": 4}]
+				},
+				{
+					"name": "Rathbringer Axe",
+					"rarity": 3,
+					"icon": "monsters/rathalos",
+					"parts": [
+						{"name": "Rathalos Scale", "amount": 2},
+						{"name": "Rathalos Carapace", "amount": 1},
+						{"name": "Rathalos Wing", "amount": 1},
+						{"name": "Rathalos Medulla", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 7},
+						{"value": 3, "amount": 3},
+						{"value": 4, "amount": 4}
+					],
+					"remove": [
+						{"name": "Wild Swing", "amount": 4},
+						{"name": "Heavenward Flurry", "amount": 2}
+					],
+					"add": [
+						{"name": "Burning Swing", "amount": 4},
+						{"name": "Hellward Flurry", "amount": 2}
+					]
+				}
+			]
+		}
+	],
+	"wildspire_waste": [
+		{
+			"name": "Barroth",
+			"icon": "monsters/barroth",
+			"weapons": [
+				{
+					"name": "Bone Axe",
+					"rarity": 0,
+					"icon": "items/bone_1",
+					"parts": [{"name": "Monster Bone S", "amount": 1}],
+					"damage": [
+						{"value": 1, "amount": 8},
+						{"value": 3, "amount": 2}
+					],
+					"add": [],
+					"remove": []
+				},
+				{
+					"name": "Carapace Axe",
+					"rarity": 2,
+					"icon": "monsters/barroth",
+					"parts": [
+						{"name": "Barroth Claw", "amount": 1},
+						{"name": "Barroth Shell", "amount": 4},
+						{"name": "Barroth Ridge", "amount": 2}
+					],
+					"damage": [
+						{"value": 1, "amount": 6},
+						{"value": 3, "amount": 2},
+						{"value": 4, "amount": 2}
+					],
+					"remove": [{"name": "Side Slash", "amount": 2}],
+					"add": [{"name": "Pulverizing Slash", "amount": 2}]
+				},
+				{
+					"name": "Barroth Grinder",
+					"rarity": 3,
+					"icon": "monsters/barroth",
+					"parts": [
+						{"name": "Barroth Claw", "amount": 2},
+						{"name": "Barroth Carapace", "amount": 3},
+						{"name": "Barroth Ridge", "amount": 3},
+						{"name": "Fertile Mud", "amount": 2}
+					],
+					"damage": [
+						{"value": 1, "amount": 6},
+						{"value": 3, "amount": 4},
+						{"value": 4, "amount": 2}
+					],
+					"remove": [
+						{"name": "Side Slash", "amount": 2},
+						{"name": "Double Slash", "amount": 3}
+					],
+					"add": [
+						{"name": "Pulverizing Slash", "amount": 4},
+						{"name": "Brutal Slash", "amount": 3}
+					]
+				}
+			]
+		},
+		{
+			"name": "Diablos",
+			"icon": "monsters/diablos",
+			"weapons": [
+				{
+					"name": "Bone Axe",
+					"rarity": 0,
+					"icon": "items/bone_1",
+					"parts": [{"name": "Monster Bone S", "amount": 1}],
+					"damage": [
+						{"value": 1, "amount": 8},
+						{"value": 3, "amount": 2}
+					],
+					"add": [],
+					"remove": []
+				},
+				{
+					"name": "Diablos Axe",
+					"rarity": 2,
+					"icon": "monsters/diablos",
+					"parts": [
+						{"name": "Diablos Fang", "amount": 2},
+						{"name": "Diablos Shell", "amount": 4},
+						{"name": "Twisted Horn", "amount": 1},
+						{"name": "Monster Bone L", "amount": 2}
+					],
+					"damage": [
+						{"value": 2, "amount": 2},
+						{"value": 3, "amount": 6},
+						{"value": 4, "amount": 4}
+					],
+					"remove": [{"name": "Rising Slash", "amount": 2}],
+					"add": [{"name": "Crippling Slash", "amount": 2}]
+				},
+				{
+					"name": "Axe Semper Tyrannis",
+					"rarity": 3,
+					"icon": "monsters/diablos",
+					"parts": [
+						{"name": "Diablos Carapace", "amount": 2},
+						{"name": "Diablos Ridge", "amount": 2},
+						{"name": "Majestic Horn", "amount": 2},
+						{"name": "Blos Medulla", "amount": 1}
+					],
+					"damage": [
+						{"value": 2, "amount": 2},
+						{"value": 3, "amount": 7},
+						{"value": 4, "amount": 5}
+					],
+					"remove": [
+						{"name": "Rising Slash", "amount": 2},
+						{"name": "Elemental Discharge", "amount": 1},
+						{"name": "Any Sword Card", "amount": 1}
+					],
+					"add": [
+						{"name": "Crippling Slash", "amount": 2},
+						{"name": "Power Discharge", "amount": 2}
+					]
+				}
+			]
+		}
+	],
 	"kulu": [],
 	"teostra": [],
 	"nergigante": [],

@@ -8,7 +8,6 @@ const props = defineProps<{
 	weapon_class: EWeapons
 	direction?: 'horizontal' | 'vertical'
 }>()
-console.log('SET: ', props.set)
 </script>
 
 <template>

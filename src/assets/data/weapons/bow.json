@@ -1,7 +1,409 @@
 {
-	"basic": [],
-	"ancient_forest": [],
-	"wildspire_waste": [],
+	"basic": [
+		{
+			"name": "Ore",
+			"icon": "items/ore_0",
+			"weapons": [
+				{
+					"name": "Iron Bow",
+					"rarity": 0,
+					"icon": "items/ore_0",
+					"parts": [],
+					"damage": [
+						{"value": 1, "amount": 8},
+						{"value": 2, "amount": 4}
+					],
+					"remove": [],
+					"add": []
+				},
+				{
+					"name": "Steel Bow",
+					"rarity": 1,
+					"icon": "items/ore_0",
+					"parts": [
+						{"name": "Dragonite Ore", "amount": 1},
+						{"name": "Malachite Ore", "amount": 1},
+						{"name": "Monster Bone M", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 6},
+						{"value": 2, "amount": 6}
+					],
+					"remove": [{"name": "Feint", "amount": 2}],
+					"add": [{"name": "Skilled Feint", "amount": 2}]
+				},
+				{
+					"name": "Alloy Bow",
+					"rarity": 2,
+					"icon": "items/ore_0",
+					"parts": [
+						{"name": "Dragonite Ore", "amount": 3},
+						{"name": "Carbalite Ore", "amount": 2},
+						{"name": "Fucium Ore", "amount": 2},
+						{"name": "Dragonvein Crystal", "amount": 2}
+					],
+					"damage": [
+						{"value": 1, "amount": 4},
+						{"value": 2, "amount": 6},
+						{"value": 3, "amount": 2}
+					],
+					"remove": [
+						{"name": "Feint", "amount": 2},
+						{"name": "Charged Shot", "amount": 3}
+					],
+					"add": [
+						{"name": "Skilled Feint", "amount": 2},
+						{"name": "Enhanced Charged Shot", "amount": 3}
+					]
+				}
+			]
+		},
+		{
+			"name": "Bone",
+			"icon": "items/bone_1",
+			"weapons": [
+				{
+					"name": "Hunter's Bow",
+					"rarity": 0,
+					"icon": "items/bone_1",
+					"parts": [{"name": "Monster Bone S", "amount": 1}],
+					"damage": [
+						{"value": 1, "amount": 6},
+						{"value": 2, "amount": 4}
+					],
+					"remove": [{"name": "Power Coating", "amount": 4}],
+					"add": [
+						{"name": "Poison Coating", "amount": 2},
+						{"name": "Paralysis Coating", "amount": 2}
+					]
+				},
+				{
+					"name": "Hunter's Stoutbow",
+					"rarity": 1,
+					"icon": "items/ore_0",
+					"parts": [
+						{"name": "Monster Bone M", "amount": 1},
+						{"name": "Monster Bone L", "amount": 1},
+						{"name": "Boulder Bone", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 4},
+						{"value": 2, "amount": 6}
+					],
+					"remove": [
+						{"name": "Power Coating", "amount": 4},
+						{"name": "Shot", "amount": 2}
+					],
+					"add": [
+						{"name": "Poison Coating", "amount": 2},
+						{"name": "Paralysis Coating", "amount": 2},
+						{"name": "Enhanced Shot", "amount": 2}
+					]
+				},
+				{
+					"name": "Hunter's Proudbow",
+					"rarity": 2,
+					"icon": "items/ore_0",
+					"parts": [
+						{"name": "Monster Hardbone", "amount": 2},
+						{"name": "Monster Keenbone", "amount": 2},
+						{"name": "Quality Bone", "amount": 3}
+					],
+					"damage": [
+						{"value": 1, "amount": 3},
+						{"value": 2, "amount": 5},
+						{"value": 3, "amount": 2}
+					],
+					"remove": [
+						{"name": "Power Coating", "amount": 4},
+						{"name": "Shot", "amount": 2},
+						{"name": "Arc Shot", "amount": 2}
+					],
+					"add": [
+						{"name": "Poison Coating", "amount": 2},
+						{"name": "Paralysis Coating", "amount": 2},
+						{"name": "Enhanced Shot", "amount": 2},
+						{"name": "Strong Arc Shot", "amount": 2}
+					]
+				}
+			]
+		}
+	],
+	"ancient_forest": [
+		{
+			"name": "Tobi-Kadachi",
+			"icon": "monsters/tobi",
+			"weapons": [
+				{
+					"name": "Hunter's Bow",
+					"rarity": 0,
+					"icon": "items/bone_1",
+					"parts": [{"name": "Monster Bone S", "amount": 1}],
+					"damage": [
+						{"value": 1, "amount": 6},
+						{"value": 2, "amount": 4}
+					],
+					"remove": [{"name": "Power Coating", "amount": 4}],
+					"add": [
+						{"name": "Poison Coating", "amount": 2},
+						{"name": "Paralysis Coating", "amount": 2}
+					]
+				},
+				{
+					"name": "Pulsar Bow",
+					"rarity": 2,
+					"icon": "monsters/tobi",
+					"parts": [
+						{"name": "Tobi-Kadachi Electrode", "amount": 2},
+						{"name": "Tobi-Kadachi Claw", "amount": 2},
+						{"name": "Electro Sac", "amount": 1},
+						{"name": "Coral Crystal", "amount": 2}
+					],
+					"damage": [
+						{"value": 1, "amount": 2},
+						{"value": 2, "amount": 5},
+						{"value": 3, "amount": 3}
+					],
+					"remove": [{"name": "Power Coating", "amount": 4}],
+					"add": [
+						{"name": "High Power Coating", "amount": 3},
+						{"name": "Paralysis Coating", "amount": 1}
+					]
+				},
+				{
+					"name": "Flying Kadachi Strikebow",
+					"rarity": 3,
+					"icon": "monsters/tobi",
+					"parts": [
+						{"name": "Tobi-Kadachi Claw", "amount": 2},
+						{"name": "Tobi-Kadachi Scale", "amount": 2},
+						{"name": "Tobi-Kadachi Pelt", "amount": 2},
+						{"name": "Dragonvein Crystal", "amount": 2}
+					],
+					"damage": [
+						{"value": 2, "amount": 9},
+						{"value": 3, "amount": 3}
+					],
+					"remove": [
+						{"name": "Power Coating", "amount": 4},
+						{"name": "Dragon Piercer", "amount": 1},
+						{"name": "", "amount": 1}
+					],
+					"add": [
+						{"name": "High Power Coating", "amount": 3},
+						{"name": "Paralysis Coating", "amount": 1},
+						{"name": "Striking Dragon Piercer", "amount": 2}
+					]
+				}
+			]
+		},
+		{
+			"name": "Anjanath",
+			"icon": "monsters/anjanath",
+			"weapons": [
+				{
+					"name": "Hunter's Bow",
+					"rarity": 0,
+					"icon": "items/bone_1",
+					"parts": [{"name": "Monster Bone S", "amount": 1}],
+					"damage": [
+						{"value": 1, "amount": 6},
+						{"value": 2, "amount": 4}
+					],
+					"remove": [{"name": "Power Coating", "amount": 4}],
+					"add": [
+						{"name": "Poison Coating", "amount": 2},
+						{"name": "Paralysis Coating", "amount": 2}
+					]
+				},
+				{
+					"name": "Blazing Bow",
+					"rarity": 2,
+					"icon": "monsters/anjanath",
+					"parts": [
+						{"name": "Anjanath Scale", "amount": 3},
+						{"name": "Anjanath Fang", "amount": 2},
+						{"name": "Flame Sac", "amount": 1}
+					],
+					"damage": [
+						{"value": 2, "amount": 2},
+						{"value": 3, "amount": 6},
+						{"value": 4, "amount": 4}
+					],
+					"remove": [{"name": "Power Coating", "amount": 4}],
+					"add": [
+						{"name": "Blast Coating", "amount": 2},
+						{"name": "Poison Coating", "amount": 2}
+					]
+				},
+				{
+					"name": "Anja Arch",
+					"rarity": 3,
+					"icon": "monsters/anjanath",
+					"parts": [
+						{"name": "Anjanath Fang", "amount": 4},
+						{"name": "Anjanath Pelt", "amount": 4},
+						{"name": "Firecell Stone", "amount": 2}
+					],
+					"damage": [
+						{"value": 2, "amount": 6},
+						{"value": 3, "amount": 8}
+					],
+					"remove": [
+						{"name": "Power Coating", "amount": 4},
+						{"name": "Charged Shot", "amount": 3}
+					],
+					"add": [
+						{"name": "Blast Coating", "amount": 2},
+						{"name": "Poison Coating", "amount": 2},
+						{"name": "Blazing Charged Shot", "amount": 3}
+					]
+				}
+			]
+		}
+	],
+	"wildspire_waste": [
+		{
+			"name": "Pukei-Pukei",
+			"icon": "monsters/pukei",
+			"weapons": [
+				{
+					"name": "Hunter's Bow",
+					"rarity": 0,
+					"icon": "items/bone_1",
+					"parts": [{"name": "Monster Bone S", "amount": 1}],
+					"damage": [
+						{"value": 1, "amount": 6},
+						{"value": 2, "amount": 4}
+					],
+					"remove": [{"name": "Power Coating", "amount": 4}],
+					"add": [
+						{"name": "Poison Coating", "amount": 2},
+						{"name": "Paralysis Coating", "amount": 2}
+					]
+				},
+				{
+					"name": "Blooming Arch",
+					"rarity": 2,
+					"icon": "monsters/pukei",
+					"parts": [
+						{"name": "Pukei-Pukei Quill", "amount": 2},
+						{"name": "Pukei-Pukei Scale", "amount": 2},
+						{"name": "Pukei-Pukei Tail", "amount": 1},
+						{"name": "Poison Sac", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 1},
+						{"value": 2, "amount": 7},
+						{"value": 3, "amount": 2}
+					],
+					"remove": [
+						{"name": "Power Coating", "amount": 4},
+						{"name": "Shot", "amount": 2}
+					],
+					"add": [
+						{"name": "Poison Coating", "amount": 2},
+						{"name": "Paralysis Coating", "amount": 2},
+						{"name": "Poisoned Shot", "amount": 2}
+					]
+				},
+				{
+					"name": "Datura String",
+					"rarity": 3,
+					"icon": "monsters/pukei",
+					"parts": [
+						{"name": "Pukei-Pukei Scale", "amount": 2},
+						{"name": "Pukei-Pukei Wing", "amount": 2},
+						{"name": "Toxin Sac", "amount": 2},
+						{"name": "Quality Bone", "amount": 3}
+					],
+					"damage": [
+						{"value": 1, "amount": 1},
+						{"value": 2, "amount": 7},
+						{"value": 3, "amount": 4}
+					],
+					"remove": [
+						{"name": "Power Coating", "amount": 4},
+						{"name": "Shot", "amount": 6}
+					],
+					"add": [
+						{"name": "Poison Coating", "amount": 2},
+						{"name": "Paralysis Coating", "amount": 2},
+						{"name": "Poisoned Shot", "amount": 2},
+						{"name": "Flared Shot", "amount": 4}
+					]
+				}
+			]
+		},
+		{
+			"name": "Diablos",
+			"icon": "monsters/diablos",
+			"weapons": [
+				{
+					"name": "Hunter's Bow",
+					"rarity": 0,
+					"icon": "items/bone_1",
+					"parts": [{"name": "Monster Bone S", "amount": 1}],
+					"damage": [
+						{"value": 1, "amount": 6},
+						{"value": 2, "amount": 4}
+					],
+					"remove": [{"name": "Power Coating", "amount": 4}],
+					"add": [
+						{"name": "Poison Coating", "amount": 2},
+						{"name": "Paralysis Coating", "amount": 2}
+					]
+				},
+				{
+					"name": "Diablos Bow",
+					"rarity": 2,
+					"icon": "monsters/diablos",
+					"parts": [
+						{"name": "Diablos Scale", "amount": 3},
+						{"name": "Diablos Fang", "amount": 2},
+						{"name": "Flame Sac", "amount": 1}
+					],
+					"damage": [
+						{"value": 2, "amount": 2},
+						{"value": 3, "amount": 6},
+						{"value": 4, "amount": 4}
+					],
+					"remove": [
+						{"name": "Power Coating", "amount": 2},
+						{"name": "Shot", "amount": 2}
+					],
+					"add": [
+						{"name": "Paralysis Coating", "amount": 2},
+						{"name": "Rending Arrows", "amount": 2}
+					]
+				},
+				{
+					"name": "Diablos Coilbender",
+					"rarity": 3,
+					"icon": "monsters/diablos",
+					"parts": [
+						{"name": "Diablos Fang", "amount": 4},
+						{"name": "Diablos Pelt", "amount": 4},
+						{"name": "Firecell Stone", "amount": 2}
+					],
+					"damage": [
+						{"value": 2, "amount": 6},
+						{"value": 3, "amount": 8}
+					],
+					"remove": [
+						{"name": "Power Coating", "amount": 2},
+						{"name": "Shot", "amount": 2},
+						{"name": "Charged Sidestep", "amount": 2}
+					],
+					"add": [
+						{"name": "Paralysis Coating", "amount": 2},
+						{"name": "Rending Arrows", "amount": 2},
+						{"name": "Rapid Dash", "amount": 2}
+					]
+				}
+			]
+		}
+	],
 	"kulu": [],
 	"teostra": [],
 	"nergigante": [],

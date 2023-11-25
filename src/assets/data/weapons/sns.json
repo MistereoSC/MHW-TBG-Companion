@@ -1,7 +1,381 @@
 {
-	"basic": [],
-	"ancient_forest": [],
-	"wildspire_waste": [],
+	"basic": [
+		{
+			"name": "Ore",
+			"icon": "items/ore_0",
+			"weapons": [
+				{
+					"name": "Hunter's Knife",
+					"rarity": 0,
+					"icon": "items/ore_0",
+					"parts": [],
+					"damage": [
+						{"value": 1, "amount": 8},
+						{"value": 2, "amount": 4}
+					],
+					"remove": [],
+					"add": []
+				},
+				{
+					"name": "Steel Knife",
+					"rarity": 1,
+					"icon": "items/ore_0",
+					"parts": [
+						{"name": "Dragonite Ore", "amount": 1},
+						{"name": "Malachite Ore", "amount": 1},
+						{"name": "Monster Bone M", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 6},
+						{"value": 2, "amount": 5},
+						{"value": 3, "amount": 1}
+					],
+					"remove": [{"name": "Advancing Slash", "amount": 2}],
+					"add": [{"name": "Enhanced Advancing Slash", "amount": 2}]
+				},
+				{
+					"name": "Chrome Slicer",
+					"rarity": 2,
+					"icon": "items/ore_0",
+					"parts": [
+						{"name": "Dragonite Ore", "amount": 3},
+						{"name": "Carbalite Ore", "amount": 2},
+						{"name": "Fucium Ore", "amount": 2},
+						{"name": "Dragonvein Crystal", "amount": 2}
+					],
+					"damage": [
+						{"value": 1, "amount": 2},
+						{"value": 2, "amount": 6},
+						{"value": 3, "amount": 4}
+					],
+					"remove": [
+						{"name": "Advancing Slash", "amount": 2},
+						{"name": "", "amount": 2}
+					],
+					"add": [
+						{"name": "Enhanced Advancing Slash", "amount": 2},
+						{"name": "Helm Splitter", "amount": 2}
+					],
+					"armor": 1
+				}
+			]
+		},
+		{
+			"name": "Bone",
+			"icon": "items/bone_1",
+			"weapons": [
+				{
+					"name": "Bone Kukri",
+					"rarity": 0,
+					"icon": "items/bone_1",
+					"parts": [{"name": "Monster Bone S", "amount": 1}],
+					"damage": [
+						{"value": 1, "amount": 5},
+						{"value": 2, "amount": 4},
+						{"value": 3, "amount": 1}
+					],
+					"add": [],
+					"remove": []
+				},
+				{
+					"name": "Chief Kukri",
+					"rarity": 1,
+					"icon": "items/bone_1",
+					"parts": [
+						{"name": "Monster Bone M", "amount": 1},
+						{"name": "Monster Bone L", "amount": 1},
+						{"name": "Boulder Bone", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 3},
+						{"value": 2, "amount": 5},
+						{"value": 3, "amount": 2}
+					],
+					"remove": [{"name": "Shield Bash", "amount": 2}],
+					"add": [{"name": "Strong Shield Bash", "amount": 2}]
+				},
+				{
+					"name": "Grand Barong",
+					"rarity": 2,
+					"icon": "items/bone_1",
+					"parts": [
+						{"name": "Monster Hardbone", "amount": 2},
+						{"name": "Monster Keenbone", "amount": 2},
+						{"name": "Quality Bone", "amount": 3}
+					],
+					"damage": [
+						{"value": 1, "amount": 3},
+						{"value": 2, "amount": 4},
+						{"value": 3, "amount": 3}
+					],
+					"remove": [
+						{"name": "Shield Bash", "amount": 2},
+						{"name": "Chop", "amount": 2}
+					],
+					"add": [
+						{"name": "Strong Shield Bash", "amount": 2},
+						{"name": "Chop Reversal", "amount": 2}
+					],
+					"armor": 1
+				}
+			]
+		}
+	],
+	"ancient_forest": [
+		{
+			"name": "Great Jagras",
+			"icon": "monsters/jagras",
+			"weapons": [
+				{
+					"name": "Bone Kukri",
+					"rarity": 0,
+					"icon": "items/bone_1",
+					"parts": [{"name": "Monster Bone S", "amount": 1}],
+					"damage": [
+						{"value": 1, "amount": 5},
+						{"value": 2, "amount": 4},
+						{"value": 3, "amount": 1}
+					],
+					"add": [],
+					"remove": []
+				},
+				{
+					"name": "Jagras Edge",
+					"rarity": 2,
+					"icon": "monsters/jagras",
+					"parts": [
+						{"name": "Great Jagras Claw", "amount": 2},
+						{"name": "Great Jagras Hide", "amount": 1},
+						{"name": "Great Jagras Scale", "amount": 2},
+						{"name": "Sharp Claw", "amount": 1}
+					],
+					"damage": [
+						{"value": 2, "amount": 2},
+						{"value": 3, "amount": 6},
+						{"value": 4, "amount": 2}
+					],
+					"remove": [{"name": "Lateral Slash", "amount": 2}],
+					"add": [{"name": "Glutton Lateral Slash", "amount": 2}],
+					"armor": 1
+				},
+				{
+					"name": "Jagras Garotte",
+					"rarity": 3,
+					"icon": "monsters/jagras",
+					"parts": [
+						{"name": "Great Jagras Scale", "amount": 3},
+						{"name": "Great Jagras Claw", "amount": 1},
+						{"name": "Great Jagras Mane", "amount": 2},
+						{"name": "Piercing Claw", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 3},
+						{"value": 2, "amount": 5},
+						{"value": 3, "amount": 3},
+						{"value": 4, "amount": 1}
+					],
+					"remove": [
+						{"name": "Lateral Slash", "amount": 3},
+						{"name": "Rising Slash", "amount": 1},
+						{"name": "", "amount": 1}
+					],
+					"add": [
+						{"name": "Glutton Lateral Slash", "amount": 3},
+						{"name": "Jump Rising Slash", "amount": 2}
+					],
+					"armor": 1
+				}
+			]
+		},
+		{
+			"name": "Rathalos",
+			"icon": "monsters/rathalos",
+			"weapons": [
+				{
+					"name": "Hunter's Knife",
+					"rarity": 0,
+					"icon": "items/ore_0",
+					"parts": [],
+					"damage": [
+						{"value": 1, "amount": 8},
+						{"value": 2, "amount": 4}
+					],
+					"remove": [],
+					"add": []
+				},
+				{
+					"name": "Flame Knife",
+					"rarity": 2,
+					"icon": "monsters/rathalos",
+					"parts": [
+						{"name": "Rathalos Scale", "amount": 1},
+						{"name": "Rathalos Tail", "amount": 2},
+						{"name": "Rathalos Plate", "amount": 1},
+						{"name": "Inferno Sac", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 2},
+						{"value": 2, "amount": 6},
+						{"value": 3, "amount": 4}
+					],
+					"remove": [{"name": "Advancing Slash", "amount": 2}],
+					"add": [{"name": "Advancing Double Slash", "amount": 2}],
+					"armor": 1
+				},
+				{
+					"name": "Heat Edge",
+					"rarity": 3,
+					"icon": "monsters/rathalos",
+					"parts": [
+						{"name": "Rathalos Scale", "amount": 2},
+						{"name": "Rathalos Carapace", "amount": 2},
+						{"name": "Rathalos Wing", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 1},
+						{"value": 2, "amount": 7},
+						{"value": 3, "amount": 5},
+						{"value": 4, "amount": 1}
+					],
+					"remove": [
+						{"name": "Advancing Slash", "amount": 4},
+						{"name": "Sword & Shield Combo", "amount": 2}
+					],
+					"add": [
+						{"name": "Advancing Double Slash", "amount": 4},
+						{"name": "Blazing Combo", "amount": 2}
+					],
+					"armor": 1
+				}
+			]
+		}
+	],
+	"wildspire_waste": [
+		{
+			"name": "Pukei-Pukei",
+			"icon": "monsters/pukei",
+			"weapons": [
+				{
+					"name": "Hunter's Knife",
+					"rarity": 0,
+					"icon": "items/ore_0",
+					"parts": [],
+					"damage": [
+						{"value": 1, "amount": 8},
+						{"value": 2, "amount": 4}
+					],
+					"remove": [],
+					"add": []
+				},
+				{
+					"name": "Blooming Knife",
+					"rarity": 2,
+					"icon": "monsters/pukei",
+					"parts": [
+						{"name": "Pukei-Pukei Quill", "amount": 2},
+						{"name": "Pukei-Pukei Scale", "amount": 2},
+						{"name": "Pukei-Pukei Tail", "amount": 1},
+						{"name": "Poison Sac", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 1},
+						{"value": 2, "amount": 8},
+						{"value": 3, "amount": 3}
+					],
+					"remove": [
+						{"name": "Round Slash", "amount": 1},
+						{"name": "Rising Slash", "amount": 1}
+					],
+					"add": [{"name": "Poison Spin Slash", "amount": 2}],
+					"armor": 1
+				},
+				{
+					"name": "Datura Blossom",
+					"rarity": 3,
+					"icon": "monsters/pukei",
+					"parts": [
+						{"name": "Pukei-Pukei Scale", "amount": 2},
+						{"name": "Pukei-Pukei Wing", "amount": 2},
+						{"name": "Toxin Sac", "amount": 2},
+						{"name": "Quality Bone", "amount": 3}
+					],
+					"damage": [
+						{"value": 1, "amount": 1},
+						{"value": 2, "amount": 9},
+						{"value": 3, "amount": 4}
+					],
+					"remove": [
+						{"name": "Round Slash", "amount": 1},
+						{"name": "Rising Slash", "amount": 1},
+						{"name": "", "amount": 3}
+					],
+					"add": [
+						{"name": "Poison Spin Slash", "amount": 2},
+						{"name": "Toxicity", "amount": 3}
+					],
+					"armor": 1
+				}
+			]
+		},
+		{
+			"name": "Barroth",
+			"icon": "monsters/barroth",
+			"weapons": [
+				{
+					"name": "Hunter's Knife",
+					"rarity": 0,
+					"icon": "items/ore_0",
+					"parts": [],
+					"damage": [
+						{"value": 1, "amount": 8},
+						{"value": 2, "amount": 4}
+					],
+					"remove": [],
+					"add": []
+				},
+				{
+					"name": "Carapace Edge",
+					"rarity": 2,
+					"icon": "monsters/barroth",
+					"parts": [
+						{"name": "Barroth Claw", "amount": 1},
+						{"name": "Barroth Shell", "amount": 3},
+						{"name": "Barroth Ridge", "amount": 3}
+					],
+					"damage": [
+						{"value": 2, "amount": 8},
+						{"value": 3, "amount": 2}
+					],
+					"remove": [{"name": "Advancing Slash", "amount": 2}],
+					"add": [{"name": "Powerful Double Slash", "amount": 2}],
+					"armor": 1
+				},
+				{
+					"name": "Barroth Club",
+					"rarity": 3,
+					"icon": "monsters/barroth",
+					"parts": [
+						{"name": "Barroth Claw", "amount": 2},
+						{"name": "Barroth Carapace", "amount": 3},
+						{"name": "Barroth Ridge", "amount": 3}
+					],
+					"damage": [
+						{"value": 2, "amount": 8},
+						{"value": 3, "amount": 4}
+					],
+					"remove": [
+						{"name": "Advancing Slash", "amount": 2},
+						{"name": "Chop", "amount": 2}
+					],
+					"add": [
+						{"name": "Powerful Double Slash", "amount": 2},
+						{"name": "Steadfast Chop", "amount": 2}
+					],
+					"armor": 1
+				}
+			]
+		}
+	],
 	"kulu": [],
 	"teostra": [],
 	"nergigante": [],

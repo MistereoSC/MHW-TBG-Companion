@@ -59,6 +59,7 @@ export interface IWeapon {
 		amount: number
 	}>
 	armor?: number
+	deviation?: number
 }
 
 export enum EWeapons {

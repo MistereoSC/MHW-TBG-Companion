@@ -1,7 +1,393 @@
 {
-	"basic": [],
-	"ancient_forest": [],
-	"wildspire_waste": [],
+	"basic": [
+		{
+			"name": "Ore",
+			"icon": "items/ore_0",
+			"weapons": [
+				{
+					"name": "Iron Assault",
+					"rarity": 0,
+					"icon": "items/ore_0",
+					"parts": [],
+					"damage": [
+						{"value": 1, "amount": 9},
+						{"value": 2, "amount": 3}
+					],
+					"remove": [],
+					"add": [],
+					"deviation": 1
+				},
+				{
+					"name": "Steel Assault",
+					"rarity": 1,
+					"icon": "items/ore_0",
+					"parts": [
+						{"name": "Dragonite Ore", "amount": 1},
+						{"name": "Malachite Ore", "amount": 1},
+						{"name": "Monster Bone M", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 7},
+						{"value": 2, "amount": 4},
+						{"value": 3, "amount": 1}
+					],
+					"remove": [{"name": "Pierce Ammo 2", "amount": 2}],
+					"add": [{"name": "Pierce Ammo 3", "amount": 2}],
+					"deviation": 1
+				},
+				{
+					"name": "Chrome Assault",
+					"rarity": 2,
+					"icon": "items/ore_0",
+					"parts": [
+						{"name": "Dragonite Ore", "amount": 3},
+						{"name": "Carbalite Ore", "amount": 2},
+						{"name": "Fucium Ore", "amount": 2},
+						{"name": "Dragonvein Crystal", "amount": 2}
+					],
+					"damage": [
+						{"value": 1, "amount": 5},
+						{"value": 2, "amount": 4},
+						{"value": 3, "amount": 3}
+					],
+					"remove": [
+						{"name": "Pierce Ammo 2", "amount": 2},
+						{"name": "Normal Ammo 2", "amount": 2}
+					],
+					"add": [
+						{"name": "Pierce Ammo 3", "amount": 2},
+						{"name": "Normal Ammo 3", "amount": 2}
+					],
+					"deviation": 1
+				}
+			]
+		},
+		{
+			"name": "Bone",
+			"icon": "items/bone_1",
+			"weapons": [
+				{
+					"name": "Bone Shooter",
+					"rarity": 0,
+					"icon": "items/bone_1",
+					"parts": [{"name": "Monster Bone S", "amount": 1}],
+					"damage": [
+						{"value": 1, "amount": 6},
+						{"value": 2, "amount": 4}
+					],
+					"remove": [],
+					"add": [],
+					"deviation": 2
+				},
+				{
+					"name": "Heavy Shooter",
+					"rarity": 1,
+					"icon": "items/ore_0",
+					"parts": [
+						{"name": "Monster Bone M", "amount": 1},
+						{"name": "Monster Bone L", "amount": 1},
+						{"name": "Boulder Bone", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 4},
+						{"value": 2, "amount": 6}
+					],
+					"remove": [
+						{"name": "Sticky Ammo 1", "amount": 1},
+						{"name": "", "amount": 1}
+					],
+					"add": [{"name": "Sticky Ammo 2", "amount": 2}],
+					"deviation": 2
+				},
+				{
+					"name": "Power Shooter",
+					"rarity": 2,
+					"icon": "items/ore_0",
+					"parts": [
+						{"name": "Monster Hardbone", "amount": 2},
+						{"name": "Monster Keenbone", "amount": 2},
+						{"name": "Quality Bone", "amount": 3}
+					],
+					"damage": [
+						{"value": 1, "amount": 3},
+						{"value": 2, "amount": 5},
+						{"value": 3, "amount": 2}
+					],
+					"remove": [
+						{"name": "Sticky Ammo 1", "amount": 1},
+						{"name": "Spread Ammo 1", "amount": 2},
+						{"name": "", "amount": 1}
+					],
+					"add": [
+						{"name": "Sticky Ammo 2", "amount": 2},
+						{"name": "Spread Ammo 2", "amount": 2}
+					],
+					"deviation": 2
+				}
+			]
+		}
+	],
+	"ancient_forest": [
+		{
+			"name": "Great Jagras",
+			"icon": "monsters/jagras",
+			"weapons": [
+				{
+					"name": "Iron Assault",
+					"rarity": 0,
+					"icon": "items/ore_0",
+					"parts": [],
+					"damage": [
+						{"value": 1, "amount": 9},
+						{"value": 2, "amount": 3}
+					],
+					"remove": [],
+					"add": [],
+					"deviation": 1
+				},
+				{
+					"name": "Jagras Assault",
+					"rarity": 2,
+					"icon": "monsters/jagras",
+					"parts": [
+						{"name": "Great Jagras Claw", "amount": 1},
+						{"name": "Great Jagras Hide", "amount": 1},
+						{"name": "Great Jagras Scale", "amount": 3},
+						{"name": "Sharp Claw", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 4},
+						{"value": 2, "amount": 4},
+						{"value": 3, "amount": 4}
+					],
+					"remove": [{"name": "Pierce Ammo 1", "amount": 2}],
+					"add": [{"name": "Water Ammo", "amount": 2}],
+					"deviation": 2
+				},
+				{
+					"name": "Jagras Cannon",
+					"rarity": 3,
+					"icon": "monsters/jagras",
+					"parts": [
+						{"name": "Great Jagras Claw", "amount": 2},
+						{"name": "Great Jagras Scale", "amount": 2},
+						{"name": "Great Jagras Mane", "amount": 2},
+						{"name": "Piercing Claw", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 6},
+						{"value": 2, "amount": 1},
+						{"value": 3, "amount": 5},
+						{"value": 4, "amount": 2}
+					],
+					"remove": [
+						{"name": "Pierce Ammo 1", "amount": 2},
+						{"name": "Wyvernsnipe", "amount": 1},
+						{"name": "", "amount": 1}
+					],
+					"add": [
+						{"name": "Water Ammo", "amount": 2},
+						{"name": "Jagras Wyvernheart", "amount": 2}
+					],
+					"deviation": 2
+				}
+			]
+		},
+		{
+			"name": "Tobi-Kadachi",
+			"icon": "monsters/tobi",
+			"weapons": [
+				{
+					"name": "Bone Shooter",
+					"rarity": 0,
+					"icon": "items/bone_1",
+					"parts": [{"name": "Monster Bone S", "amount": 1}],
+					"damage": [
+						{"value": 1, "amount": 6},
+						{"value": 2, "amount": 4}
+					],
+					"remove": [],
+					"add": [],
+					"deviation": 2
+				},
+				{
+					"name": "Pulsar Bow",
+					"rarity": 2,
+					"icon": "monsters/tobi",
+					"parts": [
+						{"name": "Tobi-Kadachi Claw", "amount": 1},
+						{"name": "Tobi-Kadachi Scale", "amount": 3},
+						{"name": "Tobi-Kadachi Pelt", "amount": 2}
+					],
+					"damage": [
+						{"value": 1, "amount": 4},
+						{"value": 2, "amount": 2},
+						{"value": 3, "amount": 3},
+						{"value": 4, "amount": 1}
+					],
+					"remove": [{"name": "Pierce Ammo 2", "amount": 2}],
+					"add": [{"name": "Electrical Ammo", "amount": 2}],
+					"deviation": 0
+				},
+				{
+					"name": "Flying Kadachi Strikebow",
+					"rarity": 3,
+					"icon": "monsters/tobi",
+					"parts": [
+						{"name": "Tobi-Kadachi Claw", "amount": 2},
+						{"name": "Tobi-Kadachi Scale", "amount": 2},
+						{"name": "Tobi-Kadachi Pelt", "amount": 2},
+						{"name": "Dragonvein Crystal", "amount": 2}
+					],
+					"damage": [
+						{"value": 1, "amount": 4},
+						{"value": 2, "amount": 3},
+						{"value": 3, "amount": 3},
+						{"value": 4, "amount": 2}
+					],
+					"remove": [
+						{"name": "Pierce Ammo 2", "amount": 2},
+						{"name": "Spread Ammo 1", "amount": 2}
+					],
+					"add": [
+						{"name": "Electrical Ammo", "amount": 2},
+						{"name": "Thunder Ammo", "amount": 2}
+					],
+					"deviation": 0
+				}
+			]
+		}
+	],
+	"wildspire_waste": [
+		{
+			"name": "Pukei-Pukei",
+			"icon": "monsters/pukei",
+			"weapons": [
+				{
+					"name": "Bone Shooter",
+					"rarity": 0,
+					"icon": "items/bone_1",
+					"parts": [{"name": "Monster Bone S", "amount": 1}],
+					"damage": [
+						{"value": 1, "amount": 6},
+						{"value": 2, "amount": 4}
+					],
+					"remove": [],
+					"add": [],
+					"deviation": 2
+				},
+				{
+					"name": "Blooming Shooter",
+					"rarity": 2,
+					"icon": "monsters/pukei",
+					"parts": [
+						{"name": "Pukei-Pukei Quill", "amount": 2},
+						{"name": "Pukei-Pukei Scale", "amount": 2},
+						{"name": "Pukei-Pukei Tail", "amount": 1},
+						{"name": "Poison Sac", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 3},
+						{"value": 2, "amount": 3},
+						{"value": 3, "amount": 4}
+					],
+					"remove": [{"name": "Normal Ammo 1", "amount": 5}],
+					"add": [{"name": "Poison Ammo 1", "amount": 5}],
+					"deviation": 1
+				},
+				{
+					"name": "Datura Blaster",
+					"rarity": 3,
+					"icon": "monsters/pukei",
+					"parts": [
+						{"name": "Pukei-Pukei Scale", "amount": 2},
+						{"name": "Pukei-Pukei Wing", "amount": 2},
+						{"name": "Toxin Sac", "amount": 2},
+						{"name": "Quality Bone", "amount": 3}
+					],
+					"damage": [
+						{"value": 1, "amount": 3},
+						{"value": 2, "amount": 3},
+						{"value": 3, "amount": 4},
+						{"value": 4, "amount": 2}
+					],
+					"remove": [
+						{"name": "Normal Ammo 1", "amount": 5},
+						{"name": "Cluster Bomb 1", "amount": 2}
+					],
+					"add": [
+						{"name": "Poison Ammo 1", "amount": 5},
+						{"name": "Poison Ammo 2", "amount": 2}
+					],
+					"deviation": 1
+				}
+			]
+		},
+		{
+			"name": "Diablos",
+			"icon": "monsters/diablos",
+			"weapons": [
+				{
+					"name": "Bone Shooter",
+					"rarity": 0,
+					"icon": "items/bone_1",
+					"parts": [{"name": "Monster Bone S", "amount": 1}],
+					"damage": [
+						{"value": 1, "amount": 6},
+						{"value": 2, "amount": 4}
+					],
+					"remove": [],
+					"add": [],
+					"deviation": 2
+				},
+				{
+					"name": "Diablos Shooter",
+					"rarity": 2,
+					"icon": "monsters/diablos",
+					"parts": [
+						{"name": "Diablos Scale", "amount": 3},
+						{"name": "Diablos Fang", "amount": 2},
+						{"name": "Flame Sac", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 3},
+						{"value": 2, "amount": 4},
+						{"value": 3, "amount": 3},
+						{"value": 4, "amount": 2}
+					],
+					"remove": [{"name": "Normal Ammo 2", "amount": 2}],
+					"add": [{"name": "Brutal Ammo", "amount": 2}],
+					"deviation": 3
+				},
+				{
+					"name": "Dual Threat",
+					"rarity": 3,
+					"icon": "monsters/diablos",
+					"parts": [
+						{"name": "Diablos Fang", "amount": 4},
+						{"name": "Diablos Pelt", "amount": 4},
+						{"name": "Firecell Stone", "amount": 2}
+					],
+					"damage": [
+						{"value": 1, "amount": 2},
+						{"value": 2, "amount": 6},
+						{"value": 3, "amount": 3},
+						{"value": 4, "amount": 3}
+					],
+					"remove": [
+						{"name": "Normal Ammo 2", "amount": 2},
+						{"name": "Wyvernsnipe", "amount": 1},
+						{"name": "", "amount": 1}
+					],
+					"add": [
+						{"name": "Brutal Ammo", "amount": 2},
+						{"name": "Wyvern Ammo", "amount": 2}
+					],
+					"deviation": 3
+				}
+			]
+		}
+	],
 	"kulu": [],
 	"teostra": [],
 	"nergigante": [],

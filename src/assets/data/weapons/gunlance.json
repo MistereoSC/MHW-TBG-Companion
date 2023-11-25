@@ -1,7 +1,386 @@
 {
-	"basic": [],
-	"ancient_forest": [],
-	"wildspire_waste": [],
+	"basic": [
+		{
+			"name": "Ore",
+			"icon": "items/ore_0",
+			"weapons": [
+				{
+					"name": "Iron Gunlance",
+					"rarity": 0,
+					"icon": "items/ore_0",
+					"parts": [],
+					"damage": [
+						{"value": 1, "amount": 8},
+						{"value": 2, "amount": 4}
+					],
+					"remove": [],
+					"add": [],
+					"armor": 1
+				},
+				{
+					"name": "Steel Gunlance",
+					"rarity": 1,
+					"icon": "items/ore_0",
+					"parts": [
+						{"name": "Dragonite Ore", "amount": 1},
+						{"name": "Malachite Ore", "amount": 1},
+						{"name": "Monster Bone M", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 7},
+						{"value": 2, "amount": 4},
+						{"value": 3, "amount": 1}
+					],
+					"remove": [{"name": "Full Burst", "amount": 2}],
+					"add": [{"name": "Improved Full Burst", "amount": 2}],
+					"armor": 1
+				},
+				{
+					"name": "Chrome Gunlance",
+					"rarity": 2,
+					"icon": "items/ore_0",
+					"parts": [
+						{"name": "Dragonite Ore", "amount": 3},
+						{"name": "Carbalite Ore", "amount": 2},
+						{"name": "Fucium Ore", "amount": 2},
+						{"name": "Dragonvein Crystal", "amount": 2}
+					],
+					"damage": [
+						{"value": 1, "amount": 5},
+						{"value": 2, "amount": 4},
+						{"value": 3, "amount": 3}
+					],
+					"remove": [
+						{"name": "Full Burst", "amount": 2},
+						{"name": "Lunging Upthrust", "amount": 2}
+					],
+					"add": [
+						{"name": "Improved Full Burst", "amount": 2},
+						{"name": "Improved Lunging Upthrust", "amount": 2}
+					],
+					"armor": 1
+				}
+			]
+		},
+		{
+			"name": "Bone",
+			"icon": "items/bone_1",
+			"weapons": [
+				{
+					"name": "Bone Gunlance",
+					"rarity": 0,
+					"icon": "items/bone_1",
+					"parts": [{"name": "Monster Bone S", "amount": 1}],
+					"damage": [
+						{"value": 1, "amount": 5},
+						{"value": 2, "amount": 5}
+					],
+					"add": [],
+					"remove": [],
+					"armor": 1
+				},
+				{
+					"name": "Bone Cannon",
+					"rarity": 1,
+					"icon": "items/bone_1",
+					"parts": [
+						{"name": "Monster Bone M", "amount": 1},
+						{"name": "Monster Bone L", "amount": 1},
+						{"name": "Boulder Bone", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 3},
+						{"value": 2, "amount": 6},
+						{"value": 3, "amount": 1}
+					],
+					"remove": [{"name": "Charged Shell", "amount": 2}],
+					"add": [{"name": "Improved Charge Shell", "amount": 2}],
+					"armor": 1
+				},
+				{
+					"name": "Great Bone Gunlance",
+					"rarity": 2,
+					"icon": "items/bone_1",
+					"parts": [
+						{"name": "Monster Hardbone", "amount": 2},
+						{"name": "Monster Keenbone", "amount": 2},
+						{"name": "Quality Bone", "amount": 3}
+					],
+					"damage": [
+						{"value": 1, "amount": 3},
+						{"value": 2, "amount": 4},
+						{"value": 3, "amount": 3}
+					],
+					"remove": [
+						{"name": "Charged Shell", "amount": 2},
+						{"name": "Overhead Smash", "amount": 4}
+					],
+					"add": [
+						{"name": "Improved Charge Shell", "amount": 2},
+						{"name": "Enhanced Overhead Smash", "amount": 2}
+					],
+					"armor": 1
+				}
+			]
+		}
+	],
+	"ancient_forest": [
+		{
+			"name": "Great Jagras",
+			"icon": "monsters/jagras",
+			"weapons": [
+				{
+					"name": "Bone Gunlance",
+					"rarity": 0,
+					"icon": "items/bone_1",
+					"parts": [{"name": "Monster Bone S", "amount": 1}],
+					"damage": [
+						{"value": 1, "amount": 5},
+						{"value": 2, "amount": 5}
+					],
+					"add": [],
+					"remove": [],
+					"armor": 1
+				},
+				{
+					"name": "Jagras Gunlance",
+					"rarity": 2,
+					"icon": "monsters/jagras",
+					"parts": [
+						{"name": "Great Jagras Claw", "amount": 2},
+						{"name": "Great Jagras Hide", "amount": 1},
+						{"name": "Great Jagras Scale", "amount": 3},
+						{"name": "Sharp Claw", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 2},
+						{"value": 2, "amount": 5},
+						{"value": 3, "amount": 3}
+					],
+					"remove": [{"name": "Rising Slash", "amount": 2}],
+					"add": [{"name": "Gluttonous Rising Slash", "amount": 2}],
+					"armor": 1
+				},
+				{
+					"name": "Glutton Gunlance",
+					"rarity": 3,
+					"icon": "monsters/jagras",
+					"parts": [
+						{"name": "Great Jagras Scale", "amount": 2},
+						{"name": "Great Jagras Claw", "amount": 2},
+						{"name": "Great Jagras Mane", "amount": 2},
+						{"name": "Piercing Claw", "amount": 1}
+					],
+					"damage": [
+						{"value": 2, "amount": 2},
+						{"value": 3, "amount": 6},
+						{"value": 4, "amount": 4}
+					],
+					"remove": [
+						{"name": "Rising Slash", "amount": 2},
+						{"name": "Full Burst", "amount": 2}
+					],
+					"add": [
+						{"name": "Gluttonous Rising Slash", "amount": 2},
+						{"name": "Knock Out Full Burst", "amount": 2}
+					],
+					"armor": 1
+				}
+			]
+		},
+		{
+			"name": "Rathalos",
+			"icon": "monsters/rathalos",
+			"weapons": [
+				{
+					"name": "Iron Gunlance",
+					"rarity": 0,
+					"icon": "items/ore_0",
+					"parts": [],
+					"damage": [
+						{"value": 1, "amount": 8},
+						{"value": 2, "amount": 4}
+					],
+					"remove": [],
+					"add": [],
+					"armor": 1
+				},
+				{
+					"name": "Rush Gunlance",
+					"rarity": 2,
+					"icon": "monsters/rathalos",
+					"parts": [
+						{"name": "Rathalos Scale", "amount": 2},
+						{"name": "Rathalos Webbing", "amount": 1},
+						{"name": "Rathalos Marrow", "amount": 2},
+						{"name": "Inferno Sac", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 2},
+						{"value": 2, "amount": 6},
+						{"value": 3, "amount": 4}
+					],
+					"remove": [{"name": "Charged Shell", "amount": 2}],
+					"add": [{"name": "Flaming Charged Shell", "amount": 2}]
+				},
+				{
+					"name": "Red Rock",
+					"rarity": 3,
+					"icon": "monsters/rathalos",
+					"parts": [
+						{"name": "Rathalos Scale", "amount": 2},
+						{"name": "Rathalos Carapace", "amount": 1},
+						{"name": "Rathalos Wing", "amount": 1},
+						{"name": "Rathalos Medulla", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 3},
+						{"value": 2, "amount": 5},
+						{"value": 3, "amount": 5},
+						{"value": 4, "amount": 1}
+					],
+					"remove": [
+						{"name": "Charged Shell", "amount": 2},
+						{"name": "Lateral Thrust", "amount": 2}
+					],
+					"add": [
+						{"name": "Flaming Charged Shell", "amount": 2},
+						{"name": "Blazing Lateral Thrust", "amount": 2}
+					],
+					"armor": 1
+				}
+			]
+		}
+	],
+	"wildspire_waste": [
+		{
+			"name": "Barroth",
+			"icon": "monsters/barroth",
+			"weapons": [
+				{
+					"name": "Bone Gunlance",
+					"rarity": 0,
+					"icon": "items/bone_1",
+					"parts": [{"name": "Monster Bone S", "amount": 1}],
+					"damage": [
+						{"value": 1, "amount": 5},
+						{"value": 2, "amount": 5}
+					],
+					"add": [],
+					"remove": [],
+					"armor": 1
+				},
+				{
+					"name": "Carapace Cannon",
+					"rarity": 2,
+					"icon": "monsters/barroth",
+					"parts": [
+						{"name": "Barroth claw", "amount": 1},
+						{"name": "Barroth Shell", "amount": 3},
+						{"name": "Barroth Ridge", "amount": 2}
+					],
+					"damage": [
+						{"value": 1, "amount": 3},
+						{"value": 2, "amount": 3},
+						{"value": 3, "amount": 4}
+					],
+					"remove": [{"name": "Wyrmstake Cannon", "amount": 2}],
+					"add": [{"name": "Brutal Wyrmstake Cannon", "amount": 2}],
+					"armor": 1
+				},
+				{
+					"name": "Barroth Blaster",
+					"rarity": 3,
+					"icon": "monsters/barroth",
+					"parts": [
+						{"name": "Barroth Claw", "amount": 2},
+						{"name": "Barroth Carapace", "amount": 3},
+						{"name": "Barroth Ridge", "amount": 3},
+						{"name": "Fertile Mud", "amount": 2}
+					],
+					"damage": [
+						{"value": 1, "amount": 3},
+						{"value": 2, "amount": 5},
+						{"value": 3, "amount": 3},
+						{"value": 4, "amount": 1}
+					],
+					"remove": [
+						{"name": "Wyrmstake Cannon", "amount": 2},
+						{"name": "Rising Slash", "amount": 2}
+					],
+					"add": [
+						{"name": "Brutal Wyrmstake Cannon", "amount": 2},
+						{"name": "Crippling Rising Slash", "amount": 2}
+					],
+					"armor": 1
+				}
+			]
+		},
+		{
+			"name": "Jyuratodus",
+			"icon": "monsters/jyuratodus",
+			"weapons": [
+				{
+					"name": "Iron Gunlance",
+					"rarity": 0,
+					"icon": "items/ore_0",
+					"parts": [],
+					"damage": [
+						{"value": 1, "amount": 8},
+						{"value": 2, "amount": 4}
+					],
+					"remove": [],
+					"add": [],
+					"armor": 1
+				},
+				{
+					"name": "Madness Gunlance",
+					"rarity": 2,
+					"icon": "monsters/jyuratodus",
+					"parts": [
+						{"name": "Jyuratodus Fin", "amount": 1},
+						{"name": "Jyuratodus Shell", "amount": 2},
+						{"name": "Jyuratodus Scale", "amount": 3},
+						{"name": "Aqua Sac", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 2},
+						{"value": 2, "amount": 7},
+						{"value": 3, "amount": 3}
+					],
+					"remove": [{"name": "Burst", "amount": 2}],
+					"add": [{"name": "Water Burst", "amount": 2}],
+					"armor": 1
+				},
+				{
+					"name": "Jyrua Buster",
+					"rarity": 3,
+					"icon": "monsters/jyuratodus",
+					"parts": [
+						{"name": "Jyuratodus Fin", "amount": 1},
+						{"name": "Jyuratodus Carapace", "amount": 2},
+						{"name": "Jyuratodus Scale", "amount": 2},
+						{"name": "Aqua Sac", "amount": 1},
+						{"name": "Gajau Scale", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 2},
+						{"value": 2, "amount": 7},
+						{"value": 3, "amount": 5}
+					],
+					"remove": [
+						{"name": "Burst", "amount": 2},
+						{"name": "Wyrmstake Cannon", "amount": 2}
+					],
+					"add": [
+						{"name": "Water Burst", "amount": 2},
+						{"name": "Tidal Wyrmstake Cannon", "amount": 2}
+					],
+					"armor": 1
+				}
+			]
+		}
+	],
 	"kulu": [],
 	"teostra": [],
 	"nergigante": [],

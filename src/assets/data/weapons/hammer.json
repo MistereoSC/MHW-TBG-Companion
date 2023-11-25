@@ -1,7 +1,371 @@
 {
-	"basic": [],
-	"ancient_forest": [],
-	"wildspire_waste": [],
+	"basic": [
+		{
+			"name": "Ore",
+			"icon": "items/ore_0",
+			"weapons": [
+				{
+					"name": "Iron Hammer",
+					"rarity": 0,
+					"icon": "items/ore_0",
+					"parts": [],
+					"damage": [
+						{"value": 1, "amount": 10},
+						{"value": 2, "amount": 1},
+						{"value": 4, "amount": 1}
+					],
+					"remove": [],
+					"add": []
+				},
+				{
+					"name": "Iron Demon",
+					"rarity": 1,
+					"icon": "items/ore_0",
+					"parts": [
+						{"name": "Dragonite Ore", "amount": 1},
+						{"name": "Malachite Ore", "amount": 1},
+						{"name": "Monster Bone M", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 8},
+						{"value": 2, "amount": 2},
+						{"value": 4, "amount": 2}
+					],
+					"remove": [{"name": "Rare Steak", "amount": 2}],
+					"add": [{"name": "Well-Done Steak", "amount": 2}]
+				},
+				{
+					"name": "Iron Archdemon",
+					"rarity": 2,
+					"icon": "items/ore_0",
+					"parts": [
+						{"name": "Dragonite Ore", "amount": 3},
+						{"name": "Carbalite Ore", "amount": 2},
+						{"name": "Fucium Ore", "amount": 2},
+						{"name": "Dragonvein Crystal", "amount": 2}
+					],
+					"damage": [
+						{"value": 1, "amount": 6},
+						{"value": 2, "amount": 3},
+						{"value": 4, "amount": 3}
+					],
+					"remove": [
+						{"name": "Rare Steak", "amount": 2},
+						{"name": "Upswing", "amount": 2}
+					],
+					"add": [
+						{"name": "Well-Done Steak", "amount": 2},
+						{"name": "Improved Upswing", "amount": 2}
+					]
+				}
+			]
+		},
+		{
+			"name": "Bone",
+			"icon": "items/bone_1",
+			"weapons": [
+				{
+					"name": "Bone Bludgeon",
+					"rarity": 0,
+					"icon": "items/bone_1",
+					"parts": [{"name": "Monster Bone S", "amount": 1}],
+					"damage": [
+						{"value": 1, "amount": 7},
+						{"value": 2, "amount": 2},
+						{"value": 4, "amount": 1}
+					],
+					"add": [],
+					"remove": []
+				},
+				{
+					"name": "Fossil Bludgeon",
+					"rarity": 1,
+					"icon": "items/ore_0",
+					"parts": [
+						{"name": "Monster Bone M", "amount": 1},
+						{"name": "Monster Bone L", "amount": 1},
+						{"name": "Boulder Bone", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 5},
+						{"value": 2, "amount": 3},
+						{"value": 4, "amount": 2}
+					],
+					"remove": [{"name": "Charge", "amount": 4}],
+					"add": [{"name": "Improved Charge", "amount": 4}]
+				},
+				{
+					"name": "Grandrock",
+					"rarity": 2,
+					"icon": "items/ore_0",
+					"parts": [
+						{"name": "Monster Hardbone", "amount": 2},
+						{"name": "Monster Keenbone", "amount": 2},
+						{"name": "Quality Bone", "amount": 3}
+					],
+					"damage": [
+						{"value": 1, "amount": 4},
+						{"value": 2, "amount": 3},
+						{"value": 4, "amount": 3}
+					],
+					"remove": [
+						{"name": "Charge", "amount": 4},
+						{"name": "Spinning Bludgeon", "amount": 2}
+					],
+					"add": [
+						{"name": "Improved Charge", "amount": 4},
+						{"name": "Improved Spinning Bludgeon", "amount": 2}
+					]
+				}
+			]
+		}
+	],
+	"ancient_forest": [
+		{
+			"name": "Anjanath",
+			"icon": "monsters/anjanath",
+			"weapons": [
+				{
+					"name": "Bone Bludgeon",
+					"rarity": 0,
+					"icon": "items/bone_1",
+					"parts": [{"name": "Monster Bone S", "amount": 1}],
+					"damage": [
+						{"value": 1, "amount": 7},
+						{"value": 2, "amount": 2},
+						{"value": 4, "amount": 1}
+					],
+					"add": [],
+					"remove": []
+				},
+				{
+					"name": "Blazing Hammer",
+					"rarity": 2,
+					"icon": "monsters/anjanath",
+					"parts": [
+						{"name": "Anjanath Scale", "amount": 3},
+						{"name": "Anjanath Fang", "amount": 2},
+						{"name": "Flame Sac", "amount": 1}
+					],
+					"damage": [
+						{"value": 2, "amount": 8},
+						{"value": 4, "amount": 2}
+					],
+					"remove": [{"name": "Big Bang", "amount": 4}],
+					"add": [{"name": "Blazing Big Bang", "amount": 4}]
+				},
+				{
+					"name": "Anja Striker",
+					"rarity": 3,
+					"icon": "monsters/anjanath",
+					"parts": [
+						{"name": "Anjanath Fang", "amount": 4},
+						{"name": "Anjanath Scale", "amount": 2},
+						{"name": "Inferno Sac", "amount": 1}
+					],
+					"damage": [
+						{"value": 2, "amount": 9},
+						{"value": 4, "amount": 3}
+					],
+					"remove": [
+						{"name": "Big Bang", "amount": 4},
+						{"name": "Charged Upswing", "amount": 2}
+					],
+					"add": [
+						{"name": "Blazing Big Bang", "amount": 4},
+						{"name": "Blazing Charged Upswing", "amount": 2}
+					],
+					"armor": 1
+				}
+			]
+		}
+	],
+	"wildspire_waste": [
+		{
+			"name": "Pukei-Pukei",
+			"icon": "monsters/pukei",
+			"weapons": [
+				{
+					"name": "Iron Hammer",
+					"rarity": 0,
+					"icon": "items/ore_0",
+					"parts": [],
+					"damage": [
+						{"value": 1, "amount": 10},
+						{"value": 2, "amount": 1},
+						{"value": 4, "amount": 1}
+					],
+					"remove": [],
+					"add": []
+				},
+				{
+					"name": "Blooming Hammer",
+					"rarity": 2,
+					"icon": "monsters/pukei",
+					"parts": [
+						{"name": "Pukei-Pukei Quill", "amount": 2},
+						{"name": "Pukei-Pukei Scale", "amount": 3},
+						{"name": "Poison Sac", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 1},
+						{"value": 2, "amount": 8},
+						{"value": 4, "amount": 3}
+					],
+					"remove": [
+						{"name": "Side Smash", "amount": 2},
+						{"name": "Poisoned Side Smash", "amount": 2}
+					],
+					"add": [{"name": "Poison Spin Slash", "amount": 2}]
+				},
+				{
+					"name": "Buon Fiore",
+					"rarity": 3,
+					"icon": "monsters/pukei",
+					"parts": [
+						{"name": "Pukei-Pukei Scale", "amount": 3},
+						{"name": "Pukei-Pukei Wing", "amount": 2},
+						{"name": "Toxin Sac", "amount": 2},
+						{"name": "Quality Bone", "amount": 3}
+					],
+					"damage": [
+						{"value": 1, "amount": 1},
+						{"value": 2, "amount": 9},
+						{"value": 4, "amount": 4}
+					],
+					"remove": [
+						{"name": "Side Smash", "amount": 2},
+						{"name": "Charged Upswing", "amount": 2}
+					],
+					"add": [
+						{"name": "Poisoned Side Smash", "amount": 2},
+						{"name": "Poison Charged Upswing", "amount": 2}
+					]
+				}
+			]
+		},
+		{
+			"name": "Barroth",
+			"icon": "monsters/barroth",
+			"weapons": [
+				{
+					"name": "Bone Bludgeon",
+					"rarity": 0,
+					"icon": "items/bone_1",
+					"parts": [{"name": "Monster Bone S", "amount": 1}],
+					"damage": [
+						{"value": 1, "amount": 7},
+						{"value": 2, "amount": 2},
+						{"value": 4, "amount": 1}
+					],
+					"add": [],
+					"remove": []
+				},
+				{
+					"name": "Carapace Sledge",
+					"rarity": 2,
+					"icon": "monsters/barroth",
+					"parts": [
+						{"name": "Barroth Claw", "amount": 1},
+						{"name": "Barroth Shell", "amount": 4},
+						{"name": "Barroth Ridge", "amount": 2}
+					],
+					"damage": [
+						{"value": 1, "amount": 4},
+						{"value": 2, "amount": 2},
+						{"value": 4, "amount": 4}
+					],
+					"remove": [{"name": "Spinning Bludgeon", "amount": 2}],
+					"add": [{"name": "Brutal Bludgeon", "amount": 2}]
+				},
+				{
+					"name": "Barroth Breaker",
+					"rarity": 3,
+					"icon": "monsters/barroth",
+					"parts": [
+						{"name": "Barroth Claw", "amount": 2},
+						{"name": "Barroth Carapace", "amount": 3},
+						{"name": "Barroth Ridge", "amount": 2}
+					],
+					"damage": [
+						{"value": 1, "amount": 2},
+						{"value": 2, "amount": 5},
+						{"value": 4, "amount": 5}
+					],
+					"remove": [
+						{"name": "Spinning Bludgeon", "amount": 2},
+						{"name": "Charged Brutal Big Bang", "amount": 2}
+					],
+					"add": [
+						{"name": "Brutal Bludgeon", "amount": 2},
+						{"name": "Pulverizing Brutal Big Bang", "amount": 2}
+					]
+				}
+			]
+		},
+		{
+			"name": "Diablos",
+			"icon": "monsters/diablos",
+			"weapons": [
+				{
+					"name": "Bone Bludgeon",
+					"rarity": 0,
+					"icon": "items/bone_1",
+					"parts": [{"name": "Monster Bone S", "amount": 1}],
+					"damage": [
+						{"value": 1, "amount": 7},
+						{"value": 2, "amount": 2},
+						{"value": 4, "amount": 1}
+					],
+					"add": [],
+					"remove": []
+				},
+				{
+					"name": "Diablos Sledge",
+					"rarity": 2,
+					"icon": "monsters/diablos",
+					"parts": [
+						{"name": "Diablos Fang", "amount": 2},
+						{"name": "Diablos Shell", "amount": 4},
+						{"name": "Twisted Horn", "amount": 1},
+						{"name": "Monster Bone L", "amount": 3}
+					],
+					"damage": [
+						{"value": 1, "amount": 4},
+						{"value": 1, "amount": 3},
+						{"value": 4, "amount": 5}
+					],
+					"remove": [{"name": "Big Bang", "amount": 4}],
+					"add": [{"name": "Crippling Big Bang", "amount": 4}]
+				},
+				{
+					"name": "Diablos Shatterer",
+					"rarity": 3,
+					"icon": "monsters/diablos",
+					"parts": [
+						{"name": "Diablos Carapace", "amount": 2},
+						{"name": "Diablos Ridge", "amount": 2},
+						{"name": "Majestic Horn", "amount": 2},
+						{"name": "Blos Medulla", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 3},
+						{"value": 2, "amount": 5},
+						{"value": 4, "amount": 6}
+					],
+					"remove": [
+						{"name": "Big Bang", "amount": 4},
+						{"name": "Upswing", "amount": 2}
+					],
+					"add": [
+						{"name": "Crippling Big Bang", "amount": 4},
+						{"name": "Brutal Upswing", "amount": 2}
+					],
+					"armor": 1
+				}
+			]
+		}
+	],
 	"kulu": [],
 	"teostra": [],
 	"nergigante": [],

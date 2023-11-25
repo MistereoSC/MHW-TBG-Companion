@@ -1,7 +1,379 @@
 {
-	"basic": [],
-	"ancient_forest": [],
-	"wildspire_waste": [],
+	"basic": [
+		{
+			"name": "Ore",
+			"icon": "items/ore_0",
+			"weapons": [
+				{
+					"name": "Iron Lance",
+					"rarity": 0,
+					"icon": "items/ore_0",
+					"parts": [],
+					"damage": [
+						{"value": 1, "amount": 8},
+						{"value": 2, "amount": 4}
+					],
+					"remove": [],
+					"add": [],
+					"armor": 1
+				},
+				{
+					"name": "Steel Lance",
+					"rarity": 1,
+					"icon": "items/ore_0",
+					"parts": [
+						{"name": "Dragonite Ore", "amount": 1},
+						{"name": "Malachite Ore", "amount": 1},
+						{"name": "Monster Bone M", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 6},
+						{"value": 2, "amount": 6}
+					],
+					"remove": [{"name": "Mid Thrust", "amount": 3}],
+					"add": [{"name": "Long Thrust", "amount": 3}],
+					"armor": 1
+				},
+				{
+					"name": "Chrome Lance",
+					"rarity": 2,
+					"icon": "items/ore_0",
+					"parts": [
+						{"name": "Dragonite Ore", "amount": 3},
+						{"name": "Carbalite Ore", "amount": 2},
+						{"name": "Fucium Ore", "amount": 2},
+						{"name": "Dragonvein Crystal", "amount": 2}
+					],
+					"damage": [
+						{"value": 1, "amount": 4},
+						{"value": 2, "amount": 6},
+						{"value": 3, "amount": 2}
+					],
+					"remove": [
+						{"name": "Mid Thrust", "amount": 3},
+						{"name": "Guard Thrust", "amount": 2}
+					],
+					"add": [
+						{"name": "Long Thrust", "amount": 3},
+						{"name": "ILong Guard", "amount": 2}
+					],
+					"armor": 1
+				}
+			]
+		},
+		{
+			"name": "Bone",
+			"icon": "items/bone_1",
+			"weapons": [
+				{
+					"name": "Bone Lance",
+					"rarity": 0,
+					"icon": "items/bone_1",
+					"parts": [{"name": "Monster Bone S", "amount": 1}],
+					"damage": [
+						{"value": 1, "amount": 6},
+						{"value": 2, "amount": 4}
+					],
+					"add": [],
+					"remove": [],
+					"armor": 1
+				},
+				{
+					"name": "Hard Bone Lance",
+					"rarity": 1,
+					"icon": "items/bone_1",
+					"parts": [
+						{"name": "Monster Bone M", "amount": 1},
+						{"name": "Monster Bone L", "amount": 1},
+						{"name": "Boulder Bone", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 4},
+						{"value": 2, "amount": 6}
+					],
+					"remove": [{"name": "High Thrust", "amount": 3}],
+					"add": [{"name": "High Lunge", "amount": 3}],
+					"armor": 1
+				},
+				{
+					"name": "Heavy Bone Lance",
+					"rarity": 2,
+					"icon": "items/bone_1",
+					"parts": [
+						{"name": "Monster Hardbone", "amount": 2},
+						{"name": "Monster Keenbone", "amount": 2},
+						{"name": "Quality Bone", "amount": 3}
+					],
+					"damage": [
+						{"value": 1, "amount": 3},
+						{"value": 2, "amount": 4},
+						{"value": 3, "amount": 3}
+					],
+					"remove": [
+						{"name": "High Thrust", "amount": 3},
+						{"name": "Guard Dash", "amount": 2}
+					],
+					"add": [
+						{"name": "High Lunge", "amount": 3},
+						{"name": "Guard Sprint", "amount": 2}
+					],
+					"armor": 1
+				}
+			]
+		}
+	],
+	"ancient_forest": [
+		{
+			"name": "Tobi-Kadachi",
+			"icon": "monsters/tobi",
+			"weapons": [
+				{
+					"name": "Bone Lance",
+					"rarity": 0,
+					"icon": "items/bone_1",
+					"parts": [{"name": "Monster Bone S", "amount": 1}],
+					"damage": [
+						{"value": 1, "amount": 6},
+						{"value": 2, "amount": 4}
+					],
+					"add": [],
+					"remove": [],
+					"armor": 1
+				},
+				{
+					"name": "Thunder Lance",
+					"rarity": 2,
+					"icon": "monsters/tobi",
+					"parts": [
+						{"name": "Dragonite Ore", "amount": 2},
+						{"name": "Tobi-Kadachi Electrode", "amount": 1},
+						{"name": "Electro Sac", "amount": 2},
+						{"name": "Coral Crystal", "amount": 2}
+					],
+					"damage": [
+						{"value": 1, "amount": 3},
+						{"value": 2, "amount": 6},
+						{"value": 3, "amount": 3}
+					],
+					"remove": [{"name": "Mid Thrust", "amount": 3}],
+					"add": [{"name": "Static Thrust", "amount": 3}],
+					"armor": 1
+				},
+				{
+					"name": "Lightning Spire",
+					"rarity": 3,
+					"icon": "monsters/tobi",
+					"parts": [
+						{"name": "Fucium Ore", "amount": 2},
+						{"name": "Tobi-Kadachi Electrode", "amount": 2},
+						{"name": "Tobi-Kadachi Claw", "amount": 2},
+						{"name": "Thunder Sac", "amount": 1}
+					],
+					"damage": [
+						{"value": 2, "amount": 2},
+						{"value": 3, "amount": 7},
+						{"value": 4, "amount": 5}
+					],
+					"remove": [
+						{"name": "Mid Thrust", "amount": 3},
+						{"name": "Guard Thrust", "amount": 2}
+					],
+					"add": [
+						{"name": "Static Thrust", "amount": 3},
+						{"name": "Static Guard", "amount": 2}
+					],
+					"armor": 1
+				}
+			]
+		},
+		{
+			"name": "Rathalos",
+			"icon": "monsters/rathalos",
+			"weapons": [
+				{
+					"name": "Iron Lance",
+					"rarity": 0,
+					"icon": "items/ore_0",
+					"parts": [],
+					"damage": [
+						{"value": 1, "amount": 8},
+						{"value": 2, "amount": 4}
+					],
+					"remove": [],
+					"add": [],
+					"armor": 1
+				},
+				{
+					"name": "Flame Lance",
+					"rarity": 2,
+					"icon": "monsters/rathalos",
+					"parts": [
+						{"name": "Rathalos Scale", "amount": 2},
+						{"name": "Rathalos Webbing", "amount": 2},
+						{"name": "Rathalos Marrow", "amount": 1},
+						{"name": "Inferno Sac", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 4},
+						{"value": 2, "amount": 4},
+						{"value": 3, "amount": 4}
+					],
+					"remove": [{"name": "Counter Thrust", "amount": 2}],
+					"add": [{"name": "Flaming Thrust", "amount": 2}]
+				},
+				{
+					"name": "Red Tail",
+					"rarity": 3,
+					"icon": "monsters/rathalos",
+					"parts": [
+						{"name": "Rathalos Scale", "amount": 2},
+						{"name": "Rathalos Carapace", "amount": 1},
+						{"name": "Rathalos Wing", "amount": 1},
+						{"name": "Rathalos Medulla", "amount": 1}
+					],
+					"damage": [
+						{"value": 2, "amount": 7},
+						{"value": 3, "amount": 7}
+					],
+					"remove": [
+						{"name": "Counter Thrust", "amount": 2},
+						{"name": "Guard Dash", "amount": 2}
+					],
+					"add": [
+						{"name": "Flaming Thrust", "amount": 2},
+						{"name": "Flaming Dash", "amount": 2}
+					],
+					"armor": 1
+				}
+			]
+		}
+	],
+	"wildspire_waste": [
+		{
+			"name": "Barroth",
+			"icon": "monsters/barroth",
+			"weapons": [
+				{
+					"name": "Bone Gunlance",
+					"rarity": 0,
+					"icon": "items/bone_1",
+					"parts": [{"name": "Monster Bone S", "amount": 1}],
+					"damage": [
+						{"value": 1, "amount": 5},
+						{"value": 2, "amount": 5}
+					],
+					"add": [],
+					"remove": [],
+					"armor": 1
+				},
+				{
+					"name": "Carapace Lance",
+					"rarity": 2,
+					"icon": "monsters/barroth",
+					"parts": [
+						{"name": "Barroth claw", "amount": 1},
+						{"name": "Barroth Shell", "amount": 3},
+						{"name": "Barroth Ridge", "amount": 3}
+					],
+					"damage": [
+						{"value": 1, "amount": 2},
+						{"value": 2, "amount": 5},
+						{"value": 3, "amount": 3}
+					],
+					"remove": [{"name": "Counter Thrust", "amount": 2}],
+					"add": [{"name": "Armoured Thrust", "amount": 2}],
+					"armor": 1
+				},
+				{
+					"name": "Barroth Stinger",
+					"rarity": 3,
+					"icon": "monsters/barroth",
+					"parts": [
+						{"name": "Barroth Claw", "amount": 2},
+						{"name": "Barroth Carapace", "amount": 3},
+						{"name": "Barroth Ridge", "amount": 3}
+					],
+					"damage": [
+						{"value": 2, "amount": 9},
+						{"value": 3, "amount": 3}
+					],
+					"remove": [
+						{"name": "Counter Thrust", "amount": 2},
+						{"name": "Guard Thrust", "amount": 2}
+					],
+					"add": [
+						{"name": "Armoured Thrust", "amount": 2},
+						{"name": "Armour Guard", "amount": 2}
+					],
+					"armor": 1
+				}
+			]
+		},
+		{
+			"name": "Jyuratodus",
+			"icon": "monsters/jyuratodus",
+			"weapons": [
+				{
+					"name": "Bone Lance",
+					"rarity": 0,
+					"icon": "items/bone_1",
+					"parts": [{"name": "Monster Bone S", "amount": 1}],
+					"damage": [
+						{"value": 1, "amount": 6},
+						{"value": 2, "amount": 4}
+					],
+					"add": [],
+					"remove": [],
+					"armor": 1
+				},
+				{
+					"name": "Aqua Horn",
+					"rarity": 2,
+					"icon": "monsters/jyuratodus",
+					"parts": [
+						{"name": "Jyuratodus Fin", "amount": 1},
+						{"name": "Jyuratodus Shell", "amount": 2},
+						{"name": "Jyuratodus Scale", "amount": 3},
+						{"name": "Boulder Bone", "amount": 2},
+						{"name": "Aqua Sac", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 2},
+						{"value": 2, "amount": 4},
+						{"value": 3, "amount": 4}
+					],
+					"remove": [{"name": "High Thrust", "amount": 3}],
+					"add": [{"name": "Aqua Thrust", "amount": 3}],
+					"armor": 1
+				},
+				{
+					"name": "Water Spike",
+					"rarity": 3,
+					"icon": "monsters/jyuratodus",
+					"parts": [
+						{"name": "Jyuratodus Fin", "amount": 1},
+						{"name": "Jyuratodus Carapace", "amount": 2},
+						{"name": "Jyuratodus Scale", "amount": 2},
+						{"name": "Aqua Sac", "amount": 1},
+						{"name": "Gajau Scale", "amount": 1}
+					],
+					"damage": [
+						{"value": 2, "amount": 6},
+						{"value": 3, "amount": 6}
+					],
+					"remove": [
+						{"name": "High Thrust", "amount": 3},
+						{"name": "Guard Bash", "amount": 2}
+					],
+					"add": [
+						{"name": "Aqua Thrust", "amount": 3},
+						{"name": "Aqua Bash", "amount": 2}
+					],
+					"armor": 1
+				}
+			]
+		}
+	],
 	"kulu": [],
 	"teostra": [],
 	"nergigante": [],

@@ -1,7 +1,256 @@
 {
-	"basic": [],
+	"basic": [
+		{
+			"name": "Ore",
+			"icon": "items/ore_0",
+			"weapons": [
+				{
+					"name": "Proto Commission Axe",
+					"rarity": 0,
+					"icon": "items/ore_0",
+					"parts": [],
+					"damage": [
+						{"value": 1, "amount": 8},
+						{"value": 2, "amount": 4}
+					],
+					"remove": [],
+					"add": []
+				},
+				{
+					"name": "Elite Commission Axe",
+					"rarity": 1,
+					"icon": "items/ore_0",
+					"parts": [
+						{"name": "Dragonite Ore", "amount": 1},
+						{"name": "Malachite Ore", "amount": 1},
+						{"name": "Monster Bone M", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 8},
+						{"value": 2, "amount": 3},
+						{"value": 3, "amount": 1}
+					],
+					"remove": [{"name": "Return Stroke", "amount": 3}],
+					"add": [{"name": "Powered Stroke", "amount": 3}]
+				},
+				{
+					"name": "Chrome Guardian",
+					"rarity": 2,
+					"icon": "items/ore_0",
+					"parts": [
+						{"name": "Dragonite Ore", "amount": 3},
+						{"name": "Carbalite Ore", "amount": 2},
+						{"name": "Fucium Ore", "amount": 2},
+						{"name": "Dragonvein Crystal", "amount": 2}
+					],
+					"damage": [
+						{"value": 1, "amount": 5},
+						{"value": 2, "amount": 4},
+						{"value": 3, "amount": 3}
+					],
+					"remove": [
+						{"name": "Return Stroke", "amount": 3},
+						{"name": "Shield Block", "amount": 3}
+					],
+					"add": [
+						{"name": "Powered Stroke", "amount": 3},
+						{"name": "Solid Block", "amount": 3}
+					],
+					"armor": 1
+				}
+			]
+		},
+		{
+			"name": "Bone",
+			"icon": "items/bone_1",
+			"weapons": [
+				{
+					"name": "Bone Strongarm",
+					"rarity": 0,
+					"icon": "items/bone_1",
+					"parts": [{"name": "Monster Bone S", "amount": 1}],
+					"damage": [
+						{"value": 1, "amount": 5},
+						{"value": 2, "amount": 5}
+					],
+					"add": [],
+					"remove": []
+				},
+				{
+					"name": "Hard Bone Strongarm",
+					"rarity": 1,
+					"icon": "items/ore_0",
+					"parts": [
+						{"name": "Monster Bone M", "amount": 1},
+						{"name": "Monster Bone L", "amount": 1},
+						{"name": "Boulder Bone", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 4},
+						{"value": 2, "amount": 5},
+						{"value": 3, "amount": 1}
+					],
+					"remove": [{"name": "Charged Rising Slash", "amount": 2}],
+					"add": [{"name": "Quick Rising Slash", "amount": 2}]
+				},
+				{
+					"name": "Mighty Strongarm",
+					"rarity": 2,
+					"icon": "items/ore_0",
+					"parts": [
+						{"name": "Monster Hardbone", "amount": 2},
+						{"name": "Monster Keenbone", "amount": 2},
+						{"name": "Quality Bone", "amount": 3}
+					],
+					"damage": [
+						{"value": 1, "amount": 3},
+						{"value": 2, "amount": 4},
+						{"value": 3, "amount": 3}
+					],
+					"remove": [
+						{"name": "Charged Rising Slash", "amount": 2},
+						{"name": "Forward Slash", "amount": 2}
+					],
+					"add": [
+						{"name": "Quick Rising Slash", "amount": 2},
+						{"name": "Lunging Slash", "amount": 2}
+					],
+					"armor": 1
+				}
+			]
+		}
+	],
 	"ancient_forest": [],
-	"wildspire_waste": [],
+	"wildspire_waste": [
+		{
+			"name": "Jyuratodus",
+			"icon": "monsters/jyuratodus",
+			"weapons": [
+				{
+					"name": "Proto Commission Axe",
+					"rarity": 0,
+					"icon": "items/ore_0",
+					"parts": [],
+					"damage": [
+						{"value": 1, "amount": 8},
+						{"value": 2, "amount": 4}
+					],
+					"remove": [],
+					"add": []
+				},
+				{
+					"name": "Mudslide Blade",
+					"rarity": 2,
+					"icon": "monsters/jyuratodus",
+					"parts": [
+						{"name": "Jyuratodus Fin", "amount": 1},
+						{"name": "Jyuratodus Shell", "amount": 2},
+						{"name": "Jyuratodus Scale", "amount": 3},
+						{"name": "Aqua Sac", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 3},
+						{"value": 2, "amount": 4},
+						{"value": 3, "amount": 5}
+					],
+					"remove": [{"name": "Elemental Round Slash", "amount": 2}],
+					"add": [{"name": "Slippery Round Slash", "amount": 2}],
+					"armor": 1
+				},
+				{
+					"name": "Jyura Depth",
+					"rarity": 3,
+					"icon": "monsters/jyuratodus",
+					"parts": [
+						{"name": "Jyuratodus Fin", "amount": 1},
+						{"name": "Jyuratodus Carapace", "amount": 2},
+						{"name": "Jyuratodus Scale", "amount": 2},
+						{"name": "Aqua Sac", "amount": 1},
+						{"name": "Gajau Scale", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 1},
+						{"value": 2, "amount": 6},
+						{"value": 3, "amount": 5},
+						{"value": 4, "amount": 2}
+					],
+					"remove": [
+						{"name": "Elemental Round Slash", "amount": 2},
+						{"name": "Amped Elemental Discharge", "amount": 2}
+					],
+					"add": [
+						{"name": "Slippery Round Slash", "amount": 2},
+						{"name": "Water Elemental Discharge", "amount": 2}
+					],
+					"armor": 1
+				}
+			]
+		},
+		{
+			"name": "Diablos",
+			"icon": "monsters/diablos",
+			"weapons": [
+				{
+					"name": "Bone Strongarm",
+					"rarity": 0,
+					"icon": "items/bone_1",
+					"parts": [{"name": "Monster Bone S", "amount": 1}],
+					"damage": [
+						{"value": 1, "amount": 5},
+						{"value": 2, "amount": 5}
+					],
+					"add": [],
+					"remove": []
+				},
+				{
+					"name": "Diablos Wall",
+					"rarity": 2,
+					"icon": "monsters/diablos",
+					"parts": [
+						{"name": "Diablos Fang", "amount": 2},
+						{"name": "Diablos Shell", "amount": 4},
+						{"name": "Twisted Horn", "amount": 1},
+						{"name": "Monster Bone L", "amount": 2}
+					],
+					"damage": [
+						{"value": 1, "amount": 1},
+						{"value": 2, "amount": 7},
+						{"value": 3, "amount": 1},
+						{"value": 4, "amount": 1}
+					],
+					"remove": [{"name": "Weak Slash", "amount": 2}],
+					"add": [{"name": "Deft Slash", "amount": 2}],
+					"armor": 1
+				},
+				{
+					"name": "Diablos Tyrannis",
+					"rarity": 3,
+					"icon": "monsters/diablos",
+					"parts": [
+						{"name": "Diablos Carapace", "amount": 2},
+						{"name": "Diablos Ridge", "amount": 2},
+						{"name": "Majestic Horn", "amount": 2},
+						{"name": "Blos Medulla", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 2},
+						{"value": 2, "amount": 5},
+						{"value": 3, "amount": 2},
+						{"value": 4, "amount": 3}
+					],
+					"remove": [
+						{"name": "Weak Slash", "amount": 2},
+						{"name": "Elemental Discharge", "amount": 2}
+					],
+					"add": [
+						{"name": "Deft Slash", "amount": 2},
+						{"name": "Crippling Discharge", "amount": 2}
+					],
+					"armor": 1
+				}
+			]
+		}
+	],
 	"kulu": [],
 	"teostra": [],
 	"nergigante": [],

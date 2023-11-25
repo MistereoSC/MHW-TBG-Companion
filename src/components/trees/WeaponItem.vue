@@ -40,6 +40,11 @@ const props = defineProps<{
 						<span class="item__stats__number --dark">{{ item.armor }}</span>
 					</Shield>
 				</div>
+				<div class="item__stats__element --shield" v-if="item.deviation !== undefined">
+					<div class="item__stats__image">
+						<img class="item__stats__icon" :src="`/icons/items/bullet_${item.deviation}.png`" />
+					</div>
+				</div>
 				<div class="item__stats__element --icon" v-for="dmg in item.damage">
 					<div class="item__stats__image">
 						<img class="item__stats__icon" src="/icons/misc/damage_card.png" />
@@ -149,9 +154,6 @@ const props = defineProps<{
 			&.--icon {
 				width: 50px;
 			}
-			&.--shield {
-				margin-right: 6px;
-			}
 		}
 		&__image {
 			position: relative;
@@ -187,8 +189,8 @@ const props = defineProps<{
 	}
 	&__deck {
 		&__table {
-			min-height: 74px;
-			margin-top: -4px;
+			min-height: 80px;
+			margin-top: -6px;
 			display: grid;
 			grid-template-columns: 1fr 10px 1fr;
 			&.--single {
