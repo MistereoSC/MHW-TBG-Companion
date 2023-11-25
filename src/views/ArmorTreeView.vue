@@ -3,7 +3,11 @@ import ArmorSetsByExpansion from '@/assets/data/armor.json'
 import {onMounted} from 'vue'
 import ArmorSet from '@/components/trees/ArmorSet.vue'
 
-const PAGE_DIRECTION = 'horizontal' as 'horizontal' | 'vertical'
+import {useSettingsStore} from '@/stores/settings'
+const settingsStore = useSettingsStore()
+
+const PAGE_DIRECTION =
+	settingsStore.settingsData?.general.armor_direction_vertical === true ? 'vertical' : 'horizontal'
 
 onMounted(() => {
 	if (PAGE_DIRECTION === 'horizontal') {
@@ -36,45 +40,75 @@ onMounted(() => {
 				></ArmorSet>
 			</div>
 
-			<div class="separator"></div>
+			<div
+				class="separator"
+				v-if="settingsStore.settingsData?.owned_expansions.ancient_forest"
+			></div>
 
-			<div class="set" v-for="set in ArmorSetsByExpansion.ancient_forest">
+			<div
+				class="set"
+				v-for="set in ArmorSetsByExpansion.ancient_forest"
+				v-if="settingsStore.settingsData?.owned_expansions.ancient_forest"
+			>
 				<ArmorSet
 					:set="set"
 					:direction="PAGE_DIRECTION === 'vertical' ? 'horizontal' : 'vertical'"
 				></ArmorSet>
 			</div>
 
-			<div class="separator"></div>
+			<div
+				class="separator"
+				v-if="settingsStore.settingsData?.owned_expansions.wildspire_waste"
+			></div>
 
-			<div class="set" v-for="set in ArmorSetsByExpansion.wildspire_waste">
+			<div
+				class="set"
+				v-for="set in ArmorSetsByExpansion.wildspire_waste"
+				v-if="settingsStore.settingsData?.owned_expansions.wildspire_waste"
+			>
 				<ArmorSet
 					:set="set"
 					:direction="PAGE_DIRECTION === 'vertical' ? 'horizontal' : 'vertical'"
 				></ArmorSet>
 			</div>
 
-			<div class="separator"></div>
+			<div class="separator" v-if="settingsStore.ownsNonBaseExpansion()"></div>
 
-			<div class="set" v-for="set in ArmorSetsByExpansion.kulu">
+			<div
+				class="set"
+				v-for="set in ArmorSetsByExpansion.kulu"
+				v-if="settingsStore.settingsData?.owned_expansions.kulu"
+			>
 				<ArmorSet
 					:set="set"
 					:direction="PAGE_DIRECTION === 'vertical' ? 'horizontal' : 'vertical'"
 				></ArmorSet>
 			</div>
-			<div class="set" v-for="set in ArmorSetsByExpansion.teostra">
+			<div
+				class="set"
+				v-for="set in ArmorSetsByExpansion.teostra"
+				v-if="settingsStore.settingsData?.owned_expansions.teostra"
+			>
 				<ArmorSet
 					:set="set"
 					:direction="PAGE_DIRECTION === 'vertical' ? 'horizontal' : 'vertical'"
 				></ArmorSet>
 			</div>
-			<div class="set" v-for="set in ArmorSetsByExpansion.nergigante">
+			<div
+				class="set"
+				v-for="set in ArmorSetsByExpansion.nergigante"
+				v-if="settingsStore.settingsData?.owned_expansions.nergigante"
+			>
 				<ArmorSet
 					:set="set"
 					:direction="PAGE_DIRECTION === 'vertical' ? 'horizontal' : 'vertical'"
 				></ArmorSet>
 			</div>
-			<div class="set" v-for="set in ArmorSetsByExpansion.kushala">
+			<div
+				class="set"
+				v-for="set in ArmorSetsByExpansion.kushala"
+				v-if="settingsStore.settingsData?.owned_expansions.kushala"
+			>
 				<ArmorSet
 					:set="set"
 					:direction="PAGE_DIRECTION === 'vertical' ? 'horizontal' : 'vertical'"

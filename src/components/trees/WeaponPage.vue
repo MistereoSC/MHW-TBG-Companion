@@ -2,10 +2,15 @@
 import {onMounted, ref, watch} from 'vue'
 import {type IWeaponSet, type IExpansions, EWeapons} from '@/components/interfaces/items'
 import WeaponSet from './WeaponSet.vue'
-
 import Greatsword from '@/assets/data/weapons/greatsword.json'
+import Gunlance from '@/assets/data/weapons/gunlance.json'
+import {useSettingsStore} from '@/stores/settings'
+const settingsStore = useSettingsStore()
 
-const PAGE_DIRECTION = 'vertical' as 'horizontal' | 'vertical'
+const PAGE_DIRECTION =
+	settingsStore.settingsData?.general.weapon_direction_vertical === false
+		? 'horizontal'
+		: 'vertical'
 
 const activeWeaponJson = ref(Greatsword as IExpansions<Array<IWeaponSet>>)
 onMounted(async () => {
@@ -57,9 +62,7 @@ async function selectActivePage(type: EWeapons) {
 			break
 		// Wildspire Waste
 		case EWeapons.Gunlance:
-			activeWeaponJson.value = await import(
-				/* webpackChunkName: "Gunlance" */ '@/assets/data/weapons/gunlance.json'
-			)
+			activeWeaponJson.value = Gunlance
 			break
 		case EWeapons.Chargeblade:
 			activeWeaponJson.value = await import(
@@ -130,9 +133,16 @@ async function selectActivePage(type: EWeapons) {
 				></WeaponSet>
 			</div>
 
-			<div class="separator"></div>
+			<div
+				class="separator"
+				v-if="settingsStore.settingsData?.owned_expansions.ancient_forest"
+			></div>
 
-			<div class="set" v-for="set in activeWeaponJson.ancient_forest">
+			<div
+				class="set"
+				v-for="set in activeWeaponJson.ancient_forest"
+				v-if="settingsStore.settingsData?.owned_expansions.ancient_forest"
+			>
 				<WeaponSet
 					:weapon_class="active_weapon"
 					:set="set"
@@ -140,8 +150,15 @@ async function selectActivePage(type: EWeapons) {
 				></WeaponSet>
 			</div>
 
-			<div class="separator"></div>
-			<div class="set" v-for="set in activeWeaponJson.wildspire_waste">
+			<div
+				class="separator"
+				v-if="settingsStore.settingsData?.owned_expansions.wildspire_waste"
+			></div>
+			<div
+				class="set"
+				v-for="set in activeWeaponJson.wildspire_waste"
+				v-if="settingsStore.settingsData?.owned_expansions.wildspire_waste"
+			>
 				<WeaponSet
 					:weapon_class="active_weapon"
 					:set="set"

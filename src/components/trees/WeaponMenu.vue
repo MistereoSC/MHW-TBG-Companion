@@ -1,13 +1,17 @@
 <script lang="ts" setup>
 import {ref} from 'vue'
 import {EWeapons} from '@/components/interfaces/items'
+import {useSettingsStore} from '@/stores/settings'
+const settingsStore = useSettingsStore()
 
 const emit = defineEmits<{
 	(e: 'select', value: number): void
 }>()
-const selectedWeapon = ref(EWeapons.Greatsword)
+const props = defineProps<{
+	active_weapon: EWeapons
+}>()
+
 function selectWeapon(value: EWeapons) {
-	selectedWeapon.value = value
 	emit('select', value)
 }
 
@@ -18,10 +22,10 @@ const ICON_COLOR_3 = 4
 
 <template>
 	<nav class="menu">
-		<div class="menu__section">
+		<div class="menu__section" v-if="settingsStore.settingsData?.owned_expansions.ancient_forest">
 			<button
 				class="menu__item"
-				:active="selectedWeapon == EWeapons.Greatsword"
+				:active="active_weapon == EWeapons.Greatsword"
 				@click="() => selectWeapon(EWeapons.Greatsword)"
 			>
 				<img
@@ -32,7 +36,7 @@ const ICON_COLOR_3 = 4
 			</button>
 			<button
 				class="menu__item"
-				:active="selectedWeapon == EWeapons.SnS"
+				:active="active_weapon == EWeapons.SnS"
 				@click="() => selectWeapon(EWeapons.SnS)"
 			>
 				<img
@@ -44,7 +48,7 @@ const ICON_COLOR_3 = 4
 
 			<button
 				class="menu__item"
-				:active="selectedWeapon == EWeapons.Dualblades"
+				:active="active_weapon == EWeapons.Dualblades"
 				@click="() => selectWeapon(EWeapons.Dualblades)"
 			>
 				<img
@@ -55,17 +59,23 @@ const ICON_COLOR_3 = 4
 			</button>
 			<button
 				class="menu__item"
-				:active="selectedWeapon == EWeapons.Bow"
+				:active="active_weapon == EWeapons.Bow"
 				@click="() => selectWeapon(EWeapons.Bow)"
 			>
 				<img :src="`/icons/weapons/bow_${ICON_COLOR_1}.png`" alt="Bow" class="menu__item__image" />
 			</button>
-			<div class="separator--menu"></div>
 		</div>
-		<div class="menu__section">
+		<div
+			class="separator--menu"
+			v-if="
+				settingsStore.settingsData?.owned_expansions.wildspire_waste &&
+				settingsStore.settingsData?.owned_expansions.ancient_forest
+			"
+		></div>
+		<div class="menu__section" v-if="settingsStore.settingsData?.owned_expansions.wildspire_waste">
 			<button
 				class="menu__item"
-				:active="selectedWeapon == EWeapons.Gunlance"
+				:active="active_weapon == EWeapons.Gunlance"
 				@click="() => selectWeapon(EWeapons.Gunlance)"
 			>
 				<img
@@ -76,7 +86,7 @@ const ICON_COLOR_3 = 4
 			</button>
 			<button
 				class="menu__item"
-				:active="selectedWeapon == EWeapons.Chargeblade"
+				:active="active_weapon == EWeapons.Chargeblade"
 				@click="() => selectWeapon(EWeapons.Chargeblade)"
 			>
 				<img
@@ -87,7 +97,7 @@ const ICON_COLOR_3 = 4
 			</button>
 			<button
 				class="menu__item"
-				:active="selectedWeapon == EWeapons.InsectGlaive"
+				:active="active_weapon == EWeapons.InsectGlaive"
 				@click="() => selectWeapon(EWeapons.InsectGlaive)"
 			>
 				<img
@@ -98,7 +108,7 @@ const ICON_COLOR_3 = 4
 			</button>
 			<button
 				class="menu__item"
-				:active="selectedWeapon == EWeapons.HeavyBowgun"
+				:active="active_weapon == EWeapons.HeavyBowgun"
 				@click="() => selectWeapon(EWeapons.HeavyBowgun)"
 			>
 				<img
@@ -107,12 +117,15 @@ const ICON_COLOR_3 = 4
 					class="menu__item__image"
 				/>
 			</button>
-			<div class="separator--menu"></div>
 		</div>
-		<div class="menu__section">
+		<div
+			class="separator--menu"
+			v-if="settingsStore.settingsData?.owned_expansions.hunters_arsenal"
+		></div>
+		<div class="menu__section" v-if="settingsStore.settingsData?.owned_expansions.hunters_arsenal">
 			<button
 				class="menu__item"
-				:active="selectedWeapon == EWeapons.Longsword"
+				:active="active_weapon == EWeapons.Longsword"
 				@click="() => selectWeapon(EWeapons.Longsword)"
 			>
 				<img
@@ -123,7 +136,7 @@ const ICON_COLOR_3 = 4
 			</button>
 			<button
 				class="menu__item"
-				:active="selectedWeapon == EWeapons.Hammer"
+				:active="active_weapon == EWeapons.Hammer"
 				@click="() => selectWeapon(EWeapons.Hammer)"
 			>
 				<img
@@ -134,7 +147,7 @@ const ICON_COLOR_3 = 4
 			</button>
 			<button
 				class="menu__item"
-				:active="selectedWeapon == EWeapons.Lance"
+				:active="active_weapon == EWeapons.Lance"
 				@click="() => selectWeapon(EWeapons.Lance)"
 			>
 				<img
@@ -145,7 +158,7 @@ const ICON_COLOR_3 = 4
 			</button>
 			<button
 				class="menu__item"
-				:active="selectedWeapon == EWeapons.Switchaxe"
+				:active="active_weapon == EWeapons.Switchaxe"
 				@click="() => selectWeapon(EWeapons.Switchaxe)"
 			>
 				<img
@@ -156,7 +169,7 @@ const ICON_COLOR_3 = 4
 			</button>
 			<button
 				class="menu__item"
-				:active="selectedWeapon == EWeapons.HuntingHorn"
+				:active="active_weapon == EWeapons.HuntingHorn"
 				@click="() => selectWeapon(EWeapons.HuntingHorn)"
 			>
 				<img
@@ -167,7 +180,7 @@ const ICON_COLOR_3 = 4
 			</button>
 			<button
 				class="menu__item"
-				:active="selectedWeapon == EWeapons.LightBowgun"
+				:active="active_weapon == EWeapons.LightBowgun"
 				@click="() => selectWeapon(EWeapons.LightBowgun)"
 			>
 				<img

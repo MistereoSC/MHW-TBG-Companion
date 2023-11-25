@@ -1,6 +1,13 @@
 <script setup lang="ts">
-import {RouterLink, RouterView} from 'vue-router'
+import {RouterView} from 'vue-router'
 import SideMenu from '@/components/SideMenu.vue'
+import {useSettingsStore} from './stores/settings'
+import {onMounted} from 'vue'
+
+onMounted(() => {
+	const settingsStore = useSettingsStore()
+	settingsStore.loadSettings()
+})
 </script>
 
 <template>
