@@ -9,9 +9,12 @@ import Modal from '@/components/Modal.vue'
 const campaignStore = useCampaignStore()
 
 const slotSelectionOpen = ref(campaignStore.campaignData ? false : true)
-function onSlotSelect(slot: number) {
+function onSlotSelect(slot: number | null) {
 	const slotData = campaignStore.loadSlot(slot)
-	if (!slotData) return
+	if (!slotData) {
+		slotSelectionOpen.value = true
+		return
+	}
 	slotSelectionOpen.value = false
 }
 
@@ -45,6 +48,9 @@ function confirmCreateCharacter() {
 			<div class="tracker">
 				<div class="tracker__title">
 					<h1 class="tracker__title__text">{{ campaignStore.campaignData?.title }}</h1>
+					<button class="tracker__title__button c-button__medium" @click="() => onSlotSelect(null)">
+						Return
+					</button>
 				</div>
 				<div class="tracker__days"></div>
 				<CharacterOverview
@@ -102,6 +108,7 @@ function confirmCreateCharacter() {
 .tracker {
 	min-height: 100vh;
 	&__title {
+		position: relative;
 		width: 100%;
 		display: flex;
 		justify-content: center;
@@ -111,6 +118,10 @@ function confirmCreateCharacter() {
 			padding: 0 1rem;
 			border-top: 2px solid c.$text;
 			border-bottom: 2px solid c.$text;
+		}
+		&__button {
+			position: absolute;
+			right: 1rem;
 		}
 	}
 }
