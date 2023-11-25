@@ -21,7 +21,7 @@ function selectSlot(value: number) {
 	newCampaignName.value = ''
 	selectedSlot.value = value
 	//@ts-ignore
-	if (previews[value]) {
+	if (previews[`slot_${value + 1}`]) {
 		// LOAD CAMPAIGN
 		campaignStore.loadSlot(value)
 		emit('selectSlot', selectedSlot.value)
@@ -52,20 +52,20 @@ function closeModal() {
 							class="slot__add"
 							v-if="
 								//@ts-ignore
-								!previews[index - 1]
+								!previews[`slot_${index}`]
 							"
 						></div>
 						<div class="slot__content" v-else>
 							<h3 class="slot__title">
 								{{
 									//@ts-ignore
-									previews[index - 1].title
+									previews[`slot_${index}`].title
 								}}
 							</h3>
 							<img
 								:src="`/icons/${
 									//@ts-ignore
-									previews[index - 1].icon
+									previews[`slot_${index}`].icon
 								}.png`"
 								class="slot__icon"
 							/>

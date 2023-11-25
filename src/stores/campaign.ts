@@ -54,23 +54,23 @@ export const useCampaignStore = defineStore('campaign', () => {
 	}
 	function getSlotPreviews() {
 		const slots = {
-			'0': null as null | ICampaignData,
-			'1': null as null | ICampaignData,
-			'2': null as null | ICampaignData,
+			slot_1: null as null | ICampaignData,
+			slot_2: null as null | ICampaignData,
+			slot_3: null as null | ICampaignData,
 		}
 		const _slotA = localStorage.getItem('slotA')
 		if (_slotA) {
-			slots[0] = JSON.parse(_slotA)
+			slots.slot_1 = JSON.parse(_slotA)
 		}
 
 		const _slotB = localStorage.getItem('slotB')
 		if (_slotB) {
-			slots[1] = JSON.parse(_slotB)
+			slots.slot_2 = JSON.parse(_slotB)
 		}
 
 		const _slotC = localStorage.getItem('slotC')
 		if (_slotC) {
-			slots[2] = JSON.parse(_slotC)
+			slots.slot_3 = JSON.parse(_slotC)
 		}
 		return slots
 	}
@@ -119,6 +119,33 @@ export const useCampaignStore = defineStore('campaign', () => {
 		campaignData.value.characters[slot] = character
 		saveSlot()
 	}
+
+	function deleteSlot(slot: number) {
+		if (slot < 0 || slot >= 3) return
+		if (activeSlot.value == slot) {
+			activeSlot.value = null
+			campaignData.value = null
+		}
+
+		let slotTemp = null as null | string
+		switch (slot) {
+			case 0:
+				slotTemp = 'slotA'
+				break
+			case 1:
+				slotTemp = 'slotB'
+				break
+			case 2:
+				slotTemp = 'slotC'
+				break
+		}
+		if (slotTemp !== null) {
+			const slotData = localStorage.getItem(slotTemp)
+			if (slotData) {
+				localStorage.removeItem(slotTemp)
+			}
+		}
+	}
 	// #endregion
 
 	return {
@@ -130,5 +157,6 @@ export const useCampaignStore = defineStore('campaign', () => {
 		createNewCampaign,
 		createNewCharacter,
 		setCharacter,
+		deleteSlot,
 	}
 })

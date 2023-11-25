@@ -22,7 +22,7 @@ enum EMonsterIcons {
 	'nergigante',
 	'pukei',
 	'rathalus',
-	'rathalus_azure',
+	'rathalos_azure',
 	'teostra',
 	'tobi',
 }
