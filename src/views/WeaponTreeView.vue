@@ -1,14 +1,10 @@
 <script lang="ts" setup>
 import {onMounted, ref} from 'vue'
 import WeaponMenu from '@/components/trees/WeaponMenu.vue'
+import WeaponPage from '@/components/trees/WeaponPage.vue'
+import {EWeapons} from '@/components/interfaces/items'
 
-enum EWeapons {
-	SnS,
-	Greatsword,
-	Dualblades,
-	Bow,
-}
-const selectedWeapon = ref(EWeapons.SnS)
+const selectedWeapon = ref(EWeapons.Greatsword)
 function selectWeapon(value: EWeapons) {
 	selectedWeapon.value = value
 }
@@ -16,9 +12,11 @@ function selectWeapon(value: EWeapons) {
 
 <template>
 	<div class="page">
-		<div class="page__top"></div>
+		<div class="page__top">
+			<WeaponPage :active_weapon="selectedWeapon"></WeaponPage>
+		</div>
 		<div class="page__bottom">
-			<WeaponMenu></WeaponMenu>
+			<WeaponMenu @select="(val) => selectWeapon(val)"></WeaponMenu>
 		</div>
 	</div>
 </template>
@@ -28,8 +26,7 @@ function selectWeapon(value: EWeapons) {
 	width: 100%;
 	height: 100vh;
 	display: grid;
-	grid-template-rows: 1fr auto;
-
+	grid-template-rows: auto auto;
 	&__bottom {
 		background-color: c.$background-00;
 	}

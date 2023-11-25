@@ -2,8 +2,8 @@ import ItemData from '@/assets/data/loot.json'
 
 export interface IExpansions<T> {
 	basic: T
-	wildspire_waste: T
 	ancient_forest: T
+	wildspire_waste: T
 	kulu: T
 	teostra: T
 	nergigante: T
@@ -32,6 +32,69 @@ export interface IArmor {
 	parts: Array<{name: string; amount: number}>
 }
 
+// =================================================================
+// Weapon Sets
+// =================================================================
+
+export interface IWeaponSet {
+	name: string
+	icon: string
+	weapons: Array<IWeapon>
+}
+export interface IWeapon {
+	name: string
+	rarity: number
+	icon: string
+	parts: Array<{name: string; amount: number}>
+	damage: Array<{
+		value: number
+		amount: number
+	}>
+	remove: Array<{
+		name: string
+		amount: number
+	}>
+	add: Array<{
+		name: string
+		amount: number
+	}>
+	armor?: number
+}
+
+export enum EWeapons {
+	Greatsword,
+	SnS,
+	Dualblades,
+	Bow,
+
+	Gunlance,
+	Chargeblade,
+	InsectGlaive,
+	HeavyBowgun,
+
+	Longsword,
+	Hammer,
+	Lance,
+	Switchaxe,
+	HuntingHorn,
+	LightBowgun,
+}
+export const EWeaponsString = [
+	'greatsword',
+	'sns',
+	'dualblades',
+	'bow',
+	'gunlance',
+	'chargeblade',
+	'glaive',
+	'hbg',
+	'longsword',
+	'hammer',
+	'lance',
+	'switchaxe',
+	'horn',
+	'lbg',
+]
 // =================================================================
 // Lootable Items
 // =================================================================

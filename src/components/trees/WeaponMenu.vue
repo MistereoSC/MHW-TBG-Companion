@@ -1,34 +1,14 @@
 <script lang="ts" setup>
-import {onMounted, ref} from 'vue'
+import {ref} from 'vue'
+import {EWeapons} from '@/components/interfaces/items'
 
-const props = defineProps<{
-	message?: string
+const emit = defineEmits<{
+	(e: 'select', value: number): void
 }>()
-const emit = defineEmits([])
-onMounted(() => {
-	return
-})
-enum EWeapons {
-	SnS,
-	Greatsword,
-	Dualblades,
-	Bow,
-
-	Gunlance,
-	Chargeblade,
-	InsectGlaive,
-	HeavyBowgun,
-
-	Longsword,
-	Hammer,
-	Lance,
-	Switchaxe,
-	HuntingHorn,
-	LightBowgun,
-}
-const selectedWeapon = ref(EWeapons.SnS)
+const selectedWeapon = ref(EWeapons.Greatsword)
 function selectWeapon(value: EWeapons) {
 	selectedWeapon.value = value
+	emit('select', value)
 }
 
 const ICON_COLOR_1 = 1
@@ -41,17 +21,6 @@ const ICON_COLOR_3 = 4
 		<div class="menu__section">
 			<button
 				class="menu__item"
-				:active="selectedWeapon == EWeapons.SnS"
-				@click="() => selectWeapon(EWeapons.SnS)"
-			>
-				<img
-					:src="`/icons/weapons/sns_${ICON_COLOR_1}.png`"
-					alt="Sword and Shield"
-					class="menu__item__image"
-				/>
-			</button>
-			<button
-				class="menu__item"
 				:active="selectedWeapon == EWeapons.Greatsword"
 				@click="() => selectWeapon(EWeapons.Greatsword)"
 			>
@@ -61,6 +30,18 @@ const ICON_COLOR_3 = 4
 					class="menu__item__image"
 				/>
 			</button>
+			<button
+				class="menu__item"
+				:active="selectedWeapon == EWeapons.SnS"
+				@click="() => selectWeapon(EWeapons.SnS)"
+			>
+				<img
+					:src="`/icons/weapons/sns_${ICON_COLOR_1}.png`"
+					alt="Sword and Shield"
+					class="menu__item__image"
+				/>
+			</button>
+
 			<button
 				class="menu__item"
 				:active="selectedWeapon == EWeapons.Dualblades"

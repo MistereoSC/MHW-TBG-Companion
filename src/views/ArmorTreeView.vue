@@ -131,8 +131,6 @@ onMounted(() => {
 		.separator {
 			width: 100%;
 			height: 12px;
-			background-color: lime;
-			outline: 2px solid red;
 		}
 	}
 }

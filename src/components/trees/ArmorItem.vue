@@ -2,7 +2,7 @@
 import type {IArmor} from '@/components/interfaces/items'
 import Shield from '@/components/icons/Icon_Shield.vue'
 import Pentagon from '@/components/icons/Icon_Pentagon.vue'
-import Tooltip from '@/views/Tooltip.vue'
+import Tooltip from '@/components/Tooltip.vue'
 
 const props = defineProps<{
 	item: IArmor

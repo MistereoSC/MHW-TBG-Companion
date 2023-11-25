@@ -1,43 +1,27 @@
 <script lang="ts" setup>
-import type {IArmorSet} from '@/components/interfaces/items'
-import ArmorItem from './ArmorItem.vue'
 import BorderComponent from '../BorderComponent.vue'
+import WeaponItem from './WeaponItem.vue'
+import {type IWeaponSet, EWeapons, EWeaponsString} from '@/components/interfaces/items'
 
 const props = defineProps<{
-	set: IArmorSet
+	set: IWeaponSet
+	weapon_class: EWeapons
 	direction?: 'horizontal' | 'vertical'
 }>()
+console.log('SET: ', props.set)
 </script>
 
 <template>
 	<div class="container" :class="{'direction-horizontal': props.direction == 'horizontal'}">
 		<BorderComponent class="header__border" :blur_radius="10">
-			<img :src="`/icons/monsters/${set.icon}.png`" class="header__icon" />
+			<img :src="`/icons/${set.icon}.png`" class="header__icon" />
 		</BorderComponent>
 		<div class="line"></div>
-		<ArmorItem
-			class="armor-item"
-			:rarity="set.rarity"
-			:name="set.name + ' Helm'"
-			type="helm"
-			:item="set.helm"
-		></ArmorItem>
+		<WeaponItem :weapon_class="weapon_class" :item="set.weapons[0]" />
 		<div class="line"></div>
-		<ArmorItem
-			class="armor-item"
-			:rarity="set.rarity"
-			:name="set.name + ' Mail'"
-			type="mail"
-			:item="set.mail"
-		></ArmorItem>
+		<WeaponItem :weapon_class="weapon_class" :item="set.weapons[1]" />
 		<div class="line"></div>
-		<ArmorItem
-			class="armor-item"
-			:rarity="set.rarity"
-			:name="set.name + ' Greaves'"
-			type="greaves"
-			:item="set.greaves"
-		></ArmorItem>
+		<WeaponItem :weapon_class="weapon_class" :item="set.weapons[2]" />
 	</div>
 </template>
 
@@ -54,11 +38,11 @@ const props = defineProps<{
 		padding: 6px;
 	}
 }
+
 .container:not(.container.direction-horizontal) {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 200px;
 	.line {
 		width: 4px;
 		background-color: c.$background-3;
@@ -72,7 +56,7 @@ const props = defineProps<{
 	display: flex;
 	align-items: center;
 	.line {
-		width: 64px;
+		width: 128px;
 		background-color: c.$background-3;
 		height: 4px;
 		margin: 0 -20px;
