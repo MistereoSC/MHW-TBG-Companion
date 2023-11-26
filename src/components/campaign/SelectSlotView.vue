@@ -86,7 +86,7 @@ function closeModal() {
 					class="modal__input c-input__underline"
 					placeholder="Campaign Name"
 					v-model="newCampaignName"
-					autofocus
+					v-autofocus
 				/>
 				<button
 					class="modal__confirm c-button__medium"

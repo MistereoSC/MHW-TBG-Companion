@@ -76,7 +76,7 @@ export const useCampaignStore = defineStore('campaign', () => {
 	}
 	// #endregion
 
-	//#region Campaign and Character Creation and Deletion
+	//#region Campaign Creation and Deletion
 	function createNewCampaign(slot: number, name: string, icon?: string) {
 		if (slot < 0 || slot >= 3) return undefined
 		const newCampaign = {
@@ -94,30 +94,6 @@ export const useCampaignStore = defineStore('campaign', () => {
 		campaignData.value = newCampaign
 		saveSlot()
 		return newCampaign
-	}
-
-	function createNewCharacter(hunter_name: string, palico_name: string, icon?: string) {
-		if (!campaignData.value) return undefined
-		const newCharacter = {
-			creation_date: Date.now(),
-			last_update: Date.now(),
-			hunter_name: hunter_name,
-			palico_name: palico_name,
-			icon: getRandomWeaponIcon(false),
-			inventory: getDefaultInventory(),
-		} as ICharacterData
-		if (icon) newCharacter.icon = icon
-
-		campaignData.value.characters.push(newCharacter)
-		saveSlot()
-		return newCharacter
-	}
-
-	function setCharacter(slot: number, character: ICharacterData) {
-		if (!campaignData.value) return
-		// TODO: Validation
-		campaignData.value.characters[slot] = character
-		saveSlot()
 	}
 
 	function deleteSlot(slot: number) {
@@ -148,6 +124,40 @@ export const useCampaignStore = defineStore('campaign', () => {
 	}
 	// #endregion
 
+	//#region Character Management
+	function createNewCharacter(hunter_name: string, palico_name: string, icon?: string) {
+		if (!campaignData.value) return undefined
+		const newCharacter = {
+			creation_date: Date.now(),
+			last_update: Date.now(),
+			hunter_name: hunter_name,
+			palico_name: palico_name,
+			icon: getRandomWeaponIcon(false),
+			inventory: getDefaultInventory(),
+		} as ICharacterData
+		if (icon) newCharacter.icon = icon
+
+		campaignData.value.characters.push(newCharacter)
+		saveSlot()
+		return newCharacter
+	}
+
+	function setCharacter(slot: number, character: ICharacterData) {
+		if (!campaignData.value) return
+		// TODO: Validation
+		campaignData.value.characters[slot] = character
+		saveSlot()
+	}
+
+	function deleteCharacter(index: number) {
+		if (!campaignData.value) return false
+		campaignData.value.characters.splice(index, 1)
+		saveSlot()
+		return true
+	}
+
+	//#endregion
+
 	return {
 		activeSlot,
 		campaignData,
@@ -158,5 +168,6 @@ export const useCampaignStore = defineStore('campaign', () => {
 		createNewCharacter,
 		setCharacter,
 		deleteSlot,
+		deleteCharacter,
 	}
 })

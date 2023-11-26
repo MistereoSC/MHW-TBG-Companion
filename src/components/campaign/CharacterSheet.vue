@@ -1,8 +1,9 @@
 <script lang="ts" setup>
-import {onMounted, ref} from 'vue'
+import {ref} from 'vue'
 import {useCampaignStore} from '@/stores/campaign'
 import type {IItem} from '@/components/interfaces/items'
 import type {ICharacterData} from '@/components/interfaces/campaign'
+import CharacterDeletion from './CharacterDeletion.vue'
 
 const props = defineProps<{
 	slot: number
@@ -32,6 +33,19 @@ function save() {
 	campaignStore.setCharacter(props.slot, character.value)
 	emit('close')
 }
+
+const deleteModalOpen = ref(false)
+function openDeleteModal() {
+	deleteModalOpen.value = true
+}
+function cancelDelete() {
+	deleteModalOpen.value = false
+}
+function confirmDelete() {
+	campaignStore.deleteCharacter(props.slot)
+	deleteModalOpen.value = false
+	emit('close')
+}
 </script>
 
 <template>
@@ -39,6 +53,14 @@ function save() {
 		<div class="name">
 			<span class="name__text">{{ character.hunter_name }}</span>
 			<span class="name__subtext">& {{ character.palico_name }}</span>
+			<button class="name__delete c-button__medium" @click="() => openDeleteModal()">Delete</button>
+			<CharacterDeletion
+				v-if="deleteModalOpen"
+				:slot="slot"
+				:hunter_name="character.hunter_name"
+				@close="() => cancelDelete()"
+				@confirm="() => confirmDelete()"
+			/>
 		</div>
 
 		<div class="separator"></div>
@@ -128,6 +150,7 @@ function save() {
 	resize: vertical;
 }
 .name {
+	position: relative;
 	&__text {
 		font-weight: bold;
 		font-size: 1.25rem;
@@ -137,6 +160,15 @@ function save() {
 		font-weight: normal;
 		color: c.$text-mute;
 		margin-left: 1rem;
+	}
+	&__delete {
+		position: absolute;
+		right: 0;
+		padding: 6px !important;
+
+		&:hover {
+			border-color: c.$accent-red !important;
+		}
 	}
 }
 .common {

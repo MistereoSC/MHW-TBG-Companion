@@ -80,14 +80,13 @@ function confirmCreateCharacter() {
 						class="modal__input c-input__underline"
 						placeholder="Hunter Name"
 						v-model="newHunterName"
-						autofocus
+						v-autofocus
 					/>
 					<input
 						type="text"
 						class="modal__input c-input__underline"
 						placeholder="Palico Name"
 						v-model="newHunterPalico"
-						autofocus
 					/>
 					<div class="modal__icon-selection">
 						<h3 class="modal__icon-selection__title">Select Icon</h3>

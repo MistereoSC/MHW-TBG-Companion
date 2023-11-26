@@ -221,7 +221,7 @@ function confirmDeleteSlot() {
 						<input
 							type="text"
 							class="danger__delete__modal__input c-input__underline"
-							autofocus
+							v-autofocus
 							placeholder="Are you sure?"
 							v-model="deleteModalInput"
 						/>
