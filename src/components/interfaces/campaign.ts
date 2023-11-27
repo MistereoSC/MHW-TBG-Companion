@@ -9,7 +9,9 @@ export interface ICampaignData {
 
 	potions: number
 	characters: Array<ICharacterData>
-	days: []
+	max_days: number
+	days: Array<ICampaignDay>
+	version: number
 }
 
 export interface ICharacterData {
@@ -26,4 +28,10 @@ export interface ICharacterData {
 		parts: string
 		equipment: string
 	}
+}
+
+export interface ICampaignDay {
+	day: number
+	type: 'hunt' | 'downtime'
+	icon: string
 }

@@ -11,21 +11,39 @@ export function getRandomWeaponIcon(full_path: boolean, rarity?: number) {
 }
 
 export enum EMonsterIcons {
+	'jagras',
+	'tobi',
 	'anjanath',
+	'rathalos',
+	'rathalos_azure',
+	'pukei',
 	'barroth',
+	'jyuratodus',
 	'diablos',
 	'diablos_black',
-	'jagras',
-	'jyuratodus',
 	'kulu',
-	'kushala',
-	'nergigante',
-	'pukei',
-	'rathalus',
-	'rathalos_azure',
 	'teostra',
-	'tobi',
+	'nergigante',
+	'kushala',
 }
+
+export const EMonsterArr = [
+	'jagras',
+	'tobi',
+	'anjanath',
+	'rathalos',
+	'rathalos_azure',
+	'pukei',
+	'barroth',
+	'jyuratodus',
+	'diablos',
+	'diablos_black',
+	'kulu',
+	'teostra',
+	'nergigante',
+	'kushala',
+]
+
 export enum EWeaponIcons {
 	'longsword',
 	'greatsword',

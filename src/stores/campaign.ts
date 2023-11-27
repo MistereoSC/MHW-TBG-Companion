@@ -1,8 +1,9 @@
 import {defineStore} from 'pinia'
 import {ref} from 'vue'
-import type {ICampaignData, ICharacterData} from '@/components/interfaces/campaign'
+import type {ICampaignData, ICampaignDay, ICharacterData} from '@/components/interfaces/campaign'
 import {getDefaultInventory} from '@/components/interfaces/items'
 import {getRandomMonsterIcon, getRandomWeaponIcon} from '@/components/icons/icon_helper'
+export const VERSION = 4
 
 export const useCampaignStore = defineStore('campaign', () => {
 	const activeSlot = ref(null as null | number)
@@ -86,7 +87,9 @@ export const useCampaignStore = defineStore('campaign', () => {
 			icon: getRandomMonsterIcon(false),
 			potions: 0,
 			characters: [],
+			max_days: 60,
 			days: [],
+			version: VERSION,
 		} as ICampaignData
 		if (icon) newCampaign.icon = icon
 
@@ -158,6 +161,26 @@ export const useCampaignStore = defineStore('campaign', () => {
 
 	//#endregion
 
+	//#region Miscellaneous
+	function registerCampaignDay(day: ICampaignDay) {
+		if (!campaignData.value) return false
+		if (day.day - 1 !== campaignData.value.days.length) return false
+
+		campaignData.value.days.push(day)
+		saveSlot()
+		return true
+	}
+
+	function setPotions(val: number) {
+		if (!campaignData.value) return
+		if (val < 0 || val > 99) return
+		console.log('Updating Potions to ' + val)
+
+		campaignData.value.potions = val
+		saveSlot()
+	}
+	//#endregion
+
 	return {
 		activeSlot,
 		campaignData,
@@ -169,5 +192,7 @@ export const useCampaignStore = defineStore('campaign', () => {
 		setCharacter,
 		deleteSlot,
 		deleteCharacter,
+		registerCampaignDay,
+		setPotions,
 	}
 })

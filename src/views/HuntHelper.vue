@@ -1,72 +1,25 @@
 <script lang="ts" setup>
 import BorderComponent from '@/components/BorderComponent.vue'
 import {useHuntHelperStore} from '@/stores/huntHelper'
+import Counter from '@/components/Counter.vue'
 const huntHelperStore = useHuntHelperStore()
 </script>
 
 <template>
 	<div class="page">
 		<div class="page__top">
-			<BorderComponent>
-				<div class="tracker">
-					<img class="tracker__image" src="/icons/icon_potion.png" />
-					<h3 class="tracker__title">Potions</h3>
-					<div class="separator--decorative"></div>
-					<div class="tracker__counter">
-						<button
-							class="tracker__button tracker__button--minus"
-							@click="huntHelperStore.decrementPotions"
-							:class="{disabled: huntHelperStore.countPotions <= 0}"
-						></button>
-						<div class="tracker__scroller__wrapper">
-							<div
-								class="tracker__scroller"
-								:style="{transform: `translateY(-${huntHelperStore.countPotions * 48}px)`}"
-							>
-								<div class="tracker__scroller__number">0</div>
-								<div class="tracker__scroller__number">1</div>
-								<div class="tracker__scroller__number">2</div>
-								<div class="tracker__scroller__number">3</div>
-							</div>
-						</div>
-						<button
-							class="tracker__button tracker__button--plus"
-							@click="huntHelperStore.incrementPotions"
-							:class="{disabled: huntHelperStore.countPotions >= 3}"
-						></button>
-					</div>
-				</div>
-			</BorderComponent>
-			<BorderComponent>
-				<div class="tracker">
-					<img class="tracker__image" src="/icons/icon_quest.png" />
-					<h3 class="tracker__title">Lives</h3>
-					<div class="separator--decorative"></div>
-					<div class="tracker__counter">
-						<button
-							class="tracker__button tracker__button--minus"
-							@click="huntHelperStore.decrementLives"
-							:class="{disabled: huntHelperStore.countLives <= 0}"
-						></button>
-						<div class="tracker__scroller__wrapper">
-							<div
-								class="tracker__scroller"
-								:style="{transform: `translateY(-${huntHelperStore.countLives * 48}px)`}"
-							>
-								<div class="tracker__scroller__number">0</div>
-								<div class="tracker__scroller__number">1</div>
-								<div class="tracker__scroller__number">2</div>
-								<div class="tracker__scroller__number">3</div>
-							</div>
-						</div>
-						<button
-							class="tracker__button tracker__button--plus"
-							@click="huntHelperStore.incrementLives"
-							:class="{disabled: huntHelperStore.countLives >= 3}"
-						></button>
-					</div>
-				</div>
-			</BorderComponent>
+			<Counter
+				:max_amount="3"
+				icon="icon_potion"
+				title="Potions"
+				v-model="huntHelperStore.countPotions"
+			/>
+			<Counter
+				:max_amount="3"
+				icon="icon_quest"
+				title="Lives"
+				v-model="huntHelperStore.countLives"
+			/>
 		</div>
 		<div class="page__bottom">
 			<div class="separator"></div>
@@ -242,111 +195,6 @@ const huntHelperStore = useHuntHelperStore()
 	}
 }
 
-.tracker {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 16px 0;
-
-	&__image {
-		width: 96px;
-		height: 96px;
-	}
-	&__title {
-		text-align: center;
-		font-size: 24px;
-	}
-	&__counter {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		gap: 20px;
-		padding: 0 10px;
-
-		font-size: 32px;
-		line-height: 1.1;
-	}
-	&__button {
-		width: 32px;
-		height: 32px;
-		background: transparent;
-		border: none;
-		position: relative;
-		border-color: c.$text;
-		cursor: pointer;
-		transition: border-color 0.2s ease-out;
-
-		&.disabled {
-			border-color: c.$text-disabled;
-			cursor: default;
-		}
-
-		&--plus {
-			&::after {
-				content: '';
-				position: absolute;
-				inset: 14px 3px auto 3px;
-				border-bottom: 5px solid;
-				border-color: inherit;
-				width: 26px;
-				height: 2px;
-			}
-			&::before {
-				content: '';
-				position: absolute;
-				inset: 3px auto 3px 14px;
-				border-left: 5px solid;
-				border-color: inherit;
-				width: 2px;
-				height: 26px;
-			}
-		}
-		&--minus {
-			&::after {
-				content: '';
-				position: absolute;
-				inset: 14px 3px auto 3px;
-				border-bottom: 5px solid;
-				border-color: inherit;
-				width: 26px;
-				height: 2px;
-			}
-		}
-	}
-	&__scroller {
-		&__wrapper {
-			position: relative;
-			border-left: 2px solid c.$background-00;
-			border-right: 2px solid c.$background-00;
-			overflow-y: hidden;
-			background: linear-gradient(
-				0deg,
-				rgba(0, 0, 0, 0.5) 0%,
-				rgba(0, 0, 0, 0.1) 20%,
-				rgba(0, 0, 0, 0.1) 80%,
-				rgba(0, 0, 0, 0.5) 100%
-			);
-		}
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		height: 48px;
-		width: 48px;
-
-		transition: transform 0.3s ease-in-out;
-		transform: translateY(-64px);
-
-		&__number {
-			height: 32px;
-			margin: 8px 0;
-			width: 48px;
-			display: grid;
-			place-items: center;
-			user-select: none;
-		}
-	}
-}
-
 .separator {
 	width: auto;
 	height: 1px;
@@ -358,11 +206,5 @@ const huntHelperStore = useHuntHelperStore()
 	height: auto;
 	border-left: 2px solid c.$background-2;
 	margin: 16px 4px;
-}
-.separator--decorative {
-	width: 180px;
-	height: 1px;
-	border-bottom: 2px solid c.$background-2;
-	margin: 5px 5px 10px 5px;
 }
 </style>

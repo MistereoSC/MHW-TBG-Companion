@@ -5,7 +5,7 @@ import Modal from '@/components/Modal.vue'
 import {useCampaignStore} from '@/stores/campaign'
 
 const campaignStore = useCampaignStore()
-const previews = campaignStore.getSlotPreviews()
+let previews = campaignStore.getSlotPreviews()
 onMounted(() => {
 	campaignStore.loadSlot(null)
 })
@@ -33,7 +33,9 @@ function selectSlot(value: number) {
 function confirmSlot() {
 	if (selectedSlot.value === null) return
 	campaignStore.createNewCampaign(selectedSlot.value, newCampaignName.value)
-	emit('selectSlot', selectedSlot.value)
+	modalOpen.value = false
+	previews = campaignStore.getSlotPreviews()
+	// emit('selectSlot', selectedSlot.value)
 }
 function closeModal() {
 	selectedSlot.value = null

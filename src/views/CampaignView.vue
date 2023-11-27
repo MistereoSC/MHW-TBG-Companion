@@ -1,11 +1,13 @@
 <script lang="ts" setup>
-import {ref} from 'vue'
+import {onMounted, ref, watch} from 'vue'
 import {useCampaignStore} from '@/stores/campaign'
 import {EColors, EColorsHex, EWeaponIcons, EWeaponIconsArr} from '@/components/icons/icon_helper'
 import SelectSlotView from '@/components/campaign/SelectSlotView.vue'
 import CharacterSheet from '@/components/campaign/CharacterSheet.vue'
 import CharacterOverview from '@/components/campaign/CharacterOverview.vue'
+import DayTracker from '@/components/campaign/DayTracker.vue'
 import Modal from '@/components/Modal.vue'
+import Counter from '@/components/Counter.vue'
 
 const campaignStore = useCampaignStore()
 
@@ -16,6 +18,7 @@ function onSlotSelect(slot: number | null) {
 		slotSelectionOpen.value = true
 		return
 	}
+	potionCount.value = slotData.potions
 	slotSelectionOpen.value = false
 }
 
@@ -49,6 +52,14 @@ function confirmCreateCharacter() {
 	campaignStore.createNewCharacter(newHunterName.value, newHunterPalico.value, icon)
 	modalCharacterCreateOpen.value = false
 }
+
+const potionCount = ref(0)
+watch(
+	() => potionCount.value,
+	(newVal) => {
+		campaignStore.setPotions(newVal)
+	}
+)
 </script>
 
 <template>
@@ -56,19 +67,29 @@ function confirmCreateCharacter() {
 		<div class="page__select" v-if="slotSelectionOpen">
 			<SelectSlotView @select-slot="onSlotSelect" />
 		</div>
-		<div class="page__tracker scrollable" v-else>
-			<div class="tracker">
-				<div class="tracker__title">
-					<h1 class="tracker__title__text">{{ campaignStore.campaignData?.title }}</h1>
-					<button class="tracker__title__button c-button__medium" @click="() => onSlotSelect(null)">
+		<div class="page__character scrollable" v-else-if="campaignStore.campaignData">
+			<div class="character">
+				<div class="character__title">
+					<h1 class="character__title__text">{{ campaignStore.campaignData.title }}</h1>
+					<button
+						class="character__title__button c-button__medium"
+						@click="() => onSlotSelect(null)"
+					>
 						Return
 					</button>
 				</div>
-				<div class="tracker__days"></div>
 				<CharacterOverview
 					@create="() => createCharacter()"
 					@select="(slot) => selectCharacter(slot)"
-				></CharacterOverview>
+				/>
+				<div class="page__tracker">
+					<div class="page__tracker__potions">
+						<Counter v-model="potionCount" title="Potions" icon="icon_potion" :max_amount="99" />
+					</div>
+					<div class="page__tracker__days">
+						<DayTracker />
+					</div>
+				</div>
 			</div>
 			<Modal v-if="modalCharacterCreateOpen" @close="modalCharacterCreateOpen = false">
 				<div class="modal__content">
@@ -137,13 +158,21 @@ function confirmCreateCharacter() {
 	&__select {
 		height: 100vh;
 	}
-	&__tracker {
+	&__character {
 		height: 100vh;
 		overflow-y: auto;
 		overflow-x: hidden;
 	}
+	&__tracker {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		flex-wrap: wrap;
+
+		margin-top: 2rem;
+	}
 }
-.tracker {
+.character {
 	min-height: 100vh;
 	&__title {
 		position: relative;

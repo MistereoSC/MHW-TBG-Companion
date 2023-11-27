@@ -17,6 +17,7 @@ const deleteModalOpen = ref(false)
 const deleteModalInput = ref('')
 const deleteModalSlot = ref(null as null | number)
 function openDeleteSlotModal(slot: number) {
+	deleteModalInput.value = ''
 	const preview = campaignStore.getSlotPreviews()
 	//@ts-ignore
 	const slotPreview = preview[`slot_${slot + 1}`]
