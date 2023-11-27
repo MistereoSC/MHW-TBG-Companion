@@ -6,7 +6,7 @@ const huntHelperStore = useHuntHelperStore()
 </script>
 
 <template>
-	<div class="page">
+	<div class="page scrollable">
 		<div class="page__top">
 			<Counter
 				:max_amount="3"
@@ -121,6 +121,39 @@ const huntHelperStore = useHuntHelperStore()
 						</div>
 					</div>
 				</div>
+				<div class="separator--vertical"></div>
+				<div class="info__container">
+					<h3 class="info__subtitle">Terrain</h3>
+					<div class="info__content">
+						<div class="info__item">
+							<span class="info__item__title"
+								><img src="/icons/misc/terrain_bush.png" class="info__item__image" />Bush</span
+							>
+							<span class="info__item__text">
+								While a hunter is on a bush node they have -4 threat. Bush nodes don't affect
+								monsters.
+							</span>
+						</div>
+						<div class="info__item">
+							<span class="info__item__title"
+								><img src="/icons/misc/terrain_rock.png" class="info__item__image" />Rock</span
+							>
+							<span class="info__item__text">
+								When a hunter is on a rock node they may move 1 node without placing attack cards on
+								their stamina board. Rock nodes don't affect monsters.
+							</span>
+						</div>
+						<div class="info__item">
+							<span class="info__item__title"
+								><img src="/icons/misc/terrain_pond.png" class="info__item__image" />Pond</span
+							>
+							<span class="info__item__text">
+								When a hunter enters a pond node for any reason they must discard 1 card from their
+								damage deck. Pond nodes don't affect monsters.
+							</span>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -131,6 +164,7 @@ const huntHelperStore = useHuntHelperStore()
 	width: 100%;
 	display: grid;
 	grid-template-rows: 3fr 5fr;
+	overflow-y: auto;
 	&__top {
 		display: flex;
 		align-items: center;
@@ -150,7 +184,7 @@ const huntHelperStore = useHuntHelperStore()
 	height: 100%;
 	width: 100%;
 	display: grid;
-	grid-template-columns: 1fr auto 1fr;
+	grid-template-columns: 1fr auto 1fr auto 1fr;
 	&__title {
 		width: 100%;
 		text-align: center;
