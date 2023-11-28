@@ -13,11 +13,15 @@ import BorderComponent from '@/components/BorderComponent.vue'
 				<p class="about__subtext">©Sebastian Lehmann - 2023</p>
 				<div class="separator"></div>
 				<div class="about__buttons">
-					<a href="https://github.com/MistereoSC" class="about__buttons__link" target="_blank">
+					<a
+						href="https://github.com/MistereoSC/MHW-TBG-Companion"
+						class="about__buttons__link"
+						target="_blank"
+					>
 						<img src="/icons/brands/github.png" alt="GitHub" class="about__buttons__icon --color" />
 					</a>
 					<a
-						href="https://github.com/MistereoSC/MHW-TBG-Companion"
+						href="https://www.reddit.com/user/mistereo_sc/"
 						class="about__buttons__link"
 						target="_blank"
 					>
