@@ -361,7 +361,68 @@
 			]
 		}
 	],
-	"kulu": [],
+	"kulu": [
+		{
+			"name": "Kulu-Ya-Ku",
+			"icon": "monsters/kulu",
+			"weapons": [
+				{
+					"name": "Iron Blade",
+					"rarity": 0,
+					"icon": "items/ore_0",
+					"parts": [],
+					"damage": [
+						{"value": 1, "amount": 10},
+						{"value": 2, "amount": 2}
+					],
+					"remove": [],
+					"add": []
+				},
+				{
+					"name": "Kulu Blade",
+					"rarity": 2,
+					"icon": "monsters/kulu",
+					"parts": [
+						{"name": "Kulu-Ya-Ku Beak", "amount": 1},
+						{"name": "Kulu-Ya-Ku Hide", "amount": 2},
+						{"name": "Kulu-Ya-Ku Scale", "amount": 4},
+						{"name": "Earth Crystal", "amount": 3}
+					],
+					"damage": [
+						{"value": 1, "amount": 4},
+						{"value": 2, "amount": 5},
+						{"value": 3, "amount": 5}
+					],
+					"remove": [{"name": "Reaping Slash", "amount": 2}],
+					"add": [{"name": "Reaching Slash", "amount": 2}]
+				},
+				{
+					"name": "Ya-Ku Wrath",
+					"rarity": 3,
+					"icon": "monsters/kulu",
+					"parts": [
+						{"name": "Kulu-Ya-Ku Beak", "amount": 2},
+						{"name": "Kulu-Ya-Ku Hide", "amount": 3},
+						{"name": "Kulu-Ya-Ku Plume", "amount": 3},
+						{"name": "Boulder Bone", "amount": 4}
+					],
+					"damage": [
+						{"value": 1, "amount": 5},
+						{"value": 2, "amount": 3},
+						{"value": 3, "amount": 8}
+					],
+					"remove": [
+						{"name": "Reaping Slash", "amount": 2},
+						{"name": "Wide Sweep", "amount": 3}
+					],
+					"add": [
+						{"name": "Reaching Slash", "amount": 2},
+						{"name": "Random Sweep", "amount": 3}
+					]
+				}
+			]
+		}
+	],
 	"teostra": [],
 	"nergigante": [],
 	"kushala": []

@@ -374,7 +374,68 @@
 			]
 		}
 	],
-	"kulu": [],
+	"kulu": [		{
+		"name": "Kulu-Ya-Ku",
+		"icon": "monsters/kulu",
+		"weapons": [
+			{
+				"name": "Iron Lance",
+				"rarity": 0,
+				"icon": "items/ore_0",
+				"parts": [],
+				"damage": [
+					{"value": 1, "amount": 8},
+					{"value": 2, "amount": 4}
+				],
+				"remove": [],
+				"add": [],
+				"armor": 1
+			},
+			{
+				"name": "Kulu Lance",
+				"rarity": 2,
+				"icon": "monsters/kulu",
+				"parts": [
+					{"name": "Kulu-Ya-Ku Beak", "amount": 1},
+					{"name": "Kulu-Ya-Ku Hide", "amount": 2},
+					{"name": "Kulu-Ya-Ku Scale", "amount": 4},
+					{"name": "Earth Crystal", "amount": 3}
+				],
+				"damage": [
+					{"value": 1, "amount": 4},
+					{"value": 2, "amount": 8},
+					{"value": 3, "amount": 2}
+				],
+				"remove": [{"name": "High Thrust", "amount": 3}],
+				"add": [{"name": "Diving Thrust", "amount": 3}]
+			},
+			{
+				"name": "Kulu Hasta",
+				"rarity": 3,
+				"icon": "monsters/kulu",
+				"parts": [
+					{"name": "Kulu-Ya-Ku Beak", "amount": 2},
+					{"name": "Kulu-Ya-Ku Hide", "amount": 3},
+					{"name": "Kulu-Ya-Ku Plume", "amount": 3},
+					{"name": "Boulder Bone", "amount": 4}
+				],
+				"damage": [
+					{"value": 2, "amount": 1},
+					{"value": 2, "amount": 9},
+					{"value": 3, "amount": 6}
+				],
+				"remove": [
+					{"name": "High Thrust", "amount": 3},
+					{"name": "Mid Thrust", "amount": 2}
+				],
+				"add": [
+					{"name": "Diving Thrust", "amount": 3},
+					{"name": "Dream Thrust", "amount": 2}
+				],
+				"armor": 1
+			}
+		]
+	}],
 	"teostra": [],
 	"nergigante": [],
 	"kushala": []

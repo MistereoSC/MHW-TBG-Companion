@@ -166,6 +166,19 @@ async function selectActivePage(type: EWeapons) {
 				></WeaponSet>
 			</div>
 
+			<div class="separator" v-if="settingsStore.ownsNonBaseExpansion()"></div>
+			<div
+				class="set"
+				v-for="set in activeWeaponJson.kulu"
+				v-if="settingsStore.settingsData?.owned_expansions.kulu"
+			>
+				<WeaponSet
+					:weapon_class="active_weapon"
+					:set="set"
+					:direction="PAGE_DIRECTION === 'vertical' ? 'horizontal' : 'vertical'"
+				></WeaponSet>
+			</div>
+
 			<div class="blind --before" v-if="PAGE_DIRECTION == 'horizontal'"></div>
 		</div>
 	</div>

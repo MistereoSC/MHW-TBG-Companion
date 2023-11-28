@@ -367,7 +367,70 @@
 			]
 		}
 	],
-	"kulu": [],
+	"kulu": [
+		{
+			"name": "Kulu-Ya-Ku",
+			"icon": "monsters/kulu",
+			"weapons": [
+				{
+					"name": "Matched Slicers",
+					"rarity": 0,
+					"icon": "items/ore_0",
+					"parts": [],
+					"damage": [
+						{"value": 1, "amount": 10},
+						{"value": 2, "amount": 2}
+					],
+					"remove": [],
+					"add": []
+				},
+				{
+					"name": "Rending Beaks",
+					"rarity": 2,
+					"icon": "monsters/kulu",
+					"parts": [
+						{"name": "Kulu-Ya-Ku Beak", "amount": 3},
+						{"name": "Kulu-Ya-Ku Hide", "amount": 2},
+						{"name": "Kulu-Ya-Ku Scale", "amount": 4},
+						{"name": "Earth Crystal", "amount": 3}
+					],
+					"damage": [
+						{"value": 1, "amount": 2},
+						{"value": 2, "amount": 10},
+						{"value": 3, "amount": 2}
+					],
+					"remove": [
+						{"name": "Lunging Stab", "amount": 2}
+					],
+					"add": [{"name": "Evasive Stab", "amount": 2}]
+				},
+				{
+					"name": "Arcanaria",
+					"rarity": 3,
+					"icon": "monsters/kulu",
+					"parts": [
+						{"name": "Kulu-Ya-Ku Beak", "amount": 2},
+						{"name": "Kulu-Ya-Ku Hide", "amount": 3},
+						{"name": "Kulu-Ya-Ku Plume", "amount": 3},
+						{"name": "Boulder Bone", "amount": 4}
+					],
+					"damage": [
+						{"value": 1, "amount": 2},
+						{"value": 2, "amount": 10},
+						{"value": 3, "amount": 4}
+					],
+					"remove": [
+						{"name": "Lunging Stab", "amount": 2},
+						{"name": "Double Spin", "amount": 2}
+					],
+					"add": [
+						{"name": "Evasive Stab", "amount": 2},
+						{"name": "Dream Spin", "amount": 2}
+					]
+				}
+			]
+		}
+	],
 	"teostra": [],
 	"nergigante": [],
 	"kushala": []

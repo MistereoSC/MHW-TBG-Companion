@@ -366,7 +366,68 @@
 			]
 		}
 	],
-	"kulu": [],
+	"kulu": [		{
+		"name": "Kulu-Ya-Ku",
+		"icon": "monsters/kulu",
+		"weapons": [
+			{
+				"name": "Bone Bludgeon",
+				"rarity": 0,
+				"icon": "items/bone_1",
+				"parts": [{"name": "Monster Bone S", "amount": 1}],
+				"damage": [
+					{"value": 1, "amount": 7},
+					{"value": 2, "amount": 2},
+					{"value": 4, "amount": 1}
+				],
+				"add": [],
+				"remove": []
+			},
+			{
+				"name": "Kulu Beak",
+				"rarity": 2,
+				"icon": "monsters/kulu",
+				"parts": [
+					{"name": "Kulu-Ya-Ku Beak", "amount": 1},
+					{"name": "Kulu-Ya-Ku Hide", "amount": 2},
+					{"name": "Kulu-Ya-Ku Scale", "amount": 4},
+					{"name": "Earth Crystal", "amount": 3}
+				],
+				"damage": [
+					{"value": 1, "amount": 5},
+					{"value": 2, "amount": 3},
+					{"value": 4, "amount": 6}
+				],
+				"remove": [{"name": "Spinning Bludgeon", "amount": 2}],
+				"add": [{"name": "Diving Spiral Bludgeon", "amount": 2}]
+			},
+			{
+				"name": "Crushing Beak",
+				"rarity": 3,
+				"icon": "monsters/kulu",
+				"parts": [
+					{"name": "Kulu-Ya-Ku Beak", "amount": 2},
+					{"name": "Kulu-Ya-Ku Hide", "amount": 3},
+					{"name": "Kulu-Ya-Ku Plume", "amount": 3},
+					{"name": "Boulder Bone", "amount": 4}
+				],
+				"damage": [
+					{"value": 1, "amount": 5},
+					{"value": 2, "amount": 3},
+					{"value": 4, "amount": 6}
+				],
+				"remove": [
+					{"name": "Spinning Bludgeon", "amount": 2},
+					{"name": "Side Smash", "amount": 2}
+				],
+				"add": [
+					{"name": "Diving Spiral Bludgeon", "amount": 2},
+					{"name": "Knock Out Side Smash", "amount": 2}
+				],
+				"armor": 1
+			}
+		]
+	}],
 	"teostra": [],
 	"nergigante": [],
 	"kushala": []
