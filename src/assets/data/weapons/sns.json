@@ -444,6 +444,69 @@
 			]
 		}
 	],
-	"nergigante": [],
+	"nergigante": [
+		{
+			"name": "Nergigante",
+			"icon": "monsters/nergigante",
+			"weapons": [
+				{
+					"name": "Hunter's Knife",
+					"rarity": 0,
+					"icon": "items/ore_0",
+					"parts": [],
+					"damage": [
+						{"value": 1, "amount": 8},
+						{"value": 2, "amount": 4}
+					],
+					"remove": [],
+					"add": []
+				},
+				{
+					"name": "Nergal Jack",
+					"rarity": 3,
+					"icon": "monsters/nergigante",
+					"parts": [
+						{"name": "Nergigante Talon", "amount": 1},
+						{"name": "Nergigante Regrowth Plate", "amount": 1},
+						{"name": "Nergigante Tail", "amount": 2},
+						{"name": "Nergigante Carapace", "amount": 2}
+					],
+					"damage": [
+						{"value": 2, "amount": 5},
+						{"value": 3, "amount": 4},
+						{"value": 4, "amount": 3}
+					],
+					"remove": [{"name": "Guard Up", "amount": 2}],
+					"add": [{"name": "Scaled Guard", "amount": 2}],
+					"armor": 1
+				},
+				{
+					"name": "Eradication Vanguard",
+					"rarity": 4,
+					"icon": "monsters/nergigante",
+					"parts": [
+						{"name": "Nergigante Horn", "amount": 4},
+						{"name": "Nergigante Talon", "amount": 3},
+						{"name": "Nergigante Gem", "amount": 2}
+					],
+					"damage": [
+						{"value": 2, "amount": 5},
+						{"value": 3, "amount": 5},
+						{"value": 4, "amount": 3},
+						{"value": 5, "amount": 1}
+					],
+					"remove": [
+						{"name": "Guard Up", "amount": 2},
+						{"name": "Chop", "amount": 2}
+					],
+					"add": [
+						{"name": "Scaled Guard", "amount": 2},
+						{"name": "Draconic Slash", "amount": 2}
+					],
+					"armor": 1
+				}
+			]
+		}
+	],
 	"kushala": []
 }

@@ -439,7 +439,70 @@
 		}
 	],
 	"teostra": [],
-	"nergigante": [],
+	"nergigante": [
+		{
+			"name": "Nergigante",
+			"icon": "monsters/nergigante",
+			"weapons": [
+				{
+					"name": "Iron Lance",
+					"rarity": 0,
+					"icon": "items/ore_0",
+					"parts": [],
+					"damage": [
+						{"value": 1, "amount": 8},
+						{"value": 2, "amount": 4}
+					],
+					"remove": [],
+					"add": [],
+					"armor": 1
+				},
+				{
+					"name": "Nergal Impaler",
+					"rarity": 3,
+					"icon": "monsters/nergigante",
+					"parts": [
+						{"name": "Nergigante Talon", "amount": 1},
+						{"name": "Nergigante Regrowth Plate", "amount": 1},
+						{"name": "Nergigante Tail", "amount": 2},
+						{"name": "Nergigante Carapace", "amount": 2}
+					],
+					"damage": [
+						{"value": 2, "amount": 5},
+						{"value": 3, "amount": 4},
+						{"value": 4, "amount": 3}
+					],
+					"remove": [{"name": "High Thrust", "amount": 3}],
+					"add": [{"name": "Dragon Thrust", "amount": 3}]
+				},
+				{
+					"name": "Perdition's Hand",
+					"rarity": 4,
+					"icon": "monsters/nergigante",
+					"parts": [
+						{"name": "Nergigante Horn", "amount": 4},
+						{"name": "Nergigante Talon", "amount": 3},
+						{"name": "Nergigante Gem", "amount": 2}
+					],
+					"damage": [
+						{"value": 2, "amount": 6},
+						{"value": 3, "amount": 4},
+						{"value": 4, "amount": 2},
+						{"value": 5, "amount": 2}
+					],
+					"remove": [
+						{"name": "High Thrust", "amount": 3},
+						{"name": "Guard Bash", "amount": 2}
+					],
+					"add": [
+						{"name": "Dragon Thrust", "amount": 3},
+						{"name": "Dragon GUard", "amount": 2}
+					],
+					"armor": 1
+				}
+			]
+		}
+	],
 	"kushala": [
 		{
 			"name": "Kushala Daora",
@@ -474,7 +537,7 @@
 						{"value": 4, "amount": 3}
 					],
 					"remove": [{"name": "Mid Thrust", "amount": 3}],
-					"add": [{"name": "Blizzard Thrust", "amount": 2}]
+					"add": [{"name": "Blizzard Thrust", "amount": 3}]
 				},
 				{
 					"name": "Daora's Fang",

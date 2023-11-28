@@ -431,7 +431,70 @@
 		}
 	],
 	"teostra": [],
-	"nergigante": [],
+	"nergigante": [
+		{
+			"name": "Nergigante",
+			"icon": "monsters/nergigante",
+			"weapons": [
+				{
+					"name": "Iron Hammer",
+					"rarity": 0,
+					"icon": "items/ore_0",
+					"parts": [],
+					"damage": [
+						{"value": 1, "amount": 10},
+						{"value": 2, "amount": 1},
+						{"value": 4, "amount": 1}
+					],
+					"remove": [],
+					"add": []
+				},
+				{
+					"name": "Nergal Crusher",
+					"rarity": 3,
+					"icon": "monsters/nergigante",
+					"parts": [
+						{"name": "Nergigante Talon", "amount": 1},
+						{"name": "Nergigante Regrowth Plate", "amount": 1},
+						{"name": "Nergigante Tail", "amount": 2},
+						{"name": "Nergigante Carapace", "amount": 2}
+					],
+					"damage": [
+						{"value": 2, "amount": 7},
+						{"value": 4, "amount": 3},
+						{"value": 5, "amount": 2}
+					],
+					"remove": [{"name": "Big Bang", "amount": 4}],
+					"add": [{"name": "Dragon Big Bang", "amount": 4}],
+					"armor": 1
+				},
+				{
+					"name": "Obliteration's Footfall",
+					"rarity": 4,
+					"icon": "monsters/nergigante",
+					"parts": [
+						{"name": "Nergigante Horn", "amount": 4},
+						{"name": "Nergigante Talon", "amount": 3},
+						{"name": "Nergigante Gem", "amount": 2}
+					],
+					"damage": [
+						{"value": 2, "amount": 8},
+						{"value": 4, "amount": 3},
+						{"value": 5, "amount": 3}
+					],
+					"remove": [
+						{"name": "Big Bang", "amount": 4},
+						{"name": "Charged Upswing", "amount": 2}
+					],
+					"add": [
+						{"name": "Dragon Side Smash", "amount": 4},
+						{"name": "Dragon Charged Upswing", "amount": 2}
+					],
+					"armor": 1
+				}
+			]
+		}
+	],
 	"kushala": [
 		{
 			"name": "Kushala Daora",

@@ -482,6 +482,66 @@
 			]
 		}
 	],
-	"nergigante": [],
+	"nergigante": [
+		{
+			"name": "Nergigante",
+			"icon": "monsters/nergigante",
+			"weapons": [
+				{
+					"name": "Iron Katana",
+					"rarity": 0,
+					"icon": "items/ore_0",
+					"parts": [],
+					"damage": [
+						{"value": 1, "amount": 9},
+						{"value": 2, "amount": 3}
+					],
+					"remove": [],
+					"add": []
+				},
+				{
+					"name": "Nergal Reaver",
+					"rarity": 3,
+					"icon": "monsters/nergigante",
+					"parts": [
+						{"name": "Nergigante Talon", "amount": 1},
+						{"name": "Nergigante Regrowth Plate", "amount": 1},
+						{"name": "Nergigante Tail", "amount": 2},
+						{"name": "Nergigante Carapace", "amount": 2}
+					],
+					"damage": [
+						{"value": 2, "amount": 7},
+						{"value": 3, "amount": 3},
+						{"value": 4, "amount": 2}
+					],
+					"remove": [{"name": "Foresight Slash", "amount": 2}],
+					"add": [{"name": "Dragon Foresight Slash", "amount": 2}]
+				},
+				{
+					"name": "Exterminator's Edge",
+					"rarity": 4,
+					"icon": "monsters/nergigante",
+					"parts": [
+						{"name": "Nergigante Horn", "amount": 4},
+						{"name": "Nergigante Talon", "amount": 3},
+						{"name": "Nergigante Gem", "amount": 2}
+					],
+					"damage": [
+						{"value": 2, "amount": 7},
+						{"value": 3, "amount": 4},
+						{"value": 4, "amount": 3}
+					],
+					"remove": [
+						{"name": "Foresight Slash", "amount": 2},
+						{"name": "Spirit Helm Breaker", "amount": 2}
+					],
+					"add": [
+						{"name": "Dragon Foresight Slash", "amount": 2},
+						{"name": "Dragon Helm Breaker", "amount": 2}
+					]
+				}
+			]
+		}
+	],
 	"kushala": []
 }
