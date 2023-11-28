@@ -245,129 +245,196 @@
 			]
 		}
 	],
-	"wildspire_waste": [{
-		"name": "Pukei-Pukei",
-		"icon": "monsters/pukei",
-		"weapons": [
-			{
-				"name": "Buster Sword",
-				"rarity": 0,
-				"icon": "items/ore_0",
-				"parts": [],
-				"damage": [
-					{"value": 1, "amount": 7},
-					{"value": 2, "amount": 4},
-					{"value": 3, "amount": 1}
-				],
-				"remove": [],
-				"add": []
-			},
-			{
-				"name": "Blooming Blade",
-				"rarity": 2,
-				"icon": "monsters/pukei",
-				"parts": [
-					{"name": "Pukei-Pukei Quill", "amount": 2},
-					{"name": "Pukei-Pukei Scale", "amount": 2},
-					{"name": "Pukei-Pukei Tail", "amount": 1},
-					{"name": "Poison Sac", "amount": 1}
-				],
-				"damage": [
-					{"value": 2, "amount": 5},
-					{"value": 3, "amount": 6},
-					{"value": 4, "amount": 1}
-				],
-				"remove": [{"name": "True Charged Slash", "amount": 2}],
-				"add": [{"name": "Toxic Charged Slash", "amount": 2}]
-			},
-			{
-				"name": "Datura Blaze",
-				"rarity": 3,
-				"icon": "monsters/pukei",
-				"parts": [
-					{"name": "Pukei-Pukei Scale", "amount": 2},
-					{"name": "Pukei-Pukei wing", "amount": 2},
-					{"name": "Quality Bone", "amount": 3},
-					{"name": "Toxic Sac", "amount": 2}
-				],
-				"damage": [
-					{"value": 2, "amount": 3},
-					{"value": 3, "amount": 8},
-					{"value": 4, "amount": 3}
-				],
-				"remove": [
-					{"name": "True Charged Slash", "amount": 2},
-					{"name": "Charge Up", "amount": 2}
-				],
-				"add": [
-					{"name": "Toxic Charged Slash", "amount": 2},
-					{"name": "Poisoned Charge Up", "amount": 2}
-				],
-				"armor": 1
-			}
-		]
-	},
-	{
-		"name": "Barroth",
-		"icon": "monsters/barroth",
-		"weapons": [
-			{
-				"name": "Bone Blade",
-				"rarity": 0,
-				"icon": "items/bone_1",
-				"parts": [{"name": "Monster Bone S", "amount": 1}],
-				"damage": [
-					{"value": 1, "amount": 5},
-					{"value": 2, "amount": 3},
-					{"value": 3, "amount": 2}
-				],
-				"add": [],
-				"remove": []
-			},
-			{
-				"name": "Carapace Buster",
-				"rarity": 2,
-				"icon": "monsters/barroth",
-				"parts": [
-					{"name": "Barroth claw", "amount": 1},
-					{"name": "Barroth Shell", "amount": 3},
-					{"name": "Barroth Ridge", "amount": 3}
-				],
-				"damage": [
-					{"value": 2, "amount": 5},
-					{"value": 3, "amount": 4},
-					{"value": 4, "amount": 1}
-				],
-				"remove": [{"name": "Great Sword Block", "amount": 2}],
-				"add": [{"name": "Empowered Great Sword Block", "amount": 2}]
-			},
-			{
-				"name": "Barroth Shredder",
-				"rarity": 3,
-				"icon": "monsters/barroth",
-				"parts": [
-					{"name": "Barroth Claw", "amount": 2},
-					{"name": "Barroth Carapace", "amount": 3},
-					{"name": "Barroth Ridge", "amount": 3}
-				],
-				"damage": [
-					{"value": 2, "amount": 6},
-					{"value": 3, "amount": 4},
-					{"value": 4, "amount": 2}
-				],
-				"remove": [
-					{"name": "Great Sword Block", "amount": 2},
-					{"name": "", "amount": 2}
-				],
-				"add": [
-					{"name": "Empowered Great Sword Block", "amount": 2},
-					{"name": "Paralysing Slash", "amount": 2}
-				]
-			}
-		]
-	}],
+	"wildspire_waste": [
+		{
+			"name": "Pukei-Pukei",
+			"icon": "monsters/pukei",
+			"weapons": [
+				{
+					"name": "Buster Sword",
+					"rarity": 0,
+					"icon": "items/ore_0",
+					"parts": [],
+					"damage": [
+						{"value": 1, "amount": 7},
+						{"value": 2, "amount": 4},
+						{"value": 3, "amount": 1}
+					],
+					"remove": [],
+					"add": []
+				},
+				{
+					"name": "Blooming Blade",
+					"rarity": 2,
+					"icon": "monsters/pukei",
+					"parts": [
+						{"name": "Pukei-Pukei Quill", "amount": 2},
+						{"name": "Pukei-Pukei Scale", "amount": 2},
+						{"name": "Pukei-Pukei Tail", "amount": 1},
+						{"name": "Poison Sac", "amount": 1}
+					],
+					"damage": [
+						{"value": 2, "amount": 5},
+						{"value": 3, "amount": 6},
+						{"value": 4, "amount": 1}
+					],
+					"remove": [{"name": "True Charged Slash", "amount": 2}],
+					"add": [{"name": "Toxic Charged Slash", "amount": 2}]
+				},
+				{
+					"name": "Datura Blaze",
+					"rarity": 3,
+					"icon": "monsters/pukei",
+					"parts": [
+						{"name": "Pukei-Pukei Scale", "amount": 2},
+						{"name": "Pukei-Pukei wing", "amount": 2},
+						{"name": "Quality Bone", "amount": 3},
+						{"name": "Toxic Sac", "amount": 2}
+					],
+					"damage": [
+						{"value": 2, "amount": 3},
+						{"value": 3, "amount": 8},
+						{"value": 4, "amount": 3}
+					],
+					"remove": [
+						{"name": "True Charged Slash", "amount": 2},
+						{"name": "Charge Up", "amount": 2}
+					],
+					"add": [
+						{"name": "Toxic Charged Slash", "amount": 2},
+						{"name": "Poisoned Charge Up", "amount": 2}
+					],
+					"armor": 1
+				}
+			]
+		},
+		{
+			"name": "Barroth",
+			"icon": "monsters/barroth",
+			"weapons": [
+				{
+					"name": "Bone Blade",
+					"rarity": 0,
+					"icon": "items/bone_1",
+					"parts": [{"name": "Monster Bone S", "amount": 1}],
+					"damage": [
+						{"value": 1, "amount": 5},
+						{"value": 2, "amount": 3},
+						{"value": 3, "amount": 2}
+					],
+					"add": [],
+					"remove": []
+				},
+				{
+					"name": "Carapace Buster",
+					"rarity": 2,
+					"icon": "monsters/barroth",
+					"parts": [
+						{"name": "Barroth claw", "amount": 1},
+						{"name": "Barroth Shell", "amount": 3},
+						{"name": "Barroth Ridge", "amount": 3}
+					],
+					"damage": [
+						{"value": 2, "amount": 5},
+						{"value": 3, "amount": 4},
+						{"value": 4, "amount": 1}
+					],
+					"remove": [{"name": "Great Sword Block", "amount": 2}],
+					"add": [{"name": "Empowered Great Sword Block", "amount": 2}]
+				},
+				{
+					"name": "Barroth Shredder",
+					"rarity": 3,
+					"icon": "monsters/barroth",
+					"parts": [
+						{"name": "Barroth Claw", "amount": 2},
+						{"name": "Barroth Carapace", "amount": 3},
+						{"name": "Barroth Ridge", "amount": 3}
+					],
+					"damage": [
+						{"value": 2, "amount": 6},
+						{"value": 3, "amount": 4},
+						{"value": 4, "amount": 2}
+					],
+					"remove": [
+						{"name": "Great Sword Block", "amount": 2},
+						{"name": "", "amount": 2}
+					],
+					"add": [
+						{"name": "Empowered Great Sword Block", "amount": 2},
+						{"name": "Paralysing Slash", "amount": 2}
+					]
+				}
+			]
+		}
+	],
 	"kulu": [],
 	"teostra": [],
 	"nergigante": [],
-	"kushala": []
+	"kushala": [
+		{
+			"name": "Kushala Daora",
+			"icon": "monsters/kushala",
+			"weapons": [
+				{
+					"name": "Buster Sword",
+					"rarity": 0,
+					"icon": "items/ore_0",
+					"parts": [],
+					"damage": [
+						{"value": 1, "amount": 7},
+						{"value": 2, "amount": 4},
+						{"value": 3, "amount": 1}
+					],
+					"remove": [],
+					"add": []
+				},
+				{
+					"name": "Icesteel Edge",
+					"rarity": 3,
+					"icon": "monsters/kushala",
+					"parts": [
+						{"name": "Daora Claw", "amount": 1},
+						{"name": "Daora Webbing", "amount": 2},
+						{"name": "Daora Tail", "amount": 2},
+						{"name": "Nergigante Carapace", "amount": 1}
+					],
+					"damage": [
+						{"value": 2, "amount": 4},
+						{"value": 3, "amount": 4},
+						{"value": 4, "amount": 5},
+						{"value": 5, "amount": 1}
+					],
+					"remove": [{"name": "Charge Up", "amount": 2}],
+					"add": [{"name": "Frozen Charge Up", "amount": 2}],
+					"armor": 1
+				},
+				{
+					"name": "Daora's Decimator",
+					"rarity": 4,
+					"icon": "monsters/kushala",
+					"parts": [
+						{"name": "Daora Horn", "amount": 4},
+						{"name": "Daora Claw", "amount": 3},
+						{"name": "Daora Gem", "amount": 1}
+					],
+					"damage": [
+						{"value": 2, "amount": 5},
+						{"value": 3, "amount": 6},
+						{"value": 4, "amount": 3},
+						{"value": 5, "amount": 2}
+					],
+					"remove": [
+						{"name": "Charge Up", "amount": 2},
+						{"name": "Overhead Slam", "amount": 4}
+					],
+					"add": [
+						{"name": "Frozen Charge Up", "amount": 2},
+						{"name": "Frostbite Slam", "amount": 4}
+					],
+					"armor": 1
+				}
+			]
+		}
+	]
 }

@@ -366,69 +366,134 @@
 			]
 		}
 	],
-	"kulu": [		{
-		"name": "Kulu-Ya-Ku",
-		"icon": "monsters/kulu",
-		"weapons": [
-			{
-				"name": "Bone Bludgeon",
-				"rarity": 0,
-				"icon": "items/bone_1",
-				"parts": [{"name": "Monster Bone S", "amount": 1}],
-				"damage": [
-					{"value": 1, "amount": 7},
-					{"value": 2, "amount": 2},
-					{"value": 4, "amount": 1}
-				],
-				"add": [],
-				"remove": []
-			},
-			{
-				"name": "Kulu Beak",
-				"rarity": 2,
-				"icon": "monsters/kulu",
-				"parts": [
-					{"name": "Kulu-Ya-Ku Beak", "amount": 1},
-					{"name": "Kulu-Ya-Ku Hide", "amount": 2},
-					{"name": "Kulu-Ya-Ku Scale", "amount": 4},
-					{"name": "Earth Crystal", "amount": 3}
-				],
-				"damage": [
-					{"value": 1, "amount": 5},
-					{"value": 2, "amount": 3},
-					{"value": 4, "amount": 6}
-				],
-				"remove": [{"name": "Spinning Bludgeon", "amount": 2}],
-				"add": [{"name": "Diving Spiral Bludgeon", "amount": 2}]
-			},
-			{
-				"name": "Crushing Beak",
-				"rarity": 3,
-				"icon": "monsters/kulu",
-				"parts": [
-					{"name": "Kulu-Ya-Ku Beak", "amount": 2},
-					{"name": "Kulu-Ya-Ku Hide", "amount": 3},
-					{"name": "Kulu-Ya-Ku Plume", "amount": 3},
-					{"name": "Boulder Bone", "amount": 4}
-				],
-				"damage": [
-					{"value": 1, "amount": 5},
-					{"value": 2, "amount": 3},
-					{"value": 4, "amount": 6}
-				],
-				"remove": [
-					{"name": "Spinning Bludgeon", "amount": 2},
-					{"name": "Side Smash", "amount": 2}
-				],
-				"add": [
-					{"name": "Diving Spiral Bludgeon", "amount": 2},
-					{"name": "Knock Out Side Smash", "amount": 2}
-				],
-				"armor": 1
-			}
-		]
-	}],
+	"kulu": [
+		{
+			"name": "Kulu-Ya-Ku",
+			"icon": "monsters/kulu",
+			"weapons": [
+				{
+					"name": "Bone Bludgeon",
+					"rarity": 0,
+					"icon": "items/bone_1",
+					"parts": [{"name": "Monster Bone S", "amount": 1}],
+					"damage": [
+						{"value": 1, "amount": 7},
+						{"value": 2, "amount": 2},
+						{"value": 4, "amount": 1}
+					],
+					"add": [],
+					"remove": []
+				},
+				{
+					"name": "Kulu Beak",
+					"rarity": 2,
+					"icon": "monsters/kulu",
+					"parts": [
+						{"name": "Kulu-Ya-Ku Beak", "amount": 1},
+						{"name": "Kulu-Ya-Ku Hide", "amount": 2},
+						{"name": "Kulu-Ya-Ku Scale", "amount": 4},
+						{"name": "Earth Crystal", "amount": 3}
+					],
+					"damage": [
+						{"value": 1, "amount": 5},
+						{"value": 2, "amount": 3},
+						{"value": 4, "amount": 6}
+					],
+					"remove": [{"name": "Spinning Bludgeon", "amount": 2}],
+					"add": [{"name": "Diving Spiral Bludgeon", "amount": 2}]
+				},
+				{
+					"name": "Crushing Beak",
+					"rarity": 3,
+					"icon": "monsters/kulu",
+					"parts": [
+						{"name": "Kulu-Ya-Ku Beak", "amount": 2},
+						{"name": "Kulu-Ya-Ku Hide", "amount": 3},
+						{"name": "Kulu-Ya-Ku Plume", "amount": 3},
+						{"name": "Boulder Bone", "amount": 4}
+					],
+					"damage": [
+						{"value": 1, "amount": 5},
+						{"value": 2, "amount": 3},
+						{"value": 4, "amount": 6}
+					],
+					"remove": [
+						{"name": "Spinning Bludgeon", "amount": 2},
+						{"name": "Side Smash", "amount": 2}
+					],
+					"add": [
+						{"name": "Diving Spiral Bludgeon", "amount": 2},
+						{"name": "Knock Out Side Smash", "amount": 2}
+					],
+					"armor": 1
+				}
+			]
+		}
+	],
 	"teostra": [],
 	"nergigante": [],
-	"kushala": []
+	"kushala": [
+		{
+			"name": "Kushala Daora",
+			"icon": "monsters/kushala",
+			"weapons": [
+				{
+					"name": "Iron Hammer",
+					"rarity": 0,
+					"icon": "items/ore_0",
+					"parts": [],
+					"damage": [
+						{"value": 1, "amount": 10},
+						{"value": 2, "amount": 1},
+						{"value": 4, "amount": 1}
+					],
+					"remove": [],
+					"add": []
+				},
+				{
+					"name": "Icesteel Hammer",
+					"rarity": 3,
+					"icon": "monsters/kushala",
+					"parts": [
+						{"name": "Daora Claw", "amount": 1},
+						{"name": "Daora Webbing", "amount": 2},
+						{"name": "Daora Tail", "amount": 2},
+						{"name": "Nergigante Carapace", "amount": 1}
+					],
+					"damage": [
+						{"value": 2, "amount": 10},
+						{"value": 4, "amount": 2},
+						{"value": 5, "amount": 2}
+					],
+					"remove": [{"name": "Side Smash", "amount": 2}],
+					"add": [{"name": "Icy Side Smash", "amount": 2}],
+					"armor": 1
+				},
+				{
+					"name": "Daora's Colossus",
+					"rarity": 4,
+					"icon": "monsters/kushala",
+					"parts": [
+						{"name": "Daora Horn", "amount": 4},
+						{"name": "Daora Claw", "amount": 3},
+						{"name": "Daora Gem", "amount": 1}
+					],
+					"damage": [
+						{"value": 2, "amount": 11},
+						{"value": 4, "amount": 2},
+						{"value": 5, "amount": 3}
+					],
+					"remove": [
+						{"name": "Side Smash", "amount": 2},
+						{"name": "Upswing", "amount": 2}
+					],
+					"add": [
+						{"name": "Icy Side Smash", "amount": 2},
+						{"name": "Frozen Upswing", "amount": 2}
+					],
+					"armor": 1
+				}
+			]
+		}
+	]
 }

@@ -189,6 +189,17 @@ async function selectActivePage(type: EWeapons) {
 					:direction="PAGE_DIRECTION === 'vertical' ? 'horizontal' : 'vertical'"
 				></WeaponSet>
 			</div>
+			<div
+				class="set"
+				v-for="set in activeWeaponJson.kushala"
+				v-if="settingsStore.settingsData?.owned_expansions.kushala"
+			>
+				<WeaponSet
+					:weapon_class="active_weapon"
+					:set="set"
+					:direction="PAGE_DIRECTION === 'vertical' ? 'horizontal' : 'vertical'"
+				></WeaponSet>
+			</div>
 
 			<div class="blind --before" v-if="PAGE_DIRECTION == 'horizontal'"></div>
 		</div>

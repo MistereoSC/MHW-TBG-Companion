@@ -381,5 +381,70 @@
 	"kulu": [],
 	"teostra": [],
 	"nergigante": [],
-	"kushala": []
+	"kushala": [
+		{
+			"name": "Kushala Daora",
+			"icon": "monsters/kushala",
+			"weapons": [
+				{
+					"name": "Chain Blitz",
+					"rarity": 0,
+					"icon": "items/ore_0",
+					"parts": [],
+					"damage": [
+						{"value": 1, "amount": 10},
+						{"value": 2, "amount": 2}
+					],
+					"remove": [],
+					"add": [],
+					"deviation": 1
+				},
+				{
+					"name": "Icesteel Wasp",
+					"rarity": 3,
+					"icon": "monsters/kushala",
+					"parts": [
+						{"name": "Daora Claw", "amount": 1},
+						{"name": "Daora Webbing", "amount": 2},
+						{"name": "Daora Tail", "amount": 2},
+						{"name": "Nergigante Carapace", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 1},
+						{"value": 2, "amount": 9},
+						{"value": 3, "amount": 2},
+						{"value": 4, "amount": 2}
+					],
+					"remove": [{"name": "Poison Ammo 1", "amount": 2}],
+					"add": [{"name": "Freeze Ammo", "amount": 2}]
+				},
+				{
+					"name": "Kushala's Hornet",
+					"rarity": 4,
+					"icon": "monsters/kushala",
+					"parts": [
+						{"name": "Daora Horn", "amount": 4},
+						{"name": "Daora Claw", "amount": 3},
+						{"name": "Daora Gem", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 2},
+						{"value": 2, "amount": 9},
+						{"value": 3, "amount": 3},
+						{"value": 4, "amount": 2}
+					],
+					"remove": [
+						{"name": "Poison Ammo 1", "amount": 2},
+						{"name": "Wyvernblast", "amount": 1},
+						{"name": "", "amount": 1}
+					],
+					"add": [
+						{"name": "Freeze Ammo", "amount": 2},
+						{"name": "Freezing Wyvernblast", "amount": 2}
+					],
+					"deviation": 1
+				}
+			]
+		}
+	]
 }

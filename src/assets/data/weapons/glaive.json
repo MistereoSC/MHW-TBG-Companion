@@ -425,5 +425,66 @@
 	],
 	"teostra": [],
 	"nergigante": [],
-	"kushala": []
+	"kushala": [
+		{
+			"name": "Kushala Daora",
+			"icon": "monsters/kushala",
+			"weapons": [
+				{
+					"name": "Iron Blade",
+					"rarity": 0,
+					"icon": "items/ore_0",
+					"parts": [],
+					"damage": [
+						{"value": 1, "amount": 10},
+						{"value": 2, "amount": 2}
+					],
+					"remove": [],
+					"add": []
+				},
+				{
+					"name": "Daora's Entom",
+					"rarity": 3,
+					"icon": "monsters/kushala",
+					"parts": [
+						{"name": "Daora Claw", "amount": 1},
+						{"name": "Daora Webbing", "amount": 2},
+						{"name": "Daora Tail", "amount": 2},
+						{"name": "Nergigante Carapace", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 2},
+						{"value": 2, "amount": 7},
+						{"value": 3, "amount": 3},
+						{"value": 4, "amount": 2}
+					],
+					"remove": [{"name": "White Kinsect: Harvest Extract", "amount": 1}],
+					"add": [{"name": "Kushala Daora Kinsect: Harvest Extract", "amount": 1}]
+				},
+				{
+					"name": "Daora's Tethidine",
+					"rarity": 4,
+					"icon": "monsters/kushala",
+					"parts": [
+						{"name": "Daora Horn", "amount": 4},
+						{"name": "Daora Claw", "amount": 3},
+						{"name": "Daora Gem", "amount": 1}
+					],
+					"damage": [
+						{"value": 2, "amount": 8},
+						{"value": 3, "amount": 4},
+						{"value": 4, "amount": 4}
+					],
+					"remove": [
+						{"name": "White Kinsect: Harvest Extract", "amount": 1},
+						{"name": "Reaping Slash", "amount": 2}
+					],
+					"add": [
+						{"name": "Kushala Daora Kinsect: Harvest Extract", "amount": 1},
+						{"name": "Brittle Slash", "amount": 2}
+					]
+				}
+			]
+		}
+	]
 }
