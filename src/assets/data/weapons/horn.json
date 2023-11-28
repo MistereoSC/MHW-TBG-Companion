@@ -361,67 +361,130 @@
 			]
 		}
 	],
-	"kulu": [{
-		"name": "Kulu-Ya-Ku",
-		"icon": "monsters/kulu",
-		"weapons": [
-			{
-				"name": "Metal Bagpie",
-				"rarity": 0,
-				"icon": "items/ore_0",
-				"parts": [],
-				"damage": [
-					{"value": 1, "amount": 10},
-					{"value": 2, "amount": 2}
-				],
-				"remove": [],
-				"add": []
-			},
-			{
-				"name": "Kulu Duda",
-				"rarity": 2,
-				"icon": "monsters/kulu",
-				"parts": [
-					{"name": "Kulu-Ya-Ku Beak", "amount": 1},
-					{"name": "Kulu-Ya-Ku Hide", "amount": 2},
-					{"name": "Kulu-Ya-Ku Scale", "amount": 4},
-					{"name": "Earth Crystal", "amount": 3}
-				],
-				"damage": [
-					{"value": 1, "amount": 2},
-					{"value": 2, "amount": 9},
-					{"value": 3, "amount": 3}
-				],
-				"remove": [{"name": "Left Swing", "amount": 2}],
-				"add": [{"name": "Dive Swing", "amount": 2}]
-			},
-			{
-				"name": "Dancing Daval",
-				"rarity": 3,
-				"icon": "monsters/kulu",
-				"parts": [
-					{"name": "Kulu-Ya-Ku Beak", "amount": 2},
-					{"name": "Kulu-Ya-Ku Hide", "amount": 3},
-					{"name": "Kulu-Ya-Ku Plume", "amount": 3},
-					{"name": "Boulder Bone", "amount": 4}
-				],
-				"damage": [
-					{"value": 1, "amount": 3},
-					{"value": 2, "amount": 6},
-					{"value": 3, "amount": 7}
-				],
-				"remove": [
-					{"name": "Left Swing", "amount": 2},
-					{"name": "Upward Swing", "amount": 2}
-				],
-				"add": [
-					{"name": "Dive Swing", "amount": 2},
-					{"name": "Lullably Smash", "amount": 1}
-				]
-			}
-		]
-	}],
-	"teostra": [],
+	"kulu": [
+		{
+			"name": "Kulu-Ya-Ku",
+			"icon": "monsters/kulu",
+			"weapons": [
+				{
+					"name": "Metal Bagpie",
+					"rarity": 0,
+					"icon": "items/ore_0",
+					"parts": [],
+					"damage": [
+						{"value": 1, "amount": 10},
+						{"value": 2, "amount": 2}
+					],
+					"remove": [],
+					"add": []
+				},
+				{
+					"name": "Kulu Duda",
+					"rarity": 2,
+					"icon": "monsters/kulu",
+					"parts": [
+						{"name": "Kulu-Ya-Ku Beak", "amount": 1},
+						{"name": "Kulu-Ya-Ku Hide", "amount": 2},
+						{"name": "Kulu-Ya-Ku Scale", "amount": 4},
+						{"name": "Earth Crystal", "amount": 3}
+					],
+					"damage": [
+						{"value": 1, "amount": 2},
+						{"value": 2, "amount": 9},
+						{"value": 3, "amount": 3}
+					],
+					"remove": [{"name": "Left Swing", "amount": 2}],
+					"add": [{"name": "Dive Swing", "amount": 2}]
+				},
+				{
+					"name": "Dancing Daval",
+					"rarity": 3,
+					"icon": "monsters/kulu",
+					"parts": [
+						{"name": "Kulu-Ya-Ku Beak", "amount": 2},
+						{"name": "Kulu-Ya-Ku Hide", "amount": 3},
+						{"name": "Kulu-Ya-Ku Plume", "amount": 3},
+						{"name": "Boulder Bone", "amount": 4}
+					],
+					"damage": [
+						{"value": 1, "amount": 3},
+						{"value": 2, "amount": 6},
+						{"value": 3, "amount": 7}
+					],
+					"remove": [
+						{"name": "Left Swing", "amount": 2},
+						{"name": "Upward Swing", "amount": 2}
+					],
+					"add": [
+						{"name": "Dive Swing", "amount": 2},
+						{"name": "Lullably Smash", "amount": 1}
+					]
+				}
+			]
+		}
+	],
+	"teostra": [
+		{
+			"name": "Teostra",
+			"icon": "monsters/teostra",
+			"weapons": [
+				{
+					"name": "Metal Bagpie",
+					"rarity": 0,
+					"icon": "items/ore_0",
+					"parts": [],
+					"damage": [
+						{"value": 1, "amount": 10},
+						{"value": 2, "amount": 2}
+					],
+					"remove": [],
+					"add": []
+				},
+				{
+					"name": "Teostra's Tiple",
+					"rarity": 3,
+					"icon": "monsters/teostra",
+					"parts": [
+						{"name": "Teostra Claw", "amount": 1},
+						{"name": "Teostra Mane", "amount": 1},
+						{"name": "Teostra Carapace", "amount": 2},
+						{"name": "Teostra Powder", "amount": 1}
+					],
+					"damage": [
+						{"value": 1, "amount": 4},
+						{"value": 2, "amount": 4},
+						{"value": 3, "amount": 5},
+						{"value": 4, "amount": 1}
+					],
+					"remove": [{"name": "Hit Stab", "amount": 3}],
+					"add": [{"name": "Boom Box", "amount": 3}]
+				},
+				{
+					"name": "Teostras Orphée",
+					"rarity": 4,
+					"icon": "monsters/teostra",
+					"parts": [
+						{"name": "Teostra Horn", "amount": 3},
+						{"name": "Teostra Claw", "amount": 2},
+						{"name": "Teostra Gem", "amount": 1}
+					],
+					"damage": [
+						{"value": 2, "amount": 9},
+						{"value": 3, "amount": 4},
+						{"value": 4, "amount": 3}
+					],
+					"remove": [
+						{"name": "Hit Stab", "amount": 3},
+						{"name": "Left Swing", "amount": 2}
+					],
+					"add": [
+						{"name": "Boom Box", "amount": 3},
+						{"name": "Blast Swing", "amount": 2}
+					]
+				}
+			]
+		}
+	],
 	"nergigante": [],
 	"kushala": []
 }
