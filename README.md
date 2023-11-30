@@ -1,40 +1,30 @@
-# mhw-tbg_companion
+# Monster Hunter World: The Board Game - Companion
 
-This template should help get you started developing with Vue 3 in Vite.
+View the app live at https://mhw-tbg-companion.vercel.app
 
-## Recommended IDE Setup
+## Campaign Tracker
+Save up to three different campaigns, with up to 14 characters each. Track your campaign progress, potions, and resources and equipment.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+![Campaigns](https://i.imgur.com/XjGHDQh.png)
+![Tracker](https://i.imgur.com/mvzJ7Jv.png)
+![Characters](https://i.imgur.com/U5xHAcc.png)
 
-## Type Support for `.vue` Imports in TS
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+## Hunt Helper
+Get an overview of all the status and terrain effects, and keep track of your lives and potions.
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+![Helper](https://i.imgur.com/p3N4WaT.png)
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
 
-## Customize configuration
+## Armor and Weapon Trees
+Crafting trees for all armors and weapons for all 14 weapon classes, in one place.
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+![Armor](https://i.imgur.com/R8fKqzy.png)
+![Weapons](https://i.imgur.com/CIHjjzq.png)
 
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
+## And more to come . . .
+Planned features include:
+- An overview of where to get all the crafting resources
+- An overview of all available quests with hints of what resources might be found
+- An overview of all available Arena Quests
+- And hopefully all future Iceborne Content
