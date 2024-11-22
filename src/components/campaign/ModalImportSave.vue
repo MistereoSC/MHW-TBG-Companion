@@ -12,7 +12,7 @@ const props = defineProps<{
 	slotNumber: number,
 }>()
 
-const state = ref('invalid' as 'await' | 'invalid')
+const state = ref('await' as 'await' | 'invalid')
 const isLoading = ref(false)
 const dragActive = ref(false)
 const errorReason = ref(null as null | 'invalid_filetype' | 'wrong_json' | 'corrupt_json')
