@@ -10,6 +10,23 @@ export const useCampaignStore = defineStore('campaign', () => {
 	const campaignData = ref(null as null | ICampaignData)
 
 	// #region LocalStorage Management
+	function importCampaignData(toSlot: number, newCampaign: ICampaignData, openSlot?: boolean) {
+		if (toSlot < 0 || toSlot >= 3) return
+
+		switch (toSlot) {
+			case 0:
+				localStorage.setItem('slotA', JSON.stringify(newCampaign))
+				break
+			case 1:
+				localStorage.setItem('slotB', JSON.stringify(newCampaign))
+				break
+			case 2:
+				localStorage.setItem('slotC', JSON.stringify(newCampaign))
+				break
+		}
+		if (openSlot == true) loadSlot(toSlot)
+	}
+
 	function loadSlot(slot: number | null) {
 		if (slot === null) {
 			activeSlot.value = null
@@ -174,7 +191,6 @@ export const useCampaignStore = defineStore('campaign', () => {
 	function setPotions(val: number) {
 		if (!campaignData.value) return
 		if (val < 0 || val > 99) return
-		console.log('Updating Potions to ' + val)
 
 		campaignData.value.potions = val
 		saveSlot()
@@ -199,5 +215,6 @@ export const useCampaignStore = defineStore('campaign', () => {
 		registerCampaignDay,
 		setPotions,
 		getPotions,
+		importCampaignData,
 	}
 })

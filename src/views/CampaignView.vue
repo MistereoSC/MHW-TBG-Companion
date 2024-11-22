@@ -18,6 +18,7 @@ function onSlotSelect(slot: number | null) {
 		slotSelectionOpen.value = true
 		return
 	}
+
 	potionCount.value = slotData.potions
 	slotSelectionOpen.value = false
 }

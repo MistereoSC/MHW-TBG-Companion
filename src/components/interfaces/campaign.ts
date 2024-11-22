@@ -22,16 +22,18 @@ export interface ICharacterData {
 	palico_name: string
 	icon: string
 
-	inventory: {
-		common: Array<IItem>
-		uncommon: string
-		parts: string
-		equipment: string
-	}
+	inventory: IInventory
 }
 
 export interface ICampaignDay {
 	day: number
 	type: 'hunt' | 'downtime'
 	icon: string
+}
+
+export interface IInventory {
+	common: Array<IItem>
+	uncommon: string
+	parts: string
+	equipment: string
 }

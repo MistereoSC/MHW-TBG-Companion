@@ -1,4 +1,5 @@
 import ItemData from '@/assets/data/loot.json'
+import type {IInventory} from '@/components/interfaces/campaign'
 
 export interface IExpansions<T> {
 	basic: T
@@ -129,7 +130,7 @@ export function getDefaultInventory() {
 	// 	common.push({amount: 0, ...item})
 	// })
 
-	const inventory = {
+	const inventory: IInventory = {
 		common: common,
 		uncommon: '',
 		parts: '',
