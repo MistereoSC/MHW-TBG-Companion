@@ -21,7 +21,7 @@ function confirmationOnKeyDown(e: KeyboardEvent) {
 	else e.preventDefault() // If not match, don't add to input text
 }
 
-watch(() => confirmationInput.value, (newValue, oldValue) => {
+watch(() => confirmationInput.value, (newValue) => {
 	deleteValid.value = validateInput(newValue)
 
 	function validateInput(v: string) {
@@ -42,7 +42,7 @@ function onClose() {
 <template>
 	<Modal @close="emit('close')">
 		<div class="delete">
-			<div class="delete__image"><img src="/icons/warn_cat_x.png" class="delete__image__img"></div>
+			<div class="delete__image"><img src="/icons/warn_cat_x.png" class="delete__image__img" alt="Sad Palico"></div>
 			<div class="delete__message">Are you sure you want to delete save at
 				<span class="delete__message__highlight">Slot {{ props.slotNumber }}</span> ?
 			</div>
@@ -121,7 +121,6 @@ function onClose() {
 .separator {
 	height: 2px;
 	width: auto;
-	margin: 5px 0px;
 	background-color: c.$background-3;
 	opacity: 0.3;
 	margin: 24px 0;

@@ -2,7 +2,7 @@
 import {onMounted, ref} from 'vue'
 import type {ICampaignDay} from '../interfaces/campaign'
 import {useCampaignStore} from '@/stores/campaign'
-import {EMonsterIcons, EMonsterArr} from '../icons/icon_helper'
+import {EMonsterArr} from '../icons/icon_helper'
 import Modal from '../Modal.vue'
 
 const campaignStore = useCampaignStore()
@@ -129,7 +129,6 @@ const downtimeIcons = ['items/ore_2', 'items/bone_1', 'misc/food', 'icon_quest',
 	border: 2px solid c.$background-3;
 	background-color: c.$background-0;
 	&__list {
-		width: calc(100vw - 220px);
 		max-width: 768px;
 		display: grid;
 		grid-template-columns: repeat(auto-fit, 64px);

@@ -12,7 +12,7 @@ const props = defineProps<{
 <template>
 	<div class="container" :class="{'direction-horizontal': props.direction == 'horizontal'}">
 		<BorderComponent class="header__border" :blur_radius="10">
-			<img :src="`/icons/monsters/${set.icon}.png`" class="header__icon" />
+			<img :src="`/icons/monsters/${set.icon}.png`" class="header__icon" alt="Armor Set Icon" />
 		</BorderComponent>
 		<div class="line"></div>
 		<ArmorItem
@@ -71,6 +71,7 @@ const props = defineProps<{
 .container.direction-horizontal {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	.line {
 		width: 64px;
 		background-color: c.$background-3;

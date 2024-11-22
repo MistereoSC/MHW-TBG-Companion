@@ -8,18 +8,20 @@ const huntHelperStore = useHuntHelperStore()
 <template>
 	<div class="page scrollable">
 		<div class="page__top">
-			<Counter
-				:max_amount="3"
-				icon="icon_potion"
-				title="Potions"
-				v-model="huntHelperStore.countPotions"
-			/>
-			<Counter
-				:max_amount="3"
-				icon="icon_quest"
-				title="Lives"
-				v-model="huntHelperStore.countLives"
-			/>
+			<div class="page__top__counters">
+				<Counter
+					:max_amount="3"
+					icon="icon_potion"
+					title="Potions"
+					v-model="huntHelperStore.countPotions"
+				/>
+				<Counter
+					:max_amount="3"
+					icon="icon_quest"
+					title="Lives"
+					v-model="huntHelperStore.countLives"
+				/>
+			</div>
 		</div>
 		<div class="page__bottom">
 			<div class="separator"></div>
@@ -167,9 +169,15 @@ const huntHelperStore = useHuntHelperStore()
 	overflow-y: auto;
 	&__top {
 		display: flex;
-		align-items: center;
 		justify-content: center;
-		gap: 160px;
+
+		&__counters {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			width: 100%;
+			max-width: 560px;
+		}
 	}
 	&__bottom {
 		background-color: c.$background-0;
@@ -240,5 +248,29 @@ const huntHelperStore = useHuntHelperStore()
 	height: auto;
 	border-left: 2px solid c.$background-2;
 	margin: 16px 4px;
+}
+
+@media (max-width: 1050px) {
+	.info {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 64px;
+
+		&__container {
+			margin-bottom: 0;
+			align-items: flex-start;
+		}
+
+		&__content {
+			max-width: 100%;
+
+		}
+	}
+	.separator--vertical {
+		width: auto;
+		height: 1px;
+		border-bottom: 2px solid c.$background-2;
+		margin: 16px 16px 12px 16px;
+	}
 }
 </style>

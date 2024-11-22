@@ -5,7 +5,6 @@ import Modal from '@/components/Modal.vue'
 import {useCampaignStore} from '@/stores/campaign'
 import type {ICampaignData} from '@/components/interfaces/campaign'
 import ModalImportSave from '@/components/campaign/ModalImportSave.vue'
-import Tooltip from '@/components/Tooltip.vue'
 import ModalDeleteSave from '@/components/campaign/ModalDeleteSave.vue'
 
 const campaignStore = useCampaignStore()
@@ -133,6 +132,7 @@ function clickExport(slot: number) {
 									previews[`slot_${index}`].icon
 								}.png`"
 								class="slot__icon"
+								alt="Save Slot Icon"
 							/>
 						</div>
 					</BorderComponent>
@@ -141,20 +141,20 @@ function clickExport(slot: number) {
 									 /*@ts-ignore*/
 									 previews[`slot_${index}`]
 									">
-							<img class="slot__actions__button__image" src="/icons/action_export.png" />
+							<img class="slot__actions__button__image" src="/icons/action_export.png" alt="Export Savegame" />
 						</button>
 						<button class="slot__actions__button" @click="() => clickImport(index)" title="Import from File" v-if="
 									 /*@ts-ignore*/
 									 !previews[`slot_${index}`]
 									">
-							<img class="slot__actions__button__image" src="/icons/action_import.png"
+							<img class="slot__actions__button__image" src="/icons/action_import.png" alt="Import Savegame"
 							/>
 						</button>
 						<button class="slot__actions__button" @click="() => clickDelete(index)" title="Delete Save" v-if="
 									 /*@ts-ignore*/
 									 previews[`slot_${index}`]
 									">
-							<img class="slot__actions__button__image" src="/icons/action_delete.png"
+							<img class="slot__actions__button__image" src="/icons/action_delete.png" alt="Delete Savegame"
 							/>
 						</button>
 					</div>

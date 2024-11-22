@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-import {onMounted, ref, watch} from 'vue'
+import {ref, watch} from 'vue'
 import {useCampaignStore} from '@/stores/campaign'
-import {EColors, EColorsHex, EWeaponIcons, EWeaponIconsArr} from '@/components/icons/icon_helper'
+import {EColors, EColorsHex, EWeaponIconsArr} from '@/components/icons/icon_helper'
 import SelectSlotView from '@/components/campaign/SelectSlotView.vue'
 import CharacterSheet from '@/components/campaign/CharacterSheet.vue'
 import CharacterOverview from '@/components/campaign/CharacterOverview.vue'
@@ -11,7 +11,7 @@ import Counter from '@/components/Counter.vue'
 
 const campaignStore = useCampaignStore()
 
-const slotSelectionOpen = ref(campaignStore.campaignData ? false : true)
+const slotSelectionOpen = ref(!campaignStore.campaignData)
 function onSlotSelect(slot: number | null) {
 	const slotData = campaignStore.loadSlot(slot)
 	if (!slotData) {
@@ -119,7 +119,7 @@ watch(
 								:active="selectedIcon == icon"
 								@click="() => selectIcon(icon)"
 							>
-								<img class="modal__icon-selection__icon" :src="`/icons/weapons/${icon}_0.png`" />
+								<img class="modal__icon-selection__icon" :src="`/icons/weapons/${icon}_0.png`" alt="Weapon Icon" />
 							</div>
 						</div>
 					</div>
@@ -170,7 +170,12 @@ watch(
 		align-items: center;
 		flex-wrap: wrap;
 
-		margin-top: 2rem;
+		padding: 2rem 1em;
+		gap: 2rem;
+
+		&__days {
+			max-width: 100%;
+		}
 	}
 }
 .character {

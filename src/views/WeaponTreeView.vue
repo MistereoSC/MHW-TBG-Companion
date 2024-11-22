@@ -40,7 +40,7 @@ onMounted(() => {
 	width: 100%;
 	height: 100vh;
 	display: grid;
-	grid-template-rows: auto auto;
+	grid-template-rows: 1fr auto;
 	&__bottom {
 		background-color: c.$background-00;
 	}

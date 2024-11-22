@@ -17,7 +17,7 @@ const isLoading = ref(false)
 const dragActive = ref(false)
 const errorReason = ref(null as null | 'invalid_filetype' | 'wrong_json' | 'corrupt_json')
 
-function onItemEnter(e: DragEvent) {
+function onItemEnter() {
 	dragActive.value = true
 }
 
@@ -98,7 +98,7 @@ async function onItemDrop(e: DragEvent) {
 			<h2 class="import__title">Import Save from File</h2>
 			<div class="import__upload"
 					 :class="{active: !isLoading && dragActive, error: state == 'invalid'}"
-					 @dragenter.stop.prevent="(e) => onItemEnter(e)"
+					 @dragenter.stop.prevent="() => onItemEnter()"
 					 @dragleave.stop.prevent="onItemLeave"
 					 @dragover.prevent
 					 @drop.stop.prevent="(e) => onItemDrop(e)">
@@ -112,7 +112,7 @@ async function onItemDrop(e: DragEvent) {
 						<span class="import__upload__title__error"
 									v-else-if="errorReason=='corrupt_json'">JSON is corrupt or malformed</span>
 					</div>
-					<img src="/icons/action_upload.png" class="import__upload__img">
+					<img src="/icons/action_upload.png" alt="Upload Savefile" class="import__upload__img">
 					<p class="import__upload__label">Drop Savefile here</p>
 				</div>
 
@@ -195,8 +195,7 @@ async function onItemDrop(e: DragEvent) {
 			margin: auto;
 			filter: brightness(1) invert(0.8) sepia(0) saturate(1) hue-rotate(0) contrast(1);
 			-webkit-transition: 0.2s -webkit-filter linear;
-			-moz-transition: 0.2s -moz-filter linear;
-			-moz-transition: 0.2s filter linear;
+			-moz-transition: 0.2s filter linear, 0.2s -moz-filter linear;
 			-ms-transition: 0.2s -ms-filter linear;
 			-o-transition: 0.2s -o-filter linear;
 			transition: 0.2s filter linear, 0.2s -webkit-filter linear;

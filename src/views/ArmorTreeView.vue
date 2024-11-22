@@ -121,6 +121,9 @@ onMounted(() => {
 </template>
 
 <style lang="scss" scoped>
+.set {
+	margin: auto 0;
+}
 .page {
 	width: 100%;
 	height: 100%;
@@ -145,23 +148,19 @@ onMounted(() => {
 	width: auto;
 	display: flex;
 	flex-direction: row;
-	align-items: center;
 	padding: 10px 50px 10px 50px;
 	gap: 34px;
 
-	overflow-y: hidden;
-	overflow-x: scroll;
+	overflow: scroll;
 
 	.separator {
-		width: 0px;
+		width: 0;
 		height: 100%;
 		outline: 1px solid c.$background-1;
 	}
 
 	&.--vertical {
 		flex-direction: column;
-		overflow-y: scroll;
-		overflow-x: hidden;
 		.separator {
 			width: 100%;
 			height: 12px;

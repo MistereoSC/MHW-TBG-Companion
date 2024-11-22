@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import BorderComponent from '../BorderComponent.vue'
 import WeaponItem from './WeaponItem.vue'
-import {type IWeaponSet, EWeapons, EWeaponsString} from '@/components/interfaces/items'
+import {type IWeaponSet, EWeapons} from '@/components/interfaces/items'
 
 const props = defineProps<{
 	set: IWeaponSet
@@ -54,12 +54,21 @@ const props = defineProps<{
 .container.direction-horizontal {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	.line {
 		width: 128px;
 		background-color: c.$background-3;
 		height: 4px;
 		margin: 0 -20px;
 		z-index: -1;
+	}
+}
+
+@media (max-width: 1440px) {
+	.container.direction-horizontal {
+		.line {
+			width: 72px;
+		}
 	}
 }
 </style>
