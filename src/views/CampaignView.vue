@@ -53,7 +53,7 @@ function confirmCreateCharacter() {
 	modalCharacterCreateOpen.value = false
 }
 
-const potionCount = ref(0)
+const potionCount = ref(campaignStore.getPotions())
 watch(
 	() => potionCount.value,
 	(newVal) => {

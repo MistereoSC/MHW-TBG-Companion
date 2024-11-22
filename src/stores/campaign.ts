@@ -179,6 +179,10 @@ export const useCampaignStore = defineStore('campaign', () => {
 		campaignData.value.potions = val
 		saveSlot()
 	}
+	function getPotions() {
+		if (!campaignData.value) return 0
+		return campaignData.value.potions
+	}
 	//#endregion
 
 	return {
@@ -194,5 +198,6 @@ export const useCampaignStore = defineStore('campaign', () => {
 		deleteCharacter,
 		registerCampaignDay,
 		setPotions,
+		getPotions,
 	}
 })
